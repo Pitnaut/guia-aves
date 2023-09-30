@@ -6,9 +6,9 @@ import { birds } from '../data/data';
 
 const NavBar = () => {
 
-  const [selectedOrden, setSelectedOrden] = useState('');
-  const [selectedAmenaza, setSelectedAmenaza] = useState('');
-  const [selectedEstacion, setSelectedEstacion] = useState('');
+  const [selectedOrden, setSelectedOrden] = useState("");
+  const [selectedAmenaza, setSelectedAmenaza] = useState("");
+  const [selectedEstacion, setSelectedEstacion] = useState("");
 
 
   //extraer valores unicos para cada menu en formato array
@@ -20,10 +20,9 @@ const NavBar = () => {
   return (
     <nav className='navigator'>
       <div className="sections">
+        <img src={logo} alt='Logotipo de guía de aves' />
         <ul className='sections-list'>
-          <img src={logo} alt='Logotipo de guía de aves' />
-          <li>Todas las aves</li>
-          <li>
+          <li className='menu-item'>
             <label htmlFor="ordenSelect"></label>
             <select
               id="ordenSelect"
@@ -38,7 +37,7 @@ const NavBar = () => {
               ))}
             </select>
           </li>
-          <li>
+          <li className='menu-item'>
             <label htmlFor="amenazaSelect"></label>
             <select
               id="amenazaSelect"
@@ -53,7 +52,7 @@ const NavBar = () => {
               ))}
             </select>
           </li>
-          <li>
+          <li className='menu-item'>
             <label htmlFor="estacionSelect"></label>
             <select
               id="estacionSelect"
@@ -68,7 +67,8 @@ const NavBar = () => {
               ))}
             </select>
           </li>
-          <li>Guía de uso</li>
+          <li className='menu-item'>Todas las aves</li>
+          <li className='menu-item'>Guía de uso</li>
         </ul>
       </div>
       <div className='searchbar'>
@@ -76,6 +76,7 @@ const NavBar = () => {
       </div>
     </nav>
   );
+
 }
 
 export default NavBar;

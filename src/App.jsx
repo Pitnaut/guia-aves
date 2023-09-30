@@ -1,7 +1,6 @@
 import './App.css';
 import NavBar from './components/Navbar';
 import BirdList from './components/BirdList'
-import logo from './assets/logo.png';
 
 
 function App() {
