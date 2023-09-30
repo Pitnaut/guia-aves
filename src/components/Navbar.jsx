@@ -1,25 +1,81 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SearchBar } from './SearchBar';
 import '../stylesheets/NavBar.css';
+import logo from '../assets/logo.png';
+import { birds } from '../data/data';
 
 const NavBar = () => {
 
-  return(
+  const [selectedOrden, setSelectedOrden] = useState('');
+  const [selectedAmenaza, setSelectedAmenaza] = useState('');
+  const [selectedEstacion, setSelectedEstacion] = useState('');
+
+
+  //extraer valores unicos para cada menu en formato array
+  const ordenOptions = Array.from(new Set(birds.map((bird) => bird.orden)));
+  const amenazaOptions = Array.from(new Set(birds.map((bird) => bird.amenaza)));
+  const estacionOptions = Array.from(new Set(birds.map((bird) => bird.epoca)));
+
+
+  return (
     <nav className='navigator'>
-    <div classname="sections">
-      <ul className='sections-list'>
-        <li>Todas las aves</li>
-        <li>Orden</li>
-        <li>Amenaza</li>
-        <li>Estación</li>
-        <li>Guía de uso</li>
-      </ul>
-    </div>
-    <div className='searchbar'>
-      <SearchBar />
-    </div>
-  </nav>
-  )
+      <div className="sections">
+        <ul className='sections-list'>
+          <img src={logo} alt='Logotipo de guía de aves' />
+          <li>Todas las aves</li>
+          <li>
+            <label htmlFor="ordenSelect"></label>
+            <select
+              id="ordenSelect"
+              value={selectedOrden}
+              onChange={(e) => setSelectedOrden(e.target.value)}
+            >
+              <option value="">Orden</option>
+              {ordenOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </li>
+          <li>
+            <label htmlFor="amenazaSelect"></label>
+            <select
+              id="amenazaSelect"
+              value={selectedAmenaza}
+              onChange={(e) => setSelectedAmenaza(e.target.value)}
+            >
+              <option value="">Amenaza</option>
+              {amenazaOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </li>
+          <li>
+            <label htmlFor="estacionSelect"></label>
+            <select
+              id="estacionSelect"
+              value={selectedEstacion}
+              onChange={(e) => setSelectedEstacion(e.target.value)}
+            >
+              <option value="">Estación</option>
+              {estacionOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </li>
+          <li>Guía de uso</li>
+        </ul>
+      </div>
+      <div className='searchbar'>
+        <SearchBar />
+      </div>
+    </nav>
+  );
 }
 
 export default NavBar;

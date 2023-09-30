@@ -359,7 +359,7 @@ export const birds = [{
   id: 149,
   nombre: "Pito real ibérico",
   cientifico: "Picus sharpei",
-  orden: "Piciformas",
+  orden: "Piciformes",
   familia: "Picidae",
   alimentacion: ["larvas", "insectos"],
   envergadura: 41,
