@@ -118,6 +118,40 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Mareca_strepera"
 },
 {
+  id: 29,
+  nombre: "Arrendajo euroasiático",
+  cientifico: "Garrulus glandarius",
+  orden: "Passeriformes",
+  familia: "Corvidae",
+  alimentacion: ["omnivoro"],
+  envergadura: 56,
+  epoca: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "Inconfundible gracias color azul de sus alas en comparación con sus tonos ocres. Entierra bellotas para disponer de ellas en momentos de escasez, contribuyendo a la reforestación.",
+  autor: "I. Luc Viatour",
+  imagen: "Arrendajo_euroasiatico",
+  alttext: "Imagen de Arrendajo Euroasiático",
+  seo: "https://seo.org/ave/arrendajo-euroasiatico/#",
+  wiki: "https://es.wikipedia.org/wiki/Garrulus_glandarius"
+},
+{
+  id: 39,
+  nombre: "Bigotudo",
+  cientifico: "Panurus biarmicus",
+  orden: "Passeriformes",
+  familia: "Panuridae",
+  alimentacion: ["insectos", "semillas"],
+  envergadura: 17,
+  epoca: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "Su habitat principal son los carrizales donde se desenvuelve muy agilmente entre las palntas. Es bastante dificil de observar. Los machos presentan unos bigotes muy característicos.",
+  autor: "Kaeptn chemnitz",
+  imagen: "Bigotudo",
+  alttext: "Imagen de Bigotudo",
+  seo: "https://seo.org/ave/bigotudo/#",
+  wiki: "https://es.wikipedia.org/wiki/Panurus_biarmicus"
+},
+{
   id: 44,
   nombre: "Búho chico",
   cientifico: "Asio otus",
@@ -169,6 +203,23 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Troglodytes_troglodytes"
 },
 {
+  id: 64,
+  nombre: "Cigüeña blanca",
+  cientifico: "Ciconia ciconia",
+  orden: "Ciconiiformes",
+  familia: "Ciconiidae",
+  alimentacion: ["insectos", "roedores", "peces"],
+  envergadura: 200,
+  epoca: "Estival",
+  amenaza: "Preocupación menor",
+  descripcion: "Cada vez es más frecuente verla en invierno. Tiene un sonido muy característico que produce al chocar sus mandíbulas conocido como crotoreo.",
+  autor: "Dcabrilo",
+  imagen: "Cigüeña_blanca",
+  alttext: "Imagen de Cigüeña blanca",
+  seo: "https://seo.org/ave/ciguena-blanca/#",
+  wiki: "https://es.wikipedia.org/wiki/Ciconia_ciconia"
+},
+{
   id: 72,
   nombre: "Colirrojo Tizón",
   cientifico: "Phoenicurus ochuros",
@@ -218,6 +269,23 @@ export const birds = [{
   alttext: "Imagen de Elanio común",
   seo: "https://seo.org/ave/elanio-comun/#",
   wiki: "https://es.wikipedia.org/wiki/Elanus_caeruleus"
+},
+{
+  id: 100,
+  nombre: "Ganso del nilo",
+  cientifico: "Alopochen aegyptiaca",
+  orden: "Anseriformes",
+  familia: "Anatidae",
+  alimentacion: ["plantas"],
+  envergadura: 145,
+  epoca: "Residente",
+  amenaza: "Especie exótica invasora",
+  descripcion: "No se tiene una información precisa sobre la población, pero es creciente, propio de una especi invasora. Es vegetariano y se adapta muy facilmente a la presencia humana.",
+  autor: "Andreas Trepte",
+  imagen: "Ganso_del_nilo",
+  alttext: "Imagen de Ganso del nilo",
+  seo: "https://seo.org/ave/ganso-del-nilo/#",
+  wiki: "https://es.wikipedia.org/wiki/Alopochen_aegyptiaca"
 },
 {
   id: 108,
@@ -322,6 +390,23 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Motacilla_alba"
 },
 {
+  id: 128,
+  nombre: "Mito común",
+  cientifico: "Aegithalos caudatus",
+  orden: "Passeriformes",
+  familia: "Aegithalidae",
+  alimentacion: ["insectos"],
+  envergadura: 17,
+  epoca: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "Esta diminuta e inquieta ave es muy común en bosques aunque también se pueden observar en parques si son muy extensos. Su cola es muy larga en comparación con el tamaño de su cuerpo.",
+  autor: "Andreas Trepte",
+  imagen: "Mito_comun",
+  alttext: "Imagen de Mito común",
+  seo: "https://seo.org/ave/mito-comun/#",
+  wiki: "https://es.wikipedia.org/wiki/Aegithalos_caudatus"
+},
+{
   id: 129,
   nombre: "Mochuelo europeo",
   cientifico: "Aethene noctua",
@@ -337,6 +422,23 @@ export const birds = [{
   alttext: "Imagen de Mochuelo europeo",
   seo: "https://seo.org/ave/mochuelo-europeo/#",
   wiki: "https://es.wikipedia.org/wiki/Athene_noctua"
+},
+{
+  id: 135,
+  nombre: "Paloma Bravía",
+  cientifico: "Columba livia",
+  orden: "Columbiformes",
+  familia: "Columbidae",
+  alimentacion: ["semillas"],
+  envergadura: 65,
+  epoca: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "Es el ancestro de las palomas domésticas. Su cuello es muy llamativo con iridiscencias verces y violetas. Muy común verlas en la ciudades.",
+  autor: "Diego Delso",
+  imagen: "Paloma_bravia",
+  alttext: "Imagen de Paloma bravía",
+  seo: "https://seo.org/ave/paloma-bravia/#",
+  wiki: "https://es.wikipedia.org/wiki/Columba_livia"
 },
 {
   id: 148,
@@ -390,6 +492,23 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Luscinia_svecica"
 },
 {
+  id: 168,
+  nombre: "Tórtola europea",
+  cientifico: "Streptopelia turtur",
+  orden: "Columbiformes",
+  familia: "Columbidae",
+  alimentacion: ["semillas, plantas"],
+  envergadura: 50,
+  epoca: "Estival",
+  amenaza: "Vulnerable",
+  descripcion: "Es una especie de gustos cálidos y habitats abiertos como pastizales o zonas de dehesa. Son abundantes y fáciles de ver pero su población se encuentra en regresión.",
+  autor: "Zrno",
+  imagen: "Tortola_europea",
+  alttext: "Imagen de Tórtola europea",
+  seo: "https://seo.org/ave/tortola-europea/#",
+  wiki: "https://es.wikipedia.org/wiki/Streptopelia_turtur"
+},
+{
   id: 170,
   nombre: "Trepador azul",
   cientifico: "Sitta europaea",
@@ -407,7 +526,24 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Sitta_europaea"
 },
 {
-  id: 181,
+  id: 175,
+  nombre: "Verdecillo",
+  cientifico: "Serinus serinus",
+  orden: "Passeriformes",
+  familia: "Fringillidae",
+  alimentacion: ["semillas"],
+  envergadura: 21,
+  epoca: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "El Verdecillo o Serín verdecillo es pariente del canario. Se puede encontrar en diferentes habitats: bosques, llanuras e incluso parques.",
+  autor: "Antonio Sobrado",
+  imagen: "Verdecillo",
+  alttext: "Imagen de Verdecillo",
+  seo: "https://seo.org/ave/serin-verdecillo/#",
+  wiki: "https://es.wikipedia.org/wiki/Serinus_serinus"
+},
+{
+  id: 182,
   nombre: "Zorzal común",
   cientifico: "Turdus philomelos",
   orden: "Passeriformes",
