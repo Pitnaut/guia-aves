@@ -2,23 +2,24 @@ import React from 'react';
 import { SearchBar } from './SearchBar';
 import '../stylesheets/NavBar.css';
 
-export const NavBar = () => {
+const NavBar = () => {
 
   return(
     <nav className='navigator'>
-
-    <ul classname="sections">
-      <li>Todas las aves</li>
-      <li>Orden</li>
-      <li>Amenaza</li>
-      <li>Estación</li>
-      <li>Guía de uso</li>
-    </ul>
-
-    <SearchBar />
-
+    <div classname="sections">
+      <ul className='sections-list'>
+        <li>Todas las aves</li>
+        <li>Orden</li>
+        <li>Amenaza</li>
+        <li>Estación</li>
+        <li>Guía de uso</li>
+      </ul>
+    </div>
+    <div className='searchbar'>
+      <SearchBar />
+    </div>
   </nav>
   )
-  
-
 }
+
+export default NavBar;

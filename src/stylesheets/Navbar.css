@@ -1,0 +1,19 @@
+.navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sections-list {
+  display: flex;
+  list-style-type: none;
+  gap: 10%
+}
+
+.sections-list li {
+  white-space: nowrap;
+}
+
+.searchbar {
+  margin-right: 3%;
+}

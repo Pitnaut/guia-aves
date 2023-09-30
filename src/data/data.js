@@ -299,7 +299,7 @@ export const birds = [{
   amenaza: "Preocupación menor",
   descripcion: "Facilmente identificable gracias a sus llamativos colores. Apenas existe dimorfismo sexual. Hay poblaciones migratorias que cruzan el Meditarraneo rumbo a África.",
   autor: "Marek Szczepanek",
-  imagen: "Jilgero_europeo",
+  imagen: "Jilguero_europeo",
   alttext: "Imagen de Jilguero europeo",
   seo: "https://seo.org/ave/jilguero-europeo/#",
   wiki: "https://es.wikipedia.org/wiki/Carduelis_carduelis"
@@ -384,7 +384,7 @@ export const birds = [{
   amenaza: "Datos insuficientes",
   descripcion: "Es muy escaso y dificl de encontrar pero es muy facilmente identificable por su llamativa garganta azul brillante. En Madrid es un ave estival.",
   autor: "PL Bogomolov",
-  imagen: "Ruiseñor pechiazul",
+  imagen: "Ruiseñor_pechiazul",
   alttext: "Imagen de Ruiseñor pechiazul",
   seo: "https://seo.org/ave/ruisenor-pechiazul/#",
   wiki: "https://es.wikipedia.org/wiki/Luscinia_svecica"
