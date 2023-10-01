@@ -1,17 +1,16 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import BirdList from './components/BirdList';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,  } from 'react-router-dom';
+import Root from './components/Root';
 
 
 function App() {
 
   return (
-    <Router>
-      <div className='app'>
-       <NavBar />
-        <BirdList />
-      </div>
+    <Router> 
+        <Routes>
+          <Route path='/' element={<Root />} />
+          <Route path='/about' element={<h1>Guia de aves de la Comunidad de Madrid</h1>} />
+        </Routes>
     </Router>
   )
 }
