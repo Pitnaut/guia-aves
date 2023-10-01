@@ -3,7 +3,7 @@ import '../stylesheets/BirdList.css'
 import { birds } from '../data/data'
 
 const BirdList = () => {
-
+  
   return (
     <div className='bird-list'>
       {birds.map((bird) => (

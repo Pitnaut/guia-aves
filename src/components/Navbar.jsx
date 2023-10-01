@@ -14,7 +14,7 @@ const NavBar = () => {
   //extraer valores unicos para cada menu en formato array
   const ordenOptions = Array.from(new Set(birds.map((bird) => bird.orden)));
   const amenazaOptions = Array.from(new Set(birds.map((bird) => bird.amenaza)));
-  const estacionOptions = Array.from(new Set(birds.map((bird) => bird.epoca)));
+  const estacionOptions = Array.from(new Set(birds.map((bird) => bird.estacion)));
 
 
   return (
