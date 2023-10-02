@@ -3,6 +3,7 @@ import { SearchBar } from './SearchBar';
 import '../stylesheets/NavBar.css';
 import logo from '../assets/logo.png';
 import { birds } from '../data/data';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -67,8 +68,20 @@ const NavBar = () => {
               ))}
             </select>
           </li>
-          <li className='menu-item'>Todas las aves</li>
-          <li className='menu-item'>Guía de uso</li>
+          <li className='menu-item'>
+            <NavLink 
+              to='/'
+              className={({ isActive }) => isActive ? 'active-link' : 'link'}>
+              Todas las aves
+            </NavLink>
+          </li>
+          <li className='menu-item'>
+            <NavLink 
+              to='/about'
+              className={({ isActive }) => isActive ? 'active-link' : 'link'}>
+              Guía de uso
+            </NavLink>
+            </li>
         </ul>
       </div>
       <div className='searchbar'>

@@ -1,15 +1,17 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route,  } from 'react-router-dom';
-import Root from './components/Root';
+import NavBar from './components/NavBar';
+import BirdList from './components/BirdList';
 
 
 function App() {
 
   return (
     <Router> 
+      <NavBar />
         <Routes>
-          <Route path='/' element={<Root />} />
-          <Route path='/about' element={<h1>Guia de aves de la Comunidad de Madrid</h1>} />
+          <Route path='/' element={<BirdList />} />
+          <Route path='/about' element={<h1>Explicación de la Guía de Aves</h1>} />
         </Routes>
     </Router>
   )
