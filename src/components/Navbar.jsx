@@ -23,6 +23,13 @@ const NavBar = () => {
       <div className="sections">
         <img src={logo} alt='Logotipo de guía de aves' />
         <ul className='sections-list'>
+        <li className='menu-item'>
+            <NavLink 
+              to='/'
+              className={({ isActive }) => isActive ? 'active-link' : 'link'}>
+              Home
+            </NavLink>
+          </li>
           <li className='menu-item'>
             <label htmlFor="ordenSelect"></label>
             <select
@@ -70,7 +77,7 @@ const NavBar = () => {
           </li>
           <li className='menu-item'>
             <NavLink 
-              to='/'
+              to='/birds'
               className={({ isActive }) => isActive ? 'active-link' : 'link'}>
               Todas las aves
             </NavLink>

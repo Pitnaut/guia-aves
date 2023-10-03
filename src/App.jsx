@@ -1,7 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route,  } from 'react-router-dom';
-import NavBar from './components/NavBar';
+import NavBar from './components/Navbar';
 import BirdList from './components/BirdList';
+import BirdsId from './pages/BirdsId';
+import Home from './pages/Home';
 
 
 function App() {
@@ -10,7 +12,9 @@ function App() {
     <Router> 
       <NavBar />
         <Routes>
-          <Route path='/' element={<BirdList />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/birds' element={<BirdList />} />
+          <Route path='/birds/:id' element={<BirdsId />} />
           <Route path='/about' element={<h1>Explicación de la Guía de Aves</h1>} />
         </Routes>
     </Router>
