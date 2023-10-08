@@ -4,6 +4,7 @@ import NavBar from './components/Navbar';
 import BirdList from './components/BirdList';
 import BirdPage from './pages/BirdPage';
 import Home from './pages/Home';
+import SearchPage from './pages/SearchPage'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path='/birds' element={<BirdList />} />
           <Route path='/birds/:id' element={<BirdPage />} />
           <Route path='/about' element={<h1>Explicación de la Guía de Aves</h1>} />
+          <Route path='/search' element={<SearchPage />} />
         </Routes>
     </Router>
   )

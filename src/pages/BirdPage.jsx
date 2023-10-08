@@ -9,16 +9,23 @@ const BirdPage = () => {
   const bird = birds.find((bird) => bird.id === parseInt(id))
 
   return (
-    <div className='bird-list'>
-      <div key={bird.id} className='bird-container'>
-          <img 
-            className="bird-image"
-            src={`../../public/images/${bird.imagen}.png`} 
-            alt={bird.alttext} />
+    <div className='search-page'>
+      {bird ? (
+        <div className='bird-list'>
+          <div key={bird.id} className='bird-container'>
+            <img
+              className='bird-image'
+              src={`../../public/images/${bird.imagen}.png`}
+              alt={bird.alttext}
+            />
             <h2>{bird.nombre}</h2>
-      </div>
+          </div>
+        </div>
+      ) : (
+        <p>No se encontró información del ave</p>
+      )}
     </div>
-  )
+  );
 }
 
 export default BirdPage

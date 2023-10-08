@@ -1,29 +1,39 @@
-import React, { useState } from 'react';
-import '../stylesheets/SearchBar.css'
+import React, { useRef } from 'react';
+import '../stylesheets/SearchBar.css';
+import { useNavigate, createSearchParams } from 'react-router-dom'
 
 export const SearchBar = () => {
-  const [query, setQuery] = useState('');
 
-  const handleInputChange = (e) => {
-    setQuery(e.target.value);
-  };
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const searchInputRef = useRef();
+
+  const onSearchHandler = (e) => {
     e.preventDefault();
-    onSearch(query);
+
+    const searchQuery = {
+      nombre: searchInputRef.current.value
+    }
+
+    const query = createSearchParams(searchQuery)
+
+    navigate({
+      pathname: '/search',
+      search: `${query}`
+    })
   };
+  
 
   return(
       <form 
-        onSubmit={handleSubmit}
+        onSubmit={onSearchHandler}
         className='searchform'     
       >
         <input
           className='inputbox'
           type='text'
           placeholder='Buscar aves...'
-          value={query}
-          onChange={handleInputChange}
+          ref={searchInputRef}
         />
         <button 
           type='submit'
