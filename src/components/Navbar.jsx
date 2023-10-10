@@ -21,7 +21,7 @@ const NavBar = () => {
   return (
     <nav className='navigator'>
       <div className="sections">
-        <img src={logo} alt='Logotipo de guía de aves' />
+        
         <ul className='sections-list'>
         <li className='menu-item'>
             <NavLink 
