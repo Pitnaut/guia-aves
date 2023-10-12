@@ -1,10 +1,10 @@
 import React from 'react'
 import { birds } from '../data/data'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import '../stylesheets/BirdPage.css'
+import BirdCard from '../components/BirdCard'
 
 const BirdPage = () => {
-
   const { id } = useParams()
   const bird = birds.find((bird) => bird.id === parseInt(id))
 
@@ -12,20 +12,15 @@ const BirdPage = () => {
     <div className='search-page'>
       {bird ? (
         <div className='bird-list'>
-          <div key={bird.id} className='bird-container'>
-            <img
-              className='bird-image'
-              src={`../../public/images/${bird.imagen}.png`}
-              alt={bird.alttext}
-            />
-            <h2>{bird.nombre}</h2>
-          </div>
+          <Link to={`/bird/${id}`}>
+            <BirdCard bird={bird} />
+          </Link>
         </div>
       ) : (
         <p>No se encontró información del ave</p>
       )}
     </div>
-  );
+  )
 }
 
 export default BirdPage
