@@ -48,13 +48,11 @@ const NavBar = () => {
             </NavLink>
           </li>
           <li className='menu-item'>
-            <label htmlFor="ordenSelect"></label>
             <select
-              id="ordenSelect"
               value={selectedOrden}
               onChange={handleOrdenSelect}        
             >
-              <option value="">Orden</option>
+              <option value="" disable selected hidden>Orden</option>
               {ordenOptions.map((option) => (       
                 <option key={option} value={option}>
                   {option}
@@ -63,13 +61,11 @@ const NavBar = () => {
             </select>
           </li>
           <li className='menu-item'>
-            <label htmlFor="amenazaSelect"></label>
             <select
-              id="amenazaSelect"
               value={selectedAmenaza}
               onChange={handleAmenazaSelect}
             >
-              <option value="">Amenaza</option>
+              <option value="" disable selected hidden>Amenaza</option>
               {amenazaOptions.map((option) => (
                 <option key={option} value={option}>
                   {option}
@@ -78,13 +74,11 @@ const NavBar = () => {
             </select>
           </li>
           <li className='menu-item'>
-            <label htmlFor="estacionSelect"></label>
             <select
-              id="estacionSelect"
               value={selectedEstacion}
               onChange={handleEstacionSelect}
             >
-              <option value="">Estación</option>
+              <option value="" disable selected hidden>Estación</option>
               {estacionOptions.map((option) => (
                 <option key={option} value={option}>
                   {option}
