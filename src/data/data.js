@@ -410,7 +410,7 @@ export const birds = [{
   id: 81,
   nombre: "Cuco",
   cientifico: "Cuculus canorus",
-  orden: "Cucliformes",
+  orden: "Cuculiformes",
   familia: "Cuculidae",
   alimentacion: ["insectos"],
   envergadura: 58,

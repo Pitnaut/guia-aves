@@ -23,9 +23,17 @@ const NavBar = () => {
     navigate(`/birds/orden/${selectedValue}`);
   };
 
-  useEffect(() => {
-    console.log(selectedOrden);
-  }, [selectedOrden]);
+  const handleAmenazaSelect = (e) => {
+    const selectedValue = e.target.value;
+    setSelectedAmenaza(selectedValue);
+    navigate(`/birds/amenaza/${selectedValue}`);
+  };
+  
+  const handleEstacionSelect = (e) => {
+    const selectedValue = e.target.value;
+    setSelectedEstacion(selectedValue);
+    navigate(`/birds/estacion/${selectedValue}`);
+  }
 
 
   return (
@@ -59,7 +67,7 @@ const NavBar = () => {
             <select
               id="amenazaSelect"
               value={selectedAmenaza}
-              onChange={(e) => setSelectedAmenaza(e.target.value)}
+              onChange={handleAmenazaSelect}
             >
               <option value="">Amenaza</option>
               {amenazaOptions.map((option) => (
@@ -74,7 +82,7 @@ const NavBar = () => {
             <select
               id="estacionSelect"
               value={selectedEstacion}
-              onChange={(e) => setSelectedEstacion(e.target.value)}
+              onChange={handleEstacionSelect}
             >
               <option value="">Estación</option>
               {estacionOptions.map((option) => (
