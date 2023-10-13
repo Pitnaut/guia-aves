@@ -1,5 +1,4 @@
 import React from "react";
-import '../stylesheets/BirdList.css';
 import { birds } from '../data/data';
 import BirdCard from './BirdCard';
 

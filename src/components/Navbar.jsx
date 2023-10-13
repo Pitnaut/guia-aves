@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SearchBar } from './SearchBar';
 import '../stylesheets/NavBar.css';
-import logo from '../assets/logo.png';
 import { birds } from '../data/data';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -11,19 +10,29 @@ const NavBar = () => {
   const [selectedAmenaza, setSelectedAmenaza] = useState("");
   const [selectedEstacion, setSelectedEstacion] = useState("");
 
+  const navigate = useNavigate();
 
   //extraer valores unicos para cada menu en formato array
   const ordenOptions = Array.from(new Set(birds.map((bird) => bird.orden)));
   const amenazaOptions = Array.from(new Set(birds.map((bird) => bird.amenaza)));
   const estacionOptions = Array.from(new Set(birds.map((bird) => bird.estacion)));
 
+  const handleOrdenSelect = (e) => {
+    const selectedValue = e.target.value;
+    setSelectedOrden(selectedValue);
+    navigate(`/birds/orden/${selectedValue}`);
+  };
+
+  useEffect(() => {
+    console.log(selectedOrden);
+  }, [selectedOrden]);
+
 
   return (
     <nav className='navigator'>
-      <div className="sections">
-        
+      <div className="sections">        
         <ul className='sections-list'>
-        <li className='menu-item'>
+          <li className='menu-item'>
             <NavLink 
               to='/'
               className={({ isActive }) => isActive ? 'active-link' : 'link'}>
@@ -35,10 +44,10 @@ const NavBar = () => {
             <select
               id="ordenSelect"
               value={selectedOrden}
-              onChange={(e) => setSelectedOrden(e.target.value)}
+              onChange={handleOrdenSelect}        
             >
               <option value="">Orden</option>
-              {ordenOptions.map((option) => (
+              {ordenOptions.map((option) => (       
                 <option key={option} value={option}>
                   {option}
                 </option>
