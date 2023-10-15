@@ -203,6 +203,23 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Delichon_urbicum"
 },
 {
+  id: 38,
+  nombre: "Becada",
+  cientifico: "Scolopax rusticola",
+  orden: "Charadriiformes",
+  familia: "Scolopacidae",
+  alimentacion: ["invertebrados"],
+  envergadura: 60,
+  estacion: "Residente",
+  amenaza: "Datos insuficientes",
+  descripcion: "Conocida tambien como Chocha Perdiz. Es un ave predominantemente invernal aunque se puede encontrar en el Sistema Central todo el año. A pesar de ser limícola prefiere el interior de los bosques cerrados y húmedos donde puede pasar desapercibida.",
+  autor: "Ronald Slabke",
+  imagen: "Becada",
+  alttext: "Imagen de Becada",
+  seo: "https://seo.org/ave/chocha-perdiz/#",
+  wiki: "https://es.wikipedia.org/wiki/Scolopax_rusticola"
+},
+{
   id: 39,
   nombre: "Bigotudo",
   cientifico: "Panurus biarmicus",
@@ -271,6 +288,23 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Gyps_fulvus"
 },
 {
+  id: 49,
+  nombre: "Calandria común",
+  cientifico: "Melanocorypha calandra",
+  orden: "Passeriformes",
+  familia: "Alaudidae",
+  alimentacion: ["invertebrados", "semillas", "plantas"],
+  envergadura: 38,
+  estacion: "Residente",
+  amenaza: "Casí amenazado",
+  descripcion: "Abuntante en zonas de cultivos y ambientes esteparios con preferencia por las llanuras con cultivo de cereal. Es capaz de imitar el canto de otras aves.",
+  autor: "Bereçe",
+  imagen: "Calandria_comun",
+  alttext: "Imagen de Calandria común",
+  seo: "https://seo.org/ave/calandria-comun/#",
+  wiki: "https://es.wikipedia.org/wiki/Melanocorypha_calandra"
+},
+{
   id: 51,
   nombre: "Carbonero común",
   cientifico: "Parus major",
@@ -288,8 +322,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Parus_major"
 },
 {
+  id: 52,
+  nombre: "Carbonero garrapinos",
+  cientifico: "Periparus ater",
+  orden: "Passeriformes",
+  familia: "Paridae",
+  alimentacion: ["insectos", "bayas"],
+  envergadura: 19,
+  estacion: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "Su diferencia más notable con el carbonero común se encuentra en la mancha blanca que tiene en la cabeza. Habitual en los pinares, se siente muy comodo en las copas más altas.",
+  autor: "John GB Garrett",
+  imagen: "Carbonero_garrapinos",
+  alttext: "Imagen de Carbonero garrapinos",
+  seo: "https://seo.org/ave/carbonero-garrapinos/#",
+  wiki: "https://es.wikipedia.org/wiki/Periparus_ater"
+},
+{
   id: 57,
-  nombre: "Cernicalo primilla",
+  nombre: "Cernícalo primilla",
   cientifico: "Falco naumanni",
   orden: "Falconiformes",
   familia: "Falconidae",
@@ -303,6 +354,23 @@ export const birds = [{
   alttext: "Imagen de Cernícalo primilla",
   seo: "https://seo.org/ave/cernicalo-primilla/#",
   wiki: "https://es.wikipedia.org/wiki/Falco_naumanni"
+},
+{
+  id: 58,
+  nombre: "Cernícalo vulgar",
+  cientifico: "Falco tinnunculus",
+  orden: "Falconiformes",
+  familia: "Falconidae",
+  alimentacion: ["roedroes", "insectos"],
+  envergadura: 73,
+  estacion: "Residente",
+  amenaza: "En peligro",
+  descripcion: "Es una de las rapaces más comunes de Europa y es fácil verla al acecho de insectos o pequeños mamíferos. Parece que su población se encuentra en declive debido a la alteración de su habitat.",
+  autor: "Andreas Trepte",
+  imagen: "Cernicalo_vulgar",
+  alttext: "Imagen de Cernícalo vulgar",
+  seo: "https://seo.org/ave/cernicalo-vulgar/#",
+  wiki: "https://es.wikipedia.org/wiki/Falco_tinnunculus"
 },
 {
   id: 59,
@@ -424,6 +492,23 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Cuculus_canorus"
 },
 {
+  id: 82,
+  nombre: "Cuervo grande",
+  cientifico: "Corvus corax",
+  orden: "Passeriformes",
+  familia: "Corvidae",
+  alimentacion: ["omnivoro"],
+  envergadura: 130,
+  estacion: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "La más grande de las passeriformes. Puede que sea una de las aves más famosas que existen ya que siempre ha estado presente en literatura y en la cultura popular como símbolo de mal presagio. ",
+  autor: "Fernando Losada Rodríguez",
+  imagen: "Cuervo_grande",
+  alttext: "Imagen de Cuervo grande",
+  seo: "https://seo.org/ave/cuervo-grande/#",
+  wiki: "https://es.wikipedia.org/wiki/Corvus_corax"
+},
+{
   id: 84,
   nombre: "Curruca capirotada",
   cientifico: "Sylvia atricapilla",
@@ -475,6 +560,23 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Emberiza_schoeniclus"
 },
 {
+  id: 95,
+  nombre: "Estornino pinto",
+  cientifico: "Sturnus vulgaris",
+  orden: "Passeriformes",
+  familia: "Sturnidae",
+  alimentacion: ["insectos", "bayas"],
+  envergadura: 39,
+  estacion: "Invernal",
+  amenaza: "Preocupación menor",
+  descripcion: "En Madrid es un ave invernal encontrándose solo como reproductura en Cataluña y el norte de España. Su trino puede imitar al de otras aves. Es beneficioso para el hombre ya que se alimenta de especies de insectos que se consideran plagas.",
+  autor: "Philip Heron  ",
+  imagen: "Estornino_pinto",
+  alttext: "Imagen de Estornino pinto",
+  seo: "https://seo.org/ave/estornino-pinto/#",
+  wiki: "https://es.wikipedia.org/wiki/Sturnus_vulgaris"
+},
+{
   id: 96,
   nombre: "Focha común",
   cientifico: "Fulica atra",
@@ -490,6 +592,23 @@ export const birds = [{
   alttext: "Imagen de Focha Común",
   seo: "https://seo.org/ave/focha-comun/#",
   wiki: "https://es.wikipedia.org/wiki/Fulica_atra"
+},
+{
+  id: 98,
+  nombre: "Ganga ibérica",
+  cientifico: "Pterocles alchata",
+  orden: "Pterocliformes",
+  familia: "Pteroclidae",
+  alimentacion: ["semillas"],
+  envergadura: 55,
+  estacion: "Residente",
+  amenaza: "Vulnerable",
+  descripcion: "La Ganga Ibérica tiene una representación casi marginal y es muy dificil de localizar. Prefiere los campos cultivados para conseguir su comida. Su población en España se reduce a 7500 individuos.",
+  autor: "Francesco Veronesi",
+  imagen: "Ganga_iberica",
+  alttext: "Imagen de Ganga ibérica",
+  seo: "https://seo.org/ave/ganga-iberica/#",
+  wiki: "https://es.wikipedia.org/wiki/Pterocles_alchata"
 },
 {
   id: 100,
@@ -517,7 +636,7 @@ export const birds = [{
   alimentacion: ["peces", "insectos"],
   envergadura: 125,
   estacion: "Estival",
-  amenaza: "Casí amenazado",
+  amenaza: "Casi amenazado",
   descripcion: "Escasa en Madrid. Tiene una figura elegante tanto en suelo como en vuelo. Es muy sigilosa y pasa más tiempo escondida que la garza real.",
   autor: "Steve Garvie",
   imagen: "Garza_imperial",
@@ -541,6 +660,23 @@ export const birds = [{
   alttext: "Imagen de Garza real",
   seo: "https://seo.org/ave/garza-real/#",
   wiki: "https://es.wikipedia.org/wiki/Ardea_cinerea"
+},
+{
+  id: 107,
+  nombre: "Gaviota reidora",
+  cientifico: "Chroicocephalus ridibundus",
+  orden: "Charadriiformes",
+  familia: "Laridae",
+  alimentacion: ["omnivoro"],
+  envergadura: 105,
+  estacion: "Invernal",
+  amenaza: "Preocupación menor",
+  descripcion: "Es una gaviota pequeña no demasiado abundante como reproductora pero que se desplaza a nuestra península en invierno. Durante el verano el plumaje de la cabeza cambia a marrón.",
+  autor: "Hans Hillewaert",
+  imagen: "Gaviota_reidora",
+  alttext: "Imagen de Gaviota reidora",
+  seo: "https://seo.org/ave/gaviota-reidora/#",
+  wiki: "https://es.wikipedia.org/wiki/Chroicocephalus_ridibundus"
 },
 {
   id: 108,
@@ -575,6 +711,23 @@ export const birds = [{
   alttext: "Imagen de Golondrina común",
   seo: "https://seo.org/ave/golondrina-comun/#",
   wiki: "https://es.wikipedia.org/wiki/Hirundo_rustica"
+},
+{
+  id: 111,
+  nombre: "Gorrión común",
+  cientifico: "Passer domesticus",
+  orden: "Passeriformes",
+  familia: "Passeridae",
+  alimentacion: ["semillas", "bayas", "insectos"],
+  envergadura: 21,
+  estacion: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "Es quizá el ave más extendida de todo el mundo gracias a su adaptabilidad. Es fácil verlos en terrazas de restaurantes aprovechando la más minima oportunidad para hacerse con alguna migaja de comida.",
+  autor: "JrPol",
+  imagen: "Gorrion_comun",
+  alttext: "Imagen de Gorrión común",
+  seo: "https://seo.org/ave/gorrion-comun/#",
+  wiki: "https://es.wikipedia.org/wiki/Passer_domesticus"
 },
 {
   id: 112,
@@ -696,6 +849,40 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Alcedo_atthis"
 },
 {
+  id: 123,
+  nombre: "Martinete común",
+  cientifico: "Nycticorax nycticorax",
+  orden: "Pelecaniformes",
+  familia: "Ardeidae",
+  alimentacion: ["peces", "insectos"],
+  envergadura: 95,
+  estacion: "Estival",
+  amenaza: "Casi amenazado",
+  descripcion: "Bastante dificil de localizar ya que tiene hábitos nocturnos. Dos de sus rasgos más distintivos son sus largas plumás cefálicas de hasta 24 centímetros y sus ojos rojos que contrastan con su color sencillo en blanco y negro.",
+  autor: "Alnus",
+  imagen: "Martinete_comun",
+  alttext: "Imagen de Martinete común",
+  seo: "https://seo.org/ave/martinete-comun/#",
+  wiki: "https://es.wikipedia.org/wiki/Nycticorax_nycticorax"
+},
+{
+  id: 124,
+  nombre: "Milano negro",
+  cientifico: "Milvus migrans",
+  orden: "Accipitriformes",
+  familia: "Accipitridae",
+  alimentacion: ["roedores", "aves", "insectos"],
+  envergadura: 145,
+  estacion: "Estival",
+  amenaza: "Preocupación menor",
+  descripcion: "Una rapaz muy abundante que visita nuestro país en verano. Oportunista, sus presas pueden ser animales moribundos, incluso carroña y restos en basureros.",
+  autor: "Arturo Frias Marques",
+  imagen: "Milano_negro",
+  alttext: "Imagen de Milano negro",
+  seo: "https://seo.org/ave/milano-negro/#",
+  wiki: "https://es.wikipedia.org/wiki/Milvus_migrans"
+},
+{
   id: 127,
   nombre: "Mirlo común",
   cientifico: "Turdus merula",
@@ -745,6 +932,23 @@ export const birds = [{
   alttext: "Imagen de Mochuelo europeo",
   seo: "https://seo.org/ave/mochuelo-europeo/#",
   wiki: "https://es.wikipedia.org/wiki/Athene_noctua"
+},
+{
+  id: 130,
+  nombre: "Mosquitero común",
+  cientifico: "Phylloscopus collybita",
+  orden: "Passeriformes",
+  familia: "Phylloscopidae",
+  alimentacion: ["insectos", "bayas"],
+  envergadura: 18,
+  estacion: "Invernal",
+  amenaza: "Casi amenazado",
+  descripcion: "En España no es frecuente como reproductor pero es muy abundante como ave invernante. Es una ave pequeña y nervisoa y prácticamente idéntica al mosquitero ibérico, del cual se distingue por su canto.",
+  autor: "Andreas Trepte",
+  imagen: "Mosquitero_comun",
+  alttext: "Imagen de Mosquitero común",
+  seo: "https://seo.org/ave/mosquitero-comun/#",
+  wiki: "https://es.wikipedia.org/wiki/Phylloscopus_collybita"
 },
 {
   id: 133,
@@ -849,6 +1053,23 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Erithacus_rubecula"
 },
 {
+  id: 144,
+  nombre: "Pico picapinos",
+  cientifico: "Dendrocopos major",
+  orden: "Piciformes",
+  familia: "Picidae",
+  alimentacion: ["insectos", "larvas", "semillas"],
+  envergadura: 42,
+  estacion: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "Este pajaro carpintero es capaz de taladrar  las maderas más resistentes en busca de larvas e insectos de que alimentarse. El dimorfismo sexual está presente sobre todo en una mancha roja que presentan los machos en la nuca.",
+  autor: "Donald Hobern",
+  imagen: "Pico_picapinos",
+  alttext: "Imagen de Pico picapinos",
+  seo: "https://seo.org/ave/pico-picapinos/#",
+  wiki: "https://es.wikipedia.org/wiki/Dendrocopos_major"
+},
+{
   id: 145,
   nombre: "Picogordo común",
   cientifico: "Coccothraustes coccothraustes",
@@ -915,6 +1136,23 @@ export const birds = [{
   alttext: "Imagen de Porrón europeo",
   seo: "https://seo.org/ave/porron-europeo/#",
   wiki: "https://es.wikipedia.org/wiki/Aythya_ferina"
+},
+{
+  id: 151,
+  nombre: "Porrón moñudo",
+  cientifico: "Aythya fuligula",
+  orden: "Anseriformes",
+  familia: "Anatidae",
+  alimentacion: ["semillas", "plantas", "moluscos", "crustáceos"],
+  envergadura: 79,
+  estacion: "Invernal",
+  amenaza: "En peligro",
+  descripcion: "Ave casi exclusivamente invernante. Existe dimorfismo sexual, siendo las hembras de un color marrón uniforme y los machos negros y blancos. Muestra además un penacho colgante detrás de la cabeza que da nombre a la especie.",
+  autor: "Andreas Trepte",
+  imagen: "Porron_moñudo",
+  alttext: "Imagen de Porrón moñudo",
+  seo: "https://seo.org/ave/porron-monudo/#",
+  wiki: "https://es.wikipedia.org/wiki/Aythya_fuligula"
 },
 {
   id: 154,
@@ -1053,6 +1291,23 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Chloris_chloris"
 },
 {
+  id: 177,
+  nombre: "Zarcero políglota",
+  cientifico: "Hippolais polyglotta",
+  orden: "Passeriformes",
+  familia: "Acrocephalidae",
+  alimentacion: ["insectos", "bayas"],
+  envergadura: 22,
+  estacion: "Estival",
+  amenaza: "Preocupación menor",
+  descripcion: "Es un ave pequeña y de tonos amarillos y verdes. Puede ser difícil de identificar ya que no muestra características distintivas. Se puede confundir con otras especies parecidas como carriceros, mosquiteros o currucas.",
+  autor: "Frank Vassen",
+  imagen: "Zarcero_poliglota",
+  alttext: "Imagen de Zarcero políglota",
+  seo: "https://seo.org/ave/zarcero-poliglota/#",
+  wiki: "https://es.wikipedia.org/wiki/Hippolais_polyglotta"
+},
+{
   id: 181,
   nombre: "Zorzal común",
   cientifico: "Turdus philomelos",
@@ -1068,6 +1323,23 @@ export const birds = [{
   alttext: "Imagen de Zorzal común",
   seo: "https://seo.org/ave/zorzal-comun/#",
   wiki: "https://es.wikipedia.org/wiki/Turdus_philomelos"
+},
+{
+  id: 182,
+  nombre: "Zorzal real",
+  cientifico: "Turdus pilaris",
+  orden: "Passeriformes",
+  familia: "Turdidae",
+  alimentacion: ["insectos", "bayas", "semillas"],
+  envergadura: 41,
+  estacion: "Invernal",
+  amenaza: "Datos insuficientes",
+  descripcion: "Es un ave grande y corpulento que acude a nuestro país exclusivamente en invierno cuiando las olas de frio polar azotan el norte de Europa.",
+  autor: "Es un ave grande y corpulento que acude a nuestro país exclusivamente en invierno cuiando las olas de frio polar azotan el norte de Europa.",
+  imagen: "Zorzal_real",
+  alttext: "Imagen de Zorzal real",
+  seo: "https://seo.org/ave/zorzal-real/#",
+  wiki: "https://es.wikipedia.org/wiki/Turdus_pilaris"
 }
 ]
 
