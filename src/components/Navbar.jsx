@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { SearchBar } from './SearchBar';
 import '../stylesheets/NavBar.css';
 import { birds } from '../data/data';
@@ -52,7 +52,7 @@ const NavBar = () => {
               value={selectedOrden}
               onChange={handleOrdenSelect}        
             >
-              <option value="" disable selected hidden>Orden</option>
+              <option value="" disabled hidden defaultValue>Orden</option>
               {ordenOptions.map((option) => (       
                 <option key={option} value={option}>
                   {option}
@@ -65,7 +65,7 @@ const NavBar = () => {
               value={selectedAmenaza}
               onChange={handleAmenazaSelect}
             >
-              <option value="" disable selected hidden>Amenaza</option>
+              <option value="" disabled hidden defaultValue>Amenaza</option>
               {amenazaOptions.map((option) => (
                 <option key={option} value={option}>
                   {option}
@@ -78,7 +78,7 @@ const NavBar = () => {
               value={selectedEstacion}
               onChange={handleEstacionSelect}
             >
-              <option value="" disable selected hidden>Estación</option>
+              <option value="" disabled hidden defaultValue>Estación</option>
               {estacionOptions.map((option) => (
                 <option key={option} value={option}>
                   {option}
