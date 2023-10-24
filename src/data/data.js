@@ -449,7 +449,7 @@ export const birds = [{
   alimentacion: ["invertebrados", "semillas", "plantas"],
   envergadura: 38,
   estacion: "Residente",
-  amenaza: "Casí amenazado",
+  amenaza: "Casi amenazado",
   descripcion: "Abuntante en zonas de cultivos y ambientes esteparios con preferencia por las llanuras con cultivo de cereal. Es capaz de imitar el canto de otras aves.",
   autor: "Bereçe",
   imagen: "Calandria_comun",
