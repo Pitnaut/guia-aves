@@ -1,5 +1,6 @@
 import React from 'react';
 import { birds } from '../data/data';
+import BirdCard from '../components/BirdCard';
 import { useSearchParams } from 'react-router-dom';
 import '../stylesheets/BirdPage.css';
 
@@ -9,51 +10,25 @@ const SearchPage = () => {
   const normalizedBirdName = birdName
     ? birdName.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
     : '';
-  const bird = birds.some(
+  const matchingBirds = birds.filter(
     (bird) =>
       bird.nombre
         .toLowerCase()
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g, '')
-        .includes(normalizedBirdName) ||
-      (bird.nombreAlternativo &&
-        bird.nombreAlternativo
-          .toLowerCase()
-          .normalize('NFD')
-          .replace(/[\u0300-\u036f]/g, '')
-          .includes(normalizedBirdName))
-  )
-    ? birds.find(
-        (bird) =>
-          bird.nombre
-            .toLowerCase()
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
-            .includes(normalizedBirdName) ||
-          (bird.nombreAlternativo &&
-            bird.nombreAlternativo
-              .toLowerCase()
-              .normalize('NFD')
-              .replace(/[\u0300-\u036f]/g, '')
-              .includes(normalizedBirdName))
-      )
-    : null;
+        .includes(normalizedBirdName)
+  );
 
   return (
     <div className='search-page'>
-      {bird ? (
+      {matchingBirds.length > 0 ? (
         <div className='bird-list'>
-          <div key={bird.id} className='bird-container'>
-            <img
-              className='bird-image'
-              src={`../../public/images/${bird.imagen}.png`}
-              alt={bird.alttext}
-            />
-            <h2>{bird.nombre}</h2>
-          </div>
+          {matchingBirds.map((bird) => (
+            <BirdCard key={bird.id} bird={bird} />
+          ))}
         </div>
       ) : (
-        <p>No se encontró información del ave</p>
+        <p>No se encontró información de aves</p>
       )}
     </div>
   );
