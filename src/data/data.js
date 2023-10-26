@@ -135,6 +135,23 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Hieraaetus_pennatus"
 },
 {
+  id:9,
+  nombre: "Águila culebrera",
+  cientifico: "Circaetus gallicus",
+  orden: "Accipitriformes",
+  familia: "Accipitridae",
+  alimentacion: ["Reptiles", "roedores", "aves"],
+  envergadura: 168,
+  estacion: "Estival",
+  amenaza: "Preocupación menor",
+  descripcion: "Rapaz muy especial ya que su alimentación se basa en ofidios, a las que detecta, atrapa y engulle gracias a adaptaciones morfológicas. Prefiere areas forestales con una buena densidad de árboles.",
+  autor: "MarioM",
+  imagen: "Aguila_culebrera",
+  alttext: "Imagen de Águila culebrera",
+  seo: "https://seo.org/ave/aguila-culebrera/#",
+  wiki: "https://es.wikipedia.org/wiki/Circaetus_gallicus"
+},
+{
   id: 10,
   nombre: "Águila imperial ibérica",
   cientifico: "Aquila adalberti",
@@ -201,6 +218,23 @@ export const birds = [{
   alttext: "Imagen de Alcaudón común",
   seo: "https://seo.org/ave/alcaudon-comun/#",
   wiki: "https://es.wikipedia.org/wiki/Lanius_senator"
+},
+{
+  id: 18,
+  nombre: "Alcaudón dorsirrojo",
+  cientifico: "Lanius collurio",
+  orden: "Passeriformes",
+  familia: "Laniidae",
+  alimentacion: ["insectos", "roedores", "aves", "reptiles"],
+  envergadura: 26,
+  estacion: "Estival",
+  amenaza: "Vulnerable",
+  descripcion: "Pájaro estival que al igual de otros alcaudones es capaz de crear despensas insertando a sus presas en espinas de arbustos como los endrinos. Su población se ha visto reducida a un 50% en los últimos años.",
+  autor: "Antonio Tsaknakis",
+  imagen: "Alcaudon_dorsirrojo",
+  alttext: "Imagen de Alcaudón dorsirrojo",
+  seo: "https://seo.org/ave/alcaudon-dorsirrojo/#",
+  wiki: "https://es.wikipedia.org/wiki/Lanius_collurio"
 },
 {
   id: 21,
@@ -373,6 +407,23 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Anthus_spinoletta"
 },
 {
+  id: 41,
+  nombre: "Bisbita campestre",
+  cientifico: "Anthus campestris",
+  orden: "Passeriformes",
+  familia: "Motacillidae",
+  alimentacion: ["insectos"],
+  envergadura: 27,
+  estacion: "Estival",
+  amenaza: "Preocupación menor",
+  descripcion: "Bisbita estival, la única que cría de forma contínua en España. Ocupa eriales y ambientes abiertos con vegetación herbácea ky suelos pedregosos.",
+  autor: "Bogbumper",
+  imagen: "Bisbita_campestre",
+  alttext: "Imagen de Bisbita campestre",
+  seo: "https://seo.org/ave/bisbita-campestre/#",
+  wiki: "https://es.wikipedia.org/wiki/Anthus_campestris"
+},
+{
   id: 42,
   nombre: "Bisbita pratense",
   cientifico: "Arthus pratensis",
@@ -439,6 +490,23 @@ export const birds = [{
   alttext: "Imagen de Buitre leonado",
   seo: "https://seo.org/ave/buitre-leonado/#",
   wiki: "https://es.wikipedia.org/wiki/Gyps_fulvus"
+},
+{
+  id: 47,
+  nombre: "Buitre negro",
+  cientifico: "Aegypius monachus",
+  orden: "Accipitriformes",
+  familia: "Accipitridae",
+  alimentacion: ["carroña"],
+  envergadura: 280,
+  estacion: "Residente",
+  amenaza: "Casi amenazado",
+  descripcion: "Una de las cuatro especies de buitres que se pueden encontrar en Europa. Son más escrupulosos que sus primos leonados a la hora de comer, alímentandose casi exclusivamente de materia muscular evitando las vísceras.",
+  autor: "Juan Lacruz",
+  imagen: "Buitre_negro",
+  alttext: "Imagen de Buitre negro",
+  seo: "https://seo.org/ave/buitre-negro/#",
+  wiki: "https://es.wikipedia.org/wiki/Aegypius_monachus"
 },
 {
   id: 49,
@@ -609,6 +677,23 @@ export const birds = [{
   alttext: "Imagen de Cigüeña blanca",
   seo: "https://seo.org/ave/ciguena-blanca/#",
   wiki: "https://es.wikipedia.org/wiki/Ciconia_ciconia"
+},
+{
+  id: 67,
+  nombre: "Cisticola buitrón",	
+  cientifico: "Cisticola juncidis",
+  orden: "Passeriformes",
+  familia: "Cisticolidae",
+  alimentacion: ["insectos"],
+  envergadura: 15,
+  estacion: "Residente",
+  amenaza: "Casi amenazado",
+  descripcion: "Debido a su pequeño tamaño es más fácil de identificar por su canto, un tisp-tsip-tisp que repite continuamente. Le gusta las llanuras con vegetación densa, tanto en zonas húmedas como terrestres.",
+  autor: "ThomHasi",
+  imagen: "Cisticola_buitron",
+  alttext: "Imagen de Cisticola buitrón",
+  seo: "https://seo.org/ave/cisticola-buitron/#",
+  wiki: "https://es.wikipedia.org/wiki/Cisticola_juncidis"
 },
 {
   id: 70,
@@ -815,6 +900,23 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Elanus_caeruleus"
 },
 {
+  id: 91,
+  nombre: "Escribano montesino",
+  cientifico: "Emberiza cia",
+  orden: "Passeriformes",
+  familia: "Emberizidae",
+  alimentacion: ["semillas", "bayas"],
+  envergadura: 24,
+  estacion: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "Ave bastante frecuente y extendida que habita en laderas rocosas de montañas y barrancos. Como otro tipo de aves granivoras alimenta a sus crias con invertebrados.",
+  autor: "Martien Brand",
+  imagen: "Escribano_montesino",
+  alttext: "Imagen de Escribano montesino",
+  seo: "https://seo.org/ave/escribano-montesino/#",
+  wiki: "https://es.wikipedia.org/wiki/Emberiza_cia"
+},
+{
   id: 92,
   nombre: "Escribano palustre",
   cientifico: "Emberiza schoeniclus",
@@ -898,6 +1000,23 @@ export const birds = [{
   alttext: "Imagen de Ganso del nilo",
   seo: "https://seo.org/ave/ganso-del-nilo/#",
   wiki: "https://es.wikipedia.org/wiki/Alopochen_aegyptiaca"
+},
+{
+  id: 101,
+  nombre: "Garceta común",
+  cientifico: "Egretta garzetta",
+  orden: "Pelecaniformes",
+  familia: "Ardeidae",
+  alimentacion: ["peces", "anfibios", "insectos"],
+  envergadura: 95,
+  estacion: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "",
+  autor: "Golli Mohameed",
+  imagen: "Garceta_comun",
+  alttext: "Imagen de Garceta común",
+  seo: "https://seo.org/ave/garceta-comun/#",
+  wiki: "https://es.wikipedia.org/wiki/Egretta_garzetta"
 },
 {
   id: 103,
@@ -1070,6 +1189,23 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Cyanistes_caeruleus"
 },
 {
+  id: 116,
+  nombre: "Jilguero lúgano",
+  cientifico: "Spinus spinus",
+  orden: "Passeriformes",
+  familia: "Fringillidae",
+  alimentacion: ["semillas", "insectos"],
+  envergadura: 22,
+  estacion: "Invernal",
+  amenaza: "Preocupación menor",
+  descripcion: "En Madrid es un ave invernante. Muy inquieto y social que forma grupos con otras aves, incluso es posible verlo con otros fringílidos. Es granívora aunque en época repdroductora también como insectos.",
+  autor: "Jrproudfoot",
+  imagen: "Jilguero_lugano",
+  alttext: "Imagen de Jilguero lúgano",
+  seo: "https://seo.org/ave/jilguero-lugano/#",
+  wiki: "https://es.wikipedia.org/wiki/Spinus_spinus"
+},
+{
   id: 117,
   nombre: "Jilguero europeo",
   cientifico: "Carduelis carduelis",
@@ -1102,6 +1238,23 @@ export const birds = [{
   alttext: "Imagen de Lavandera blanca",
   seo: "https://seo.org/ave/lavandera-blanca/#",
   wiki: "https://es.wikipedia.org/wiki/Motacilla_alba"
+},
+{
+  id: 119,
+  nombre: "Lavandera cascadeña",
+  cientifico: "Motacilla cinerea",
+  orden: "Passeriformes",
+  familia: "Motacillidae",
+  alimentacion: ["insectos"],
+  envergadura: 26,
+  estacion: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "Típica de arroyos y rios. Al igual que la lavandera blanca, está continuamente moviendo la cola cuando está en el suelo. Los dos sexos son parecidos, solo que la hembra nunca presenta el cuello negro y es menos amarilla por abajo.",
+  autor: "J.M. Garg",
+  imagen: "Lavandera_cascadeña",
+  alttext: "Imagen de Lavandera cascadeña",
+  seo: "https://seo.org/ave/lavandera-cascadena/#",
+  wiki: "https://es.wikipedia.org/wiki/Motacilla_cinerea"
 },
 {
   id: 120,
@@ -1187,6 +1340,23 @@ export const birds = [{
   alttext: "Imagen de Milano real",
   seo: "https://seo.org/ave/milano-real/#",
   wiki: "https://es.wikipedia.org/wiki/Milvus_milvus"
+},
+{
+  id: 125,
+  nombre: "Mirlo acuático europeo",
+  cientifico: "Cinclus cinclus",
+  orden: "Passeriformes",
+  familia: "Cinclidae",
+  alimentacion: ["insectos", "invertebrados", "moluscos"],
+  envergadura: 28,
+  estacion: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "Es un ave que está asociada al buen estado ambiental. Su preferencia por las aguas no contaminadas lo han convertido en un bioindicador de la pureza del río.",
+  autor: "Thomas Kraft",
+  imagen: "Mirlo_acuatico_europeo",
+  alttext: "Imagen de Mirlo acuático europeo",
+  seo: "https://seo.org/ave/mirlo-acuatico-europeo/#",
+  wiki: "https://es.wikipedia.org/wiki/Cinclus_cinclus"
 },
 {
   id: 126,
@@ -1376,6 +1546,23 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Erithacus_rubecula"
 },
 {
+  id: 142,
+  nombre: "Pico menor",
+  cientifico: "Dryobates minor",
+  orden: "Piciformes",
+  familia: "Picidae",
+  alimentacion: ["insectos", "larvas", "semillas"],
+  envergadura: 27,
+  estacion: "Residente",
+  amenaza: "Datos insuficientes",
+  descripcion: "El más pequeño de los pícidos europeos, no mayor que un gorrión. En Madrid puede encontrarse en la Sierra de Guadarrama. Es un excelente bioindicador de la salud de nuestros bosques.",
+  autor: "Sillerkiil",
+  imagen: "Pico_menor",
+  alttext: "Imagen de Pico menor",
+  seo: "https://seo.org/ave/pico-menor/#",
+  wiki: "https://es.wikipedia.org/wiki/Dryobates_minor"
+},
+{
   id: 143,
   nombre: "Pico picapinos",
   cientifico: "Dendrocopos major",
@@ -1512,6 +1699,23 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Regulus_ignicapilla"
 },
 {
+  id: 154,
+  nombre: "Reyezuelo sencillo",
+  cientifico: "Regulus regulus",
+  orden: "Passeriformes",
+  familia: "Regulidae",
+  alimentacion: ["insectos"],
+  envergadura: 14,
+  estacion: "Invernal",
+  amenaza: "Datos insuficientes",
+  descripcion: "Muy parecido al lreyezuelo listado pero sin las lineas faciales tan características de su familiar. En Madrid es más común verlo como invernante. Prefiere los bosques de coníferas.",
+  autor: "Francis C. Franklin",
+  imagen: "Reyezuelo_sencillo",
+  alttext: "Imagen de Reyezuelo sencillo",
+  seo: "https://seo.org/ave/reyezuelo-sencillo/#",
+  wiki: "https://es.wikipedia.org/wiki/Regulus_regulus"
+},
+{
   id: 157,
   nombre: "Ruiseñor común",
   cientifico: "Luscinia megarhynchos",
@@ -1561,6 +1765,23 @@ export const birds = [{
   alttext: "Imagen de Verdecillo",
   seo: "https://seo.org/ave/serin-verdecillo/#",
   wiki: "https://es.wikipedia.org/wiki/Serinus_serinus"
+},
+{
+  id: 160,
+  nombre: "Silbón europeo",
+  cientifico: "Mareca penelope",
+  orden: "Anseriformes",
+  familia: "Anatidae",
+  alimentacion: ["plantas"],
+  envergadura: 78,
+  estacion: "Invernal",
+  amenaza: "Casi amenazado",
+  descripcion: "Anseriforme exclusivamente invernante en nuestro país. Los machos presentan un plumaje nupcial con un diseño vistoso de color castaño. Es exclusivamente vegetariano.",
+  autor: "Andreas Trepte",
+  imagen: "Silbon_europeo",
+  alttext: "Imagen de Silbón europeo",
+  seo: "https://seo.org/ave/silbon-europeo/#",
+  wiki: "https://es.wikipedia.org/wiki/Mareca_penelope"
 },
 {
   id: 162,
@@ -1629,6 +1850,23 @@ export const birds = [{
   alttext: "Imagen de Tórtola europea",
   seo: "https://seo.org/ave/tortola-europea/#",
   wiki: "https://es.wikipedia.org/wiki/Streptopelia_turtur"
+},
+{
+  id: 168,
+  nombre: "Tórtola turca",
+  cientifico: "Streptopelia decaocto",
+  orden: "Columbiformes",
+  familia: "Columbidae",
+  alimentacion: ["semillas", "insectos"],
+  envergadura: 51,
+  estacion: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "Tórtola más esbelta que la europea. Se ha extendido de forma contundente por toa la península y ha ocupado toda la península en apenas tres décadas. Puede encontrarse en ambientes urbanos, jardines y parques.",
+  autor: "Dick Daniels",
+  imagen: "Tortola_turca",
+  alttext: "Imagen de Tórtola turca",
+  seo: "https://seo.org/ave/tortola-turca/#",
+  wiki: "https://es.wikipedia.org/wiki/Streptopelia_decaocto"
 },
 {
   id: 169,
@@ -1700,6 +1938,23 @@ export const birds = [{
 },
 {
   id: 176,
+  nombre: "Zampullín común",
+  cientifico: "Tachybaptus ruficollis",
+  orden: "Podicipediformes",
+  familia: "Podicipedidae",
+  alimentacion: ["insectos", "larvas", "moluscos", "peces"],
+  envergadura: 43,
+  estacion: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "El más pequeño de los zampullines y somormujos. Muy extendida como nidificante en humedales de interior. Excelente nadador anida en solitario y en colonias dispersas.",
+  autor: "Martien Brand",
+  imagen: "Zampullin_comun",
+  alttext: "Imagen de Zampullín común",
+  seo: "https://seo.org/ave/zampullin-comun/#",
+  wiki: "https://es.wikipedia.org/wiki/Tachybaptus_ruficollis"
+},
+{
+  id: 178,
   nombre: "Zarcero políglota",
   cientifico: "Hippolais polyglotta",
   orden: "Passeriformes",
@@ -1716,7 +1971,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Hippolais_polyglotta"
 },
 {
-  id: 180,
+  id: 181,
   nombre: "Zorzal común",
   cientifico: "Turdus philomelos",
   orden: "Passeriformes",
@@ -1733,7 +1988,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Turdus_philomelos"
 },
 {
-  id: 181,
+  id: 182,
   nombre: "Zorzal real",
   cientifico: "Turdus pilaris",
   orden: "Passeriformes",
