@@ -7,7 +7,7 @@ const BirdCard = ({ bird }) => {
 
   return (
     <div className='bird-card'>
-        <div key={id} className='bird-container'>
+        <div key={nombre} className='bird-container'>
           <img 
             className="bird-image"
             src={`../../public/images/${imagen}.png`} 

@@ -60,12 +60,12 @@ select option {
   font-family: 'Montserrat', sans-serif;
   font-size: .8rem;
 }
-/* .link:visited {
+.link:visited {
   color: rgb(240, 235, 235);
   text-decoration: none;
   font-family: 'Montserrat';
   font-size: 1.3rem;
-} */
+}
 
 .active-link {
   color: rgb(240, 235, 235);

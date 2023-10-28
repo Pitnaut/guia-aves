@@ -2,6 +2,7 @@ import React from 'react';
 import { birds } from '../data/data';
 import { useParams } from 'react-router-dom';
 import BirdDetail from '../components/BirdDetail';
+import '../stylesheets/BirdPage.css';
 
 const BirdPage = () => {
   const { nombre } = useParams();
