@@ -1,26 +1,24 @@
-import React from 'react'
-import { birds } from '../data/data'
-import { useParams } from 'react-router-dom'
-import '../stylesheets/BirdPage.css'
-import BirdCard from '../components/BirdCard'
+import React from 'react';
+import { birds } from '../data/data';
+import { useParams } from 'react-router-dom';
+import BirdDetail from '../components/BirdDetail';
 
 const BirdPage = () => {
-  const { id } = useParams()
-  const bird = birds.find((bird) => bird.id === parseInt(id))
+  const { nombre } = useParams();
+  const birdName = nombre.replace(/-/g, ' ');
+  const bird = birds.find((bird) => bird.nombre === birdName);
+
+  if (!bird) {
+    return <div>No se encontró el pájaro</div>;
+  }
 
   return (
-    <div className=''>
-      {bird ? (
-        <div className='bird-list'>
-          <div className='bird-container'>
-            <BirdCard  bird={bird} />
-          </div>
-        </div>
-      ) : (
-        <p>No se encontró información del ave</p>
-      )}
+    <div>
+      <h1>Detalles de {bird.nombre}</h1>
+      <BirdDetail bird={bird} />
     </div>
-  )
-}
+  );
+};
 
-export default BirdPage
+export default BirdPage;
+

@@ -1,7 +1,7 @@
 import React from "react";
 import '../stylesheets/BirdCard.css';
 
-const BirdCard = ({bird}) => {
+const BirdCard = ({ bird }) => {
 
   const { id, imagen, alttext, nombre } = bird;
 
