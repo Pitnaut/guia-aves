@@ -15,7 +15,6 @@ const BirdPage = () => {
 
   return (
     <div>
-      <h1>Detalles de {bird.nombre}</h1>
       <BirdDetail bird={bird} />
     </div>
   );

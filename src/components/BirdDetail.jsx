@@ -2,11 +2,12 @@ import React from 'react';
 
 const BirdDetail = ({ bird }) => {
 
-  const { nombre, cientifico, orden, familia, amenaza, estacion, envergadura } = bird;
+  const { nombre, cientifico, orden, familia, amenaza, estacion, envergadura, imagen } = bird;
 
   return (
     <div className="card">
       <div className="card-body">
+      <img src={`../../public/images/${imagen}.png`} alt={nombre} />
         <h2>{nombre}</h2>
         <p>{cientifico}</p>
         <p>Orden: {orden}</p>
