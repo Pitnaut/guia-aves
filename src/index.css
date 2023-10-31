@@ -2,10 +2,13 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
-  max-width: 80rem;
-  background-image: url("./assets/background.jpg");
+  /* background-image: url("./assets/background.jpg"); */
+  background-color: #F5ECD7;
+  /* background-image: linear-gradient(45deg, #F5ECD7 0%, #ff8789 100%); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
 }

@@ -10,7 +10,7 @@ const BirdCard = ({ bird }) => {
         <div key={nombre} className='bird-container'>
           <img 
             className="bird-image"
-            src={`../../public/images/${imagen}.png`} 
+            src={`/images/${imagen}.png`} 
             alt={alttext} />
           <h2>{nombre}</h2>
         </div>

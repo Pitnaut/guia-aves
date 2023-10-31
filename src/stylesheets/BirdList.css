@@ -1,6 +1,8 @@
 .bird-list {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 2%;
+  max-width: 60%;
 }

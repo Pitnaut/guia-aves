@@ -4,13 +4,20 @@ import '../stylesheets/NavBar.css';
 import { birds } from '../data/data';
 import { NavLink, useNavigate } from 'react-router-dom';
 
+
+
 const NavBar = () => {
 
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [selectedOrden, setSelectedOrden] = useState("");
   const [selectedAmenaza, setSelectedAmenaza] = useState("");
   const [selectedEstacion, setSelectedEstacion] = useState("");
 
   const navigate = useNavigate();
+
+  const toggleDropdown = () => {
+    setIsDropdownVisible(!isDropdownVisible);
+  }
 
   const ordenOptions = Array.from(new Set(birds.map((bird) => bird.orden)));
   const amenazaOptions = Array.from(new Set(birds.map((bird) => bird.amenaza)));
@@ -20,20 +27,22 @@ const NavBar = () => {
     const selectedValue = e.target.value;
     setSelectedOrden(selectedValue);
     navigate(`/birds/orden/${selectedValue}`);
+    setIsDropdownVisible(false);
   };
 
   const handleAmenazaSelect = (e) => {
     const selectedValue = e.target.value;
     setSelectedAmenaza(selectedValue);
     navigate(`/birds/amenaza/${selectedValue}`);
+    setIsDropdownVisible(false);
   };
   
   const handleEstacionSelect = (e) => {
     const selectedValue = e.target.value;
     setSelectedEstacion(selectedValue);
     navigate(`/birds/estacion/${selectedValue}`);
+    setIsDropdownVisible(false);
   }
-
 
   return (
     <nav className='navigator'>
@@ -43,62 +52,72 @@ const NavBar = () => {
             <NavLink 
               to='/'
               className={({ isActive }) => isActive ? 'active-link' : 'link'}>
-              Home
+                Home
             </NavLink>
-          </li>
-          <li className='menu-item'>
-            <select
-              value={selectedOrden}
-              onChange={handleOrdenSelect}        
-            >
-              <option value="" disabled hidden defaultValue>Orden</option>
-              {ordenOptions.map((option) => (       
-                <option key={option} value={option}>
-                  {option}
-                </option>
-              ))}
-            </select>
-          </li>
-          <li className='menu-item'>
-            <select
-              value={selectedAmenaza}
-              onChange={handleAmenazaSelect}
-            >
-              <option value="" disabled hidden defaultValue>Amenaza</option>
-              {amenazaOptions.map((option) => (
-                <option key={option} value={option}>
-                  {option}
-                </option>
-              ))}
-            </select>
-          </li>
-          <li className='menu-item'>
-            <select
-              value={selectedEstacion}
-              onChange={handleEstacionSelect}
-            >
-              <option value="" disabled hidden defaultValue>Estación</option>
-              {estacionOptions.map((option) => (
-                <option key={option} value={option}>
-                  {option}
-                </option>
-              ))}
-            </select>
-          </li>
+          </li>    
           <li className='menu-item'>
             <NavLink 
               to='/birds'
               className={({ isActive }) => isActive ? 'active-link' : 'link'}>
-              Todas las aves
+                Todas las aves
             </NavLink>
           </li>
           <li className='menu-item'>
             <NavLink 
               to='/about'
               className={({ isActive }) => isActive ? 'active-link' : 'link'}>
-              Guía de uso
+                Guía de uso
             </NavLink>
-            </li>
+          </li>
+          <li className='dropdown' onClick={toggleDropdown}>
+            <button className='dropbtn'>Filtrar</button>
+            {isDropdownVisible && (
+              <div className={`dropdown-content ${isDropdownVisible ? 'dropdown-content-active' : ''}`}>
+                <div className='custom-select'>
+                  <select
+                    value={selectedOrden}
+                    onChange={handleOrdenSelect}
+                    onClick={(e) => e.stopPropagation()}        
+                  >
+                    <option value="" disabled hidden defaultValue>Orden</option>
+                      {ordenOptions.map((option) => (       
+                        <option key={option} value={option}>
+                          {option}
+                        </option>
+                      ))} 
+                  </select>
+                </div>
+                <div className='custom-select'>
+                  <select
+                    value={selectedAmenaza}
+                    onChange={handleAmenazaSelect}
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <option value="" disabled hidden defaultValue>Amenaza</option>
+                      {amenazaOptions.map((option) => (
+                        <option key={option} value={option}>
+                          {option}
+                        </option>
+                      ))}
+                  </select>
+                </div>
+                <div className='custom-select'>
+                  <select
+                    value={selectedEstacion}
+                    onChange={handleEstacionSelect}
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <option value="" disabled hidden defaultValue>Estación</option>
+                      {estacionOptions.map((option) => (
+                        <option key={option} value={option}>
+                          {option}
+                        </option>
+                      ))}
+                  </select>
+                </div>
+              </div>
+            )}
+          </li>
         </ul>
       </div>
       <div className='searchbar'>

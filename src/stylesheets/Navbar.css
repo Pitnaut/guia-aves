@@ -1,29 +1,26 @@
 .navigator {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-around;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: rgb(133, 28, 28);
-  max-width: 76rem;
+  background-color: #346145;
   margin: 0 auto;
 }
 
-.sections {
-  display: flex;
-  flex-direction: row;
-}
-
 .sections-list {
-  margin-left: 5%;
   display: flex;
+  flex-wrap: nowrap;
   list-style-type: none;
   align-items: center;
   font-family: 'Montserrat';
   font-size: 1.1rem;
   color: rgb(240, 235, 235);
-  gap: 5%
+  gap: 5%;
+}
+
+.searchbar {
 }
 
 .sections-list li {
@@ -32,44 +29,80 @@
   font-size: .8rem;
 }
 
-.searchbar {
-  margin-right: 3%;
+.menu-item {
+  margin-left: 5%;
 }
 
-select {
+.dropbtn {
+  background-color: #346145;
+  color: rgb(240, 235, 235);
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat';
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #346145;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+  width: 15rem;
+}
+
+.dropdown-content-active {
+  display: block;
+}
+
+.dropdown-content div {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.custom-select select {
   background: transparent;
   border: none;
   font-family: 'Montserrat';
-  font-size: .8rem;
+  font-size: 1.2rem;
   color: rgb(240, 235, 235);
   cursor: pointer;
-  width: 7.2rem;
+  width: 13rem;
 }
 
 select option {
-  background-color: rgb(133, 28, 28);
+  background-color: #346145;
   border: none;
   font-family: 'Montserrat';
-  font-size: .8rem;
+  font-size: 1rem;
   color: rgb(240, 235, 235);
+  
 }
 
 .link {
   color: rgb(240, 235, 235);
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: .8rem;
+  font-size: 1.2rem;
 }
 .link:visited {
   color: rgb(240, 235, 235);
   text-decoration: none;
   font-family: 'Montserrat';
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .active-link {
   color: rgb(240, 235, 235);
   text-decoration: none;
   font-family: 'Montserrat';
-  font-size: .8rem;
+  font-size: 1.2rem;
 }
