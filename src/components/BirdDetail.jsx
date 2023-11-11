@@ -16,15 +16,15 @@ const BirdDetail = ({ bird }) => {
 
   return (
     <div className='grid-layout'>
-      <div className='box'>
+      <div className='nombre-ave'>
         <h2>{nombre}</h2>
         <p>{cientifico}</p>
       </div>
       <div className='navegador-aves'>
-        {prevBird && <Link to={`/birds/${prevBird.nombre}`} style={{ textDecoration: 'none' }}>Ave anterior</Link>}  
-        <Link to='/birds/'style={{ textDecoration: 'none' }}>Volver</Link>
-        {nextBird && <Link to={`/birds/${nextBird.nombre}`} style={{ textDecoration: 'none' }} >Ave siguiente</Link>}
-      </div>
+  {prevBird && <Link className="link-style" to={`/birds/${prevBird.nombre}`}>Ave anterior</Link>}
+  <Link className="link-style" to='/birds/'>Volver</Link>
+  {nextBird && <Link className="link-style" to={`/birds/${nextBird.nombre}`}>Ave siguiente</Link>}
+</div>
       <div className='box'>
         <p>Orden: {orden}</p>
         <p>Familia: {familia}</p>
