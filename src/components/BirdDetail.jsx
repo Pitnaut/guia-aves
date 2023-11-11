@@ -1,9 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { birds } from '../data/data';
 import '../stylesheets/BirdDetail.css';
+import wingIconLeft from '../assets/wingIconLeft.png'
+import wingIconRight from '../assets/wingIconRight.png'
 
 const BirdDetail = ({ bird }) => {
 
   const { nombre, cientifico, orden, familia, amenaza, estacion, envergadura, imagen, alttext, descripcion, autor, seo, wiki, alimentacion, autor_page } = bird;
+
+  const currentIndex = birds.findIndex(bird => bird.nombre === nombre);
+
+  const prevBird = birds[currentIndex - 1];
+  const nextBird = birds[currentIndex + 1];
 
   return (
     <div className='grid-layout'>
@@ -11,11 +20,10 @@ const BirdDetail = ({ bird }) => {
         <h2>{nombre}</h2>
         <p>{cientifico}</p>
       </div>
-      <div className='box'>
-        {alimentacion}
-      </div>
-      <div className='box'>
-        <img src={`/images/${imagen}.png`} alt={alttext} />
+      <div className='navegador-aves'>
+        {prevBird && <Link to={`/birds/${prevBird.nombre}`} style={{ textDecoration: 'none' }}>Ave anterior</Link>}  
+        <Link to='/birds/'style={{ textDecoration: 'none' }}>Volver</Link>
+        {nextBird && <Link to={`/birds/${nextBird.nombre}`} style={{ textDecoration: 'none' }} >Ave siguiente</Link>}
       </div>
       <div className='box'>
         <p>Orden: {orden}</p>
@@ -23,8 +31,13 @@ const BirdDetail = ({ bird }) => {
         <p>Amenaza: {amenaza}</p>
         <p>Estación: {estacion}</p>
       </div>
-      <div className='box'>
+      <div className='imagen'>   
+        <img src={`/images/${imagen}.png`} alt={alttext} />
+      </div>
+      <div className='envergadura'>
+        <img src={wingIconLeft} alt='wingIconLeft' />
         <p> {envergadura}</p>
+        <img src={wingIconRight} alt='wingIconRight' />
       </div>
       <div className='box'>
         {descripcion}
@@ -34,12 +47,10 @@ const BirdDetail = ({ bird }) => {
         <br></br>
         <a href={seo} target='_blank'>SEO</a>
         <br></br>
-        <a href={wiki} target='_blank'>WIKIPEDIA</a>
+        <a href={wiki} target='_blank'>Wikipedia</a>
       </div>
       <div className='box'>
-        <p>Ave anterior</p>
-        <p>Volver</p>
-        <p>Ave siguiente</p>
+      {alimentacion}
       </div>
 
     </div>

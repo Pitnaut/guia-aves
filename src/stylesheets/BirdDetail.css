@@ -1,20 +1,50 @@
 .grid-layout {
   display: grid;
-  grid-template-columns: 50% auto;;
+  grid-template-columns: 2fr 1fr;
   margin: 0 auto;
   margin-top: 5rem;
-  width: 80%;
-  background-color: #8fbf9f;
+  width: 50%;
 }
 
 .box {
   background-color: #ebe2cd;
   border-radius: 10px;
   box-shadow: inset 0 0 3px #c2baa6;
- 
+  font-family: "Montserrat", sans-serif;
 }
 
-.box img {
-  width: 15rem;
+.navegador-aves {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ebe2cd;
   border-radius: 10px;
+  box-shadow: inset 0 0 3px #c2baa6;
+  font-family: "Montserrat", sans-serif;
+  color: #353535;
+}
+
+.imagen {
+  background-color: #ebe2cd;
+  border-radius: 10px;
+  box-shadow: inset 0 0 3px #c2baa6;
+}
+
+.imagen img {
+  width: 30rem;
+  border-radius: 10px;
+}
+
+.envergadura {
+  display: flex;
+  background-color: #ebe2cd;
+  border-radius: 10px;
+  box-shadow: inset 0 0 3px #c2baa6;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.envergadura img {
+  width: 20%;
 }
