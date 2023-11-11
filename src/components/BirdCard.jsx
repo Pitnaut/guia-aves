@@ -7,11 +7,13 @@ const BirdCard = ({ bird }) => {
 
   return (
     <div className='bird-card'>
-        <div key={nombre} className='bird-container'>
-          <img 
-            className="bird-image"
+        <div key={nombre} className='bird-image'>
+          <img
             src={`/images/${imagen}.png`} 
             alt={alttext} />
+            </div>
+            <div
+            className="bird-name">
           <h2>{nombre}</h2>
         </div>
     </div>
