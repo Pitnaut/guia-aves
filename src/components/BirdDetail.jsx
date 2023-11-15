@@ -4,6 +4,7 @@ import { birds } from '../data/data';
 import '../stylesheets/BirdDetail.css';
 import wingIconLeft from '../assets/wingIconLeft.png'
 import wingIconRight from '../assets/wingIconRight.png'
+import { foodToEmoji } from '../data/foodToEmoji'; 
 
 const BirdDetail = ({ bird }) => {
 
@@ -50,7 +51,7 @@ const BirdDetail = ({ bird }) => {
         <a href={wiki} target='_blank'>Wikipedia</a>
       </div>
       <div className='box'>
-      {alimentacion}
+      Alimentación: {alimentacion.map(alimento => foodToEmoji[alimento] || alimento).join('/')}
       </div>
 
     </div>
