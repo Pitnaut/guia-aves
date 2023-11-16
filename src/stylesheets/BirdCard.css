@@ -1,24 +1,22 @@
-.bird-card {
+  .bird-card {
+    margin: 0 auto;
+    padding: 0;
     display: flex;
-    cursor: pointer;
-    margin-bottom: 2rem;
-    margin-left: .4rem;
-    margin-right: .4rem;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
-
   
   .bird-image img {
     display: block;
-    width: 13rem;
+    width: 100%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
   }
   
   .bird-name {
     background: linear-gradient(to right, #eb9c64, #ff8789);
-    width: 13rem;
+    width: 100%;
     height: 3.4rem;
     display: flex;
     justify-content: center;
