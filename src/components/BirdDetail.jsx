@@ -16,44 +16,45 @@ const BirdDetail = ({ bird }) => {
   const nextBird = birds[currentIndex + 1];
 
   return (
-    <div className='grid-layout'>
-      <div className='nombre-ave'>
-        <h2>{nombre}</h2>
-        <p>{cientifico}</p>
-      </div>
+    <div className='main-container'>
       <div className='navegador-aves'>
-  {prevBird && <Link className="link-style" to={`/birds/${prevBird.nombre}`}>Ave anterior</Link>}
-  <Link className="link-style" to='/birds/'>Volver</Link>
-  {nextBird && <Link className="link-style" to={`/birds/${nextBird.nombre}`}>Ave siguiente</Link>}
-</div>
-      <div className='box'>
-        <p>Orden: {orden}</p>
-        <p>Familia: {familia}</p>
-        <p>Amenaza: {amenaza}</p>
-        <p>Estación: {estacion}</p>
+        {prevBird && <Link className="link-style" to={`/birds/${prevBird.nombre}`}>Ave anterior</Link>}
+        <Link className="link-style" to='/birds/'>Volver</Link>
+        {nextBird && <Link className="link-style" to={`/birds/${nextBird.nombre}`}>Ave siguiente</Link>}
       </div>
-      <div className='imagen'>   
-        <img src={`/images/${imagen}.png`} alt={alttext} />
+      <div className='grid-layout'>
+        <div className='nombre-ave'>
+          <h2>{nombre}</h2>
+          <p>{cientifico}</p>
+        </div>
+        <div className='imagen'>   
+          <img src={`/images/${imagen}.png`} alt={alttext} />
+        </div>
+        <div className='info-ave'>
+          <p>Orden: {orden}</p>
+          <p>Familia: {familia}</p>
+          <p>Amenaza: {amenaza}</p>
+          <p>Estación: {estacion}</p>
+        </div>
+        <div className='envergadura'>
+          <img src={wingIconLeft} alt='wingIconLeft' />
+          <p> {envergadura}</p>
+          <img src={wingIconRight} alt='wingIconRight' />
+        </div>
+        <div className='box'>
+          {descripcion}
+        </div>
+        <div className='box'>
+          <a href={autor_page} target='_blank'>{autor}</a>
+          <br></br>
+          <a href={seo} target='_blank'>SEO</a>
+          <br></br>
+          <a href={wiki} target='_blank'>Wikipedia</a>
+        </div>
+        <div className='box'>
+        Alimentación: {alimentacion.map(alimento => foodToEmoji[alimento] || alimento).join('/')}
+        </div>
       </div>
-      <div className='envergadura'>
-        <img src={wingIconLeft} alt='wingIconLeft' />
-        <p> {envergadura}</p>
-        <img src={wingIconRight} alt='wingIconRight' />
-      </div>
-      <div className='box'>
-        {descripcion}
-      </div>
-      <div className='box'>
-        <a href={autor_page} target='_blank'>{autor}</a>
-        <br></br>
-        <a href={seo} target='_blank'>SEO</a>
-        <br></br>
-        <a href={wiki} target='_blank'>Wikipedia</a>
-      </div>
-      <div className='box'>
-      Alimentación: {alimentacion.map(alimento => foodToEmoji[alimento] || alimento).join('/')}
-      </div>
-
     </div>
   )
 }
