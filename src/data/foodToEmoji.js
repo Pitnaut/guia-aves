@@ -13,6 +13,9 @@ export const  foodToEmoji = {
   "anfibios": "🐸",
   "peces": "🐟",
   "carroña": "🦴",
-  "omnivoro": "🍖",
-  "lombrices": "🪱"
+  "lombrices": "🐛",
+  "castañas": "🌰",
+  "huevos": "🥚",
+  "basura": "🗑️",
+  "polluelos": "🐤",
 }

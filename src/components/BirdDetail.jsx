@@ -24,35 +24,36 @@ const BirdDetail = ({ bird }) => {
       </div>
       <div className='grid-layout'>
         <div className='nombre-ave'>
-          <h2>{nombre}</h2>
+          <h1>{nombre}</h1>
           <p>{cientifico}</p>
         </div>
         <div className='imagen'>   
           <img src={`/images/${imagen}.png`} alt={alttext} />
         </div>
         <div className='info-ave'>
-          <p>Orden: {orden}</p>
-          <p>Familia: {familia}</p>
-          <p>Amenaza: {amenaza}</p>
-          <p>Estación: {estacion}</p>
+          <p><span className='label'>Orden</span>:  {orden}</p>
+          <p><span className='label'>Familia</span>: {familia}</p>
+          <p><span className='label'>Amenaza</span>: {amenaza}</p>
+          <p><span className='label'>Estación</span>: {estacion}</p>
+        </div>
+        <div className='descripcion-ave'>
+          {descripcion}
         </div>
         <div className='envergadura'>
           <img src={wingIconLeft} alt='wingIconLeft' />
           <p> {envergadura}</p>
           <img src={wingIconRight} alt='wingIconRight' />
         </div>
-        <div className='box'>
-          {descripcion}
+        <div className='alimentacion'>
+        {alimentacion.map(alimento => foodToEmoji[alimento] || alimento).join('')}
         </div>
-        <div className='box'>
+        <div className='autor'>
           <a href={autor_page} target='_blank'>{autor}</a>
-          <br></br>
+        </div>
+        <div className='enlaces'>
           <a href={seo} target='_blank'>SEO</a>
           <br></br>
           <a href={wiki} target='_blank'>Wikipedia</a>
-        </div>
-        <div className='box'>
-        Alimentación: {alimentacion.map(alimento => foodToEmoji[alimento] || alimento).join('/')}
         </div>
       </div>
     </div>
