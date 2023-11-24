@@ -70,7 +70,7 @@ const NavBar = () => {
             </NavLink>
           </li>
           <li className='dropdown' onClick={toggleDropdown}>
-            <button className='dropbtn'>Filtrar</button>
+          <div className='dropbtn'>Filtrar</div>
             {isDropdownVisible && (
               <div className={`dropdown-content ${isDropdownVisible ? 'dropdown-content-active' : ''}`}>
                 <div className='custom-select'>
