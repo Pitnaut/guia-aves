@@ -5,7 +5,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    border-radius: 15px;
+
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 15%;
+
+    transition: transform .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
+
+  .bird-card:hover {
+    transform: scale(1.25); 
+    z-index: 1;
+    box-shadow: 0 0 35px #346145;
+  }
+
+ 
   
   .bird-image img {
     display: block;
@@ -24,6 +40,11 @@
     align-items: center;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .bird-card:hover .bird-name{
+    background-color: #346145;
   }
   
   .bird-name h2 {
@@ -31,4 +52,21 @@
     text-align: center;
     color: #353535;
     font-family: 'Montserrat', sans-serif;
+  }
+
+  .bird-card:hover .bird-name h2{
+    color: rgb(240, 235, 235);
+  }
+
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      translate: 0px 50px;
+      scale: 0.7;
+    }
+
+    to {opacity: 1;
+      translate: 0 0;
+      scale: 1;
+    }
   }
