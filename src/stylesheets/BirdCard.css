@@ -21,8 +21,6 @@
     box-shadow: 0 0 35px #346145;
   }
 
- 
-  
   .bird-image img {
     display: block;
     width: 100%;
@@ -31,7 +29,7 @@
   }
   
   .bird-name {
-    background-color: #8fbf9f;
+    background-color: #346145;
     width: 100%;
     height: 3.4rem;
     display: flex;
@@ -44,18 +42,18 @@
   }
 
   .bird-card:hover .bird-name{
-    background-color: #346145;
+    background-color: #8fbf9f;
   }
   
   .bird-name h2 {
     font-size: 1rem;
     text-align: center;
-    color: #353535;
+    color: rgb(240, 235, 235);
     font-family: 'Montserrat', sans-serif;
   }
 
   .bird-card:hover .bird-name h2{
-    color: rgb(240, 235, 235);
+    color: #353535;
   }
 
   @keyframes reveal {
