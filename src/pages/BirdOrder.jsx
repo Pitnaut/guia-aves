@@ -10,11 +10,14 @@ const BirdOrder = () => {
   const filteredBirds = birds.filter((bird) => bird.orden === orden)
 
   return (
-    <div className='bird-list'>
+  <div className='bird-order-container'>
+    <h1>{orden}</h1>
+    <div className='bird-order'>
       {filteredBirds.map((bird) => (
         <BirdCard key={bird.id} bird={bird} />
       ))}
     </div>
+  </div>
   )
 }
 

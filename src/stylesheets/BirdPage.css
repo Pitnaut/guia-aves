@@ -1,0 +1,95 @@
+.bird-order-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.bird-estacion-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.bird-amenaza-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.bird-order {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill, minmax(13rem, 1fr)
+    );
+  gap: 1rem;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  width: 55%;
+}
+
+.bird-estacion {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill, minmax(13rem, 1fr)
+    );
+  gap: 1rem;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  width: 55%;
+}
+
+.bird-amenaza {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill, minmax(13rem, 1fr)
+    );
+  gap: 1rem;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  width: 55%;
+}
+
+.bird-order-container h1, .bird-estacion-container h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  background-color: #8fbf9f;
+  box-shadow: inset 0 0 5px #346145;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.header-amenaza {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.header-amenaza h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  white-space: nowrap;
+  background-color: #8fbf9f;
+  box-shadow: inset 0 0 5px #346145;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.header-amenaza img {
+  height: 4rem;
+  box-shadow: inset 0 0 5px #c2baa6;
+  padding: .85rem;
+  border-radius: 15px;
+}
