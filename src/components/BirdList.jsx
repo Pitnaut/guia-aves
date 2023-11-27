@@ -6,18 +6,20 @@ import '../stylesheets/BirdList.css';
 
 const BirdList = () => {
   return (
-
     <div className='bird-list'>
-      {birds.map((bird) => (
-        <Link
-        key={bird.nombre} 
-        to={`/birds/${bird.nombre}`}
-        style={{ textDecoration: 'none' }}
-        >
-          <BirdCard bird={bird} 
-          className={({ isActive }) => isActive ? 'active-bird' : 'bird'}/>
-        </Link>
-      ))}
+      {birds.map((bird) => {
+        return (
+          <Link
+            key={bird.nombre} 
+            to={`/birds/${bird.nombre}`}
+            style={{ textDecoration: 'none' }}
+          >
+            <BirdCard bird={bird} 
+              className={({ isActive }) => isActive ? 'active-bird' : 'bird'}
+            />
+          </Link>
+        );
+      })}
     </div>
   )
 }

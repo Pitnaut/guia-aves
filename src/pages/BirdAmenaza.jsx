@@ -1,6 +1,6 @@
 import React from 'react'
 import { birds } from '../data/data'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import '../stylesheets/BirdPage.css'
 import BirdCard from '../components/BirdCard'
 import CN from '../assets/CN.png'
@@ -46,7 +46,12 @@ const BirdAmenaza = () => {
       </div>
     <div className='bird-amenaza'>
       {filteredBirds.map((bird) => (
+        <Link
+          key={bird.nombre}
+          to={`/birds/${bird.nombre}`}
+          style={{ textDecoration: 'none' }}>
         <BirdCard key={bird.id} bird={bird} />
+        </Link>
       ))}
     </div>
     </div>

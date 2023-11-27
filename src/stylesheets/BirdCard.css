@@ -11,6 +11,7 @@
     animation: reveal linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 15%;
+    animation: view .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     transition: transform .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
@@ -57,6 +58,19 @@
   }
 
   @keyframes reveal {
+    from {
+      opacity: 0;
+      translate: 0px 50px;
+      scale: 0.7;
+    }
+
+    to {opacity: 1;
+      translate: 0 0;
+      scale: 1;
+    }
+  }
+
+  @keyframes view {
     from {
       opacity: 0;
       translate: 0px 50px;
