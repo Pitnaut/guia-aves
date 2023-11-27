@@ -794,7 +794,7 @@ export const birds = [{
   id: 48,
   nombre: "Busardo ratonero",
   cientifico: "Buteo buteo",
-  orden: "Accipitriforme",
+  orden: "Accipitriformes",
   familia: "Accipitridae",
   alimentacion: ["roedores", "carroña", "insectos", "aves", "conejos"],
   envergadura: 120,

@@ -9,7 +9,7 @@ const BirdEstacion = () => {
   const filteredBirds = birds.filter((bird) => bird.estacion === estacion)
 
   return (
-    <div className='bird-estacion-container'>
+    <div key={estacion} className='bird-estacion-container'>
       <h1>{estacion}</h1>
     <div className='bird-estacion'>
       {filteredBirds.map((bird) => (

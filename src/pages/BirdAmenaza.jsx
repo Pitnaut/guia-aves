@@ -39,7 +39,7 @@ const BirdAmenaza = () => {
 
 
   return (
-    <div className='bird-amenaza-container'>
+    <div key={amenaza}  className='bird-amenaza-container'>
       <div className='header-amenaza'>
       <h1>{amenaza}</h1>
       {amenaza !== 'Especie exótica invasora' && <img src={amenazaImg} alt={amenaza} />}

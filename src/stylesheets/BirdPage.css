@@ -1,4 +1,4 @@
-.bird-order-container {
+.bird-order-container, .bird-estacion-container, .bird-amenaza-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,23 +6,7 @@
   margin-top: 3%;
 }
 
-.bird-estacion-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3%;
-}
-
-.bird-amenaza-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3%;
-}
-
-.bird-order {
+.bird-order, .bird-estacion, .bird-amenaza {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(
@@ -34,29 +18,6 @@
   width: 55%;
 }
 
-.bird-estacion {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill, minmax(13rem, 1fr)
-    );
-  gap: 1rem;
-  margin-top: 2%;
-  margin-bottom: 5%;
-  width: 55%;
-}
-
-.bird-amenaza {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill, minmax(13rem, 1fr)
-    );
-  gap: 1rem;
-  margin-top: 2%;
-  margin-bottom: 5%;
-  width: 55%;
-}
 
 .bird-order-container h1, .bird-estacion-container h1 {
   font-size: 3rem;
@@ -66,6 +27,7 @@
   box-shadow: inset 0 0 5px #346145;
   border-radius: 15px;
   padding: 1rem;
+  animation: slideIn .2s ease-out;
 }
 
 .header-amenaza {
@@ -85,6 +47,7 @@
   box-shadow: inset 0 0 5px #346145;
   border-radius: 15px;
   padding: 1rem;
+  animation: slideIn .2s ease-out;
 }
 
 .header-amenaza img {
@@ -92,4 +55,23 @@
   box-shadow: inset 0 0 5px #c2baa6;
   padding: .85rem;
   border-radius: 15px;
+  animation: imgIn .2s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes imgIn {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
