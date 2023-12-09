@@ -52,7 +52,6 @@ const BirdDetail = ({ bird }) => {
         </div>
         <div className='enlaces'>
           <a href={seo} target='_blank'>SEO</a>
-          <br></br>
           <a href={wiki} target='_blank'>Wikipedia</a>
         </div>
       </div>
