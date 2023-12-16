@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import '../stylesheets/BirdCard.css';
+import { BirdContext } from './BirdContext';
 
 const BirdCard = ({ bird }) => {
 
-  const { id, imagen, alttext, nombre } = bird;
+  const { imagen, alttext, nombre } = bird;
+
+  const { seenBird } = useContext(BirdContext); 
 
   return (
     <div className='bird-card'>
@@ -15,6 +18,7 @@ const BirdCard = ({ bird }) => {
             <div
             className="bird-name">
           <h2>{nombre}</h2>
+          {seenBird.includes(nombre) && <span>👀</span>}
         </div>
     </div>
   );

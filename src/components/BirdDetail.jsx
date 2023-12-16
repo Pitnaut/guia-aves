@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { birds } from '../data/data';
 import '../stylesheets/BirdDetail.css';
 import wingIconLeft from '../assets/wingIconLeft.png'
 import wingIconRight from '../assets/wingIconRight.png'
 import { foodToEmoji } from '../data/foodToEmoji'; 
+import { BirdContext } from './BirdContext';
 
 const BirdDetail = ({ bird }) => {
+
+  const { markAsSeen } = useContext(BirdContext); 
 
   const { nombre, cientifico, orden, familia, amenaza, estacion, envergadura, imagen, alttext, descripcion, autor, seo, wiki, alimentacion, autor_page } = bird;
 
@@ -54,6 +57,9 @@ const BirdDetail = ({ bird }) => {
           <a href={seo} target='_blank'>SEO</a>
           <a href={wiki} target='_blank'>Wikipedia</a>
         </div>
+      </div>
+      <div className='seen-button'>
+        <button onClick={()=> markAsSeen(nombre)}>Marcar vista</button>
       </div>
     </div>
   )
