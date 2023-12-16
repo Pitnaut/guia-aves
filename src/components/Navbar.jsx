@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SearchBar } from './SearchBar';
 import '../stylesheets/NavBar.css';
 import { birds } from '../data/data';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate, useLocation} from 'react-router-dom';
 
 
 
@@ -14,6 +14,14 @@ const NavBar = () => {
   const [selectedEstacion, setSelectedEstacion] = useState("");
 
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const navbar = document.querySelector('.navigator');
+    navbar.style.animation = 'none';
+    navbar.offsetHeight; /* trigger reflow */
+    navbar.style.animation = null; 
+  }, [location]);
 
   const toggleDropdown = () => {
     setIsDropdownVisible(!isDropdownVisible);
