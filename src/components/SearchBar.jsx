@@ -36,7 +36,10 @@ export const SearchBar = () => {
 
   return (
     <form onSubmit={onSearchHandler} className='searchform'>
+      <label htmlFor='birdName' className='label'></label>
       <input
+        id='birdName'
+        name='birdName'
         className='inputbox'
         type='text'
         placeholder='Buscar aves...'

@@ -2,14 +2,14 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { birds } from '../data/data';
 import '../stylesheets/BirdDetail.css';
-import wingIconLeft from '../assets/wingIconLeft.png'
-import wingIconRight from '../assets/wingIconRight.png'
 import { foodToEmoji } from '../data/foodToEmoji'; 
 import { BirdContext } from './BirdContext';
+import wingIconLeft from '../assets/wingIconLeft.png'
+import wingIconRight from '../assets/wingIconRight.png'
 
 const BirdDetail = ({ bird }) => {
 
-  const { markAsSeen } = useContext(BirdContext); 
+  const { seenBird, markAsSeen } = useContext(BirdContext); 
 
   const { nombre, cientifico, orden, familia, amenaza, estacion, envergadura, imagen, alttext, descripcion, autor, seo, wiki, alimentacion, autor_page } = bird;
 
@@ -21,9 +21,17 @@ const BirdDetail = ({ bird }) => {
   return (
     <div className='main-container'>
       <div className='navegador-aves'>
-        {prevBird && <Link className="link-style" to={`/birds/${prevBird.nombre}`}>Ave anterior</Link>}
-        <Link className="link-style" to='/birds/'>Volver</Link>
-        {nextBird && <Link className="link-style" to={`/birds/${nextBird.nombre}`}>Ave siguiente</Link>}
+      <div className='links-container'>
+        <div className='ave-anterior'>{prevBird && <Link className="link-style" to={`/birds/${prevBird.nombre}`}>Ave anterior</Link>}</div>
+        <div className='ave-siguiente'>{nextBird && <Link className="link-style" to={`/birds/${nextBird.nombre}`}>Ave siguiente</Link>}</div>
+        <div className='todas-aves'><Link className="link-style" to='/birds/'>Volver</Link></div>
+      </div>
+      <div className='seen-button'>
+  <button onClick={()=> markAsSeen(nombre)}>¿Avistada?</button>
+  <span className="icon" key={seenBird.includes(nombre) ? 'seen' : 'not-seen'}>
+    {seenBird.includes(nombre) ? '✔️' : '❌'}
+  </span>
+</div>
       </div>
       <div className='grid-layout'>
         <div className='nombre-ave'>
@@ -58,11 +66,9 @@ const BirdDetail = ({ bird }) => {
           <a href={wiki} target='_blank'>Wikipedia</a>
         </div>
       </div>
-      <div className='seen-button'>
-        <button onClick={()=> markAsSeen(nombre)}>Marcar vista</button>
-      </div>
     </div>
   )
 }
+
 
 export default BirdDetail;
