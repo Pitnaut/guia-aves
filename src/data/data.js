@@ -143,25 +143,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Hieraaetus_pennatus"
 },
 {
-  id:9,
-  nombre: "Águila culebrera",
-  cientifico: "Circaetus gallicus",
-  orden: "Accipitriformes",
-  familia: "Accipitridae",
-  alimentacion: ["reptiles", "roedores", "aves"],
-  envergadura: 168,
-  estacion: "Estival",
-  amenaza: "Preocupación menor",
-  descripcion: "Rapaz muy especial ya que su alimentación se basa en ofidios, a las que detecta, atrapa y engulle gracias a adaptaciones morfológicas. Prefiere areas forestales con una buena densidad de árboles.",
-  autor: "MarioM",
-  autor_page: "https://commons.wikimedia.org/wiki/User:MarioM",
-  imagen: "Aguila_culebrera",
-  alttext: "Imagen de Águila culebrera",
-  seo: "https://seo.org/ave/aguila-culebrera/#",
-  wiki: "https://es.wikipedia.org/wiki/Circaetus_gallicus"
-},
-{
-  id: 10,
+  id: 9,
   nombre: "Águila imperial ibérica",
   cientifico: "Aquila adalberti",
   orden: "Accipitriformes",
@@ -179,7 +161,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Aquila_adalberti"
 },
 {
-  id: 11,
+  id: 10,
   nombre: "Águila perdicera",
   cientifico: "Aquila fasciata",
   orden: "Accipitriformes",
@@ -197,7 +179,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Aquila_fasciata"
 },
 {
-  id: 12,
+  id: 11,
   nombre: "Águila real",
   cientifico: "Aquila chrysaetos",
   orden: "Accipitriformes",
@@ -215,7 +197,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Aquila_chrysaetos"
 },
 {
-  id: 13,
+  id: 12,
   nombre: "Aguilucho cenizo",
   cientifico: "Circus pygargus",
   orden: "Falconiformes",
@@ -233,7 +215,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Circus_pygargus"
 },
 {
-  id: 14,
+  id: 13,
   nombre: "Aguilucho lagunero occidental",
   cientifico: "Circus aeruginosus",
   orden: "Accipitriformes",
@@ -251,7 +233,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Circus_aeruginosus"
 },
 {
-  id: 15,
+  id: 14,
   nombre: "Aguilucho pálido",
   cientifico: "Cirus cyaneus",
   orden: "Accipitriformes",
@@ -269,7 +251,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Circus_cyaneus"
 },
 {
-  id: 16,
+  id: 15,
   nombre: "Alcaraván común",
   cientifico: "Burhinus oedicnemus",
   orden: "Charadriiformes",
@@ -287,7 +269,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Burhinus_oedicnemus"
 },
 {
-  id: 17,
+  id: 16,
   nombre: "Alcaudón común",
   cientifico: "Lanius senator",
   orden: "Passeriformes",
@@ -305,7 +287,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Lanius_senator"
 },
 {
-  id: 18,
+  id: 17,
   nombre: "Alcaudón dorsirrojo",
   cientifico: "Lanius collurio",
   orden: "Passeriformes",
@@ -323,7 +305,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Lanius_collurio"
 },
 {
-  id: 19,
+  id: 18,
   nombre: "Alcaudón real",
   cientifico: "Lanius meridionalis",
   orden: "Passeriformes",
@@ -341,7 +323,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Lanius_meridionalis"
 },
 {
-  id: 20,
+  id: 19,
   nombre: "Alcotán europeo",
   cientifico: "Falco subbuteo",
   orden: "Falconiformes",
@@ -357,6 +339,24 @@ export const birds = [{
   alttext: "Imagen de Alcotán europeo",
   seo: "https://seo.org/ave/alcotan-europeo/#",
   wiki: "https://es.wikipedia.org/wiki/Falco_subbuteo"
+},
+{
+  id: 20,
+  nombre: "Alimoche común",
+  cientifico: "Neophron percnopterus",
+  orden: "Accipitriformes",
+  familia: "Accipitridae",
+  alimentacion: ["carroña"],
+  envergadura: 160,
+  estacion: "Estival",
+  amenaza: "Vulnerable",
+  descripcion: "Este inconfundible buitre carroñero visita nuestro pais en verano. Actualmente su población está en descenso, el uso de pesticidas y la persecución por parte de cazadores ha contribuido a ello.",
+  autor: "Koshy Koshy",
+  autor_page: "https://www.flickr.com/people/97235261@N00",
+  imagen: "Alimoche_comun",
+  alttext: "Imagen de Alimoche común",
+  seo: "https://seo.org/ave/alimoche-comun/#",
+  wiki: "https://es.wikipedia.org/wiki/Neophron_percnopterus"
 },
 {
   id: 21,
@@ -432,6 +432,24 @@ export const birds = [{
 },
 {
   id: 25,
+  nombre: "Ánade rabudo",
+  cientifico: "Anas acuta",
+  orden: "Anseriformes",
+  familia: "Anatidae",
+  alimentacion: ["plantas", "insectos", "moluscos"],
+  envergadura: 85,
+  estacion: "Invernal",
+  amenaza: "Preocupación menor",
+  descripcion: "Este ánade invernante se caracteriza por su cola larga y su esbelta figura. Como otros parientes suyos son primordialmente vegetarianos, aunque pueden consumir algo de materia animal como insectos acuáticos o moluscos.",
+  autor: "J. M. Garg",
+  autor_page: "https://commons.wikimedia.org/wiki/User:J.M.Garg",
+  imagen: "Anade_rabudo",
+  alttext: "Imagen de Ánade rabudo",
+  seo: "https://seo.org/ave/anade-rabudo/#",
+  wiki: "https://es.wikipedia.org/wiki/Anas_acuta"
+},
+{
+  id: 26,
   nombre: "Andarríos chico",
   cientifico: "Actitis hypoleucos",
   orden: "Charadriiformes",
@@ -449,7 +467,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Actitis_hypoleucos"
 },
 {
-  id: 26,
+  id: 27,
   nombre: "Andarríos grande",
   cientifico: "Tringa ochropus",
   orden: "Charadriiformes",
@@ -467,7 +485,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Tringa_ochropus"
 },
 {
-  id: 27,
+  id: 28,
   nombre: "Ánsar común",
   cientifico: "Anser anser",
   orden: "Anseriformes",
@@ -485,7 +503,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Anser_anser"
 },
 {
-  id: 28,
+  id: 29,
   nombre: "Archibebe común",
   cientifico: "Tringa totanus",
   orden: "Charadriiformes",
@@ -503,7 +521,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Tringa_totanus"
 },
 {
-  id: 29,
+  id: 30,
   nombre: "Arrendajo euroasiático",
   cientifico: "Garrulus glandarius",
   orden: "Passeriformes",
@@ -521,7 +539,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Garrulus_glandarius"
 },
 {
-  id: 30,
+  id: 31,
   nombre: "Autillo europeo",
   cientifico: "Otus scops",
   orden: "Strigiformes",
@@ -539,7 +557,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Otus_scops"
 },
 {
-  id: 31,
+  id: 32,
   nombre: "Avefría europea",
   cientifico: "Vanellus vanellus",
   orden: "Charadriiformes",
@@ -557,7 +575,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Vanellus_vanellus"
 },
 {
-  id: 32,
+  id: 33,
   nombre: "Avetorillo común",
   cientifico: "Ixobrychus minutus",
   orden: "Pelecaniformes",
@@ -575,7 +593,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Ixobrychus_minutus"
 },
 {
-  id: 33,
+  id: 34,
   nombre: "Avión común",
   cientifico: "Delichon urbicum",
   orden: "Passeriformes",
@@ -593,7 +611,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Delichon_urbicum"
 },
 {
-  id: 34,
+  id: 35,
   nombre: "Avión roquero",
   cientifico: "Ptyonoprogne rupestris",
   orden: "Passeriformes",
@@ -611,7 +629,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Ptyonoprogne_rupestris"
 },
 {
-  id: 35,
+  id: 36,
+  nombre: "Avión zapador",
+  cientifico: "Riparia riparia",
+  orden: "Passeriformes",
+  familia: "Hirundinidae",
+  alimentacion: ["insectos"],
+  envergadura: 28,
+  estacion: "Estival",
+  amenaza: "Preocupación menor",
+  descripcion: "Es el ave de la familia Hirundinidae más pequeño que visita nuestro país. Tiene una banda marrón el pecho quie ayuda a  identificarla más fácilmente. No existen diferencias entre machos y hembras.",
+  autor: "Nigel Wedge",
+  autor_page: "https://www.flickr.com/people/36666601@N02",
+  imagen: "Avion_zapador",
+  alttext: "Imagen de Avión zapador",
+  seo: "https://seo.org/ave/avion-zapador/#",
+  wiki: "https://es.wikipedia.org/wiki/Riparia_riparia"
+},
+{
+  id: 37,
   nombre: "Avoceta común",
   cientifico: "Recurvirostra avosetta",
   orden: "Charadriiformes",
@@ -629,7 +665,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Recurvirostra_avosetta"
 },
 {
-  id: 36,
+  id: 38,
   nombre: "Avutarda euroasiática",
   cientifico: "Otis tarda",
   orden: "Otidiformes",
@@ -647,7 +683,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Otis_tarda"
 },
 {
-  id: 37,
+  id: 39,
   nombre: "Azor común",
   cientifico: "Accipiter gentilis",
   orden: "Accipitriformes",
@@ -665,7 +701,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Accipiter_gentilis"
 },
 {
-  id: 39,
+  id: 40,
+  nombre: "Bengalí rojo",
+  cientifico: "Amandava amandava",
+  orden: "Passeriformes",
+  familia: "Estrildidae",
+  alimentacion: ["semillas"],
+  envergadura: 14,
+  estacion: "Residente",
+  amenaza: "Especie exótica invasora",
+  descripcion: "Esta llamativa ave roja procendente de Asia tiene un nucleo de población estable en Madrid (Tajo y Jarama). Aunque no se han encontrado efectos negativos en las especies autóctona, este ave debe ser tratado como una posible fuente de amenaza para ellas.",
+  autor: "Shantanu Kuveskar",
+  autor_page: "https://commons.wikimedia.org/wiki/User:Shantanu_Kuveskar",
+  imagen: "Bengali_rojo",
+  alttext: "Imagen de Bengalí rojo",
+  seo: "https://seo.org/ave/bengali-rojo/#",
+  wiki: "https://es.wikipedia.org/wiki/Amandava_amandava"
+},
+{
+  id: 41,
   nombre: "Bigotudo",
   cientifico: "Panurus biarmicus",
   orden: "Passeriformes",
@@ -683,7 +737,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Panurus_biarmicus"
 },
 {
-  id: 40,
+  id: 42,
   nombre: "Bisbita alpino",
   cientifico: "Anthus spinoletta",
   orden: "Passeriformes",
@@ -701,7 +755,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Anthus_spinoletta"
 },
 {
-  id: 41,
+  id: 43,
+  nombre: "Bisbita arbóreo",
+  cientifico: "Anthus trivialis",
+  orden: "Passeriformes",
+  familia: "Motacillidae",
+  alimentacion: ["insectos"],
+  envergadura: 26,
+  estacion: "Estival",
+  amenaza: "Preocupación menor",
+  descripcion: "La mayoría de los bisbitas son aves terrestres, en este caso el bisbita arbóreo se maneja bien en árboles y arbustos. Es un ave que cría en el tercio norte de España. En Madrid se puede encontrar en la Sierra de Guadarrama.",
+  autor: "Marek Szczepanek",
+  autor_page: "https://commons.wikimedia.org/wiki/User:Pkuczynski/Marek_Szczepanek",
+  imagen: "Bisbita_arboreo",
+  alttext: "Imagen de Bisbita arbóreo",
+  seo: "https://seo.org/ave/bisbita-arboreo/#",
+  wiki: "https://es.wikipedia.org/wiki/Anthus_trivialis"
+},
+{
+  id: 44,
   nombre: "Bisbita campestre",
   cientifico: "Anthus campestris",
   orden: "Passeriformes",
@@ -719,7 +791,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Anthus_campestris"
 },
 {
-  id: 42,
+  id: 45,
   nombre: "Bisbita pratense",
   cientifico: "Arthus pratensis",
   orden: "Passeriformes",
@@ -737,7 +809,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Anthus_pratensis"
 },
 {
-  id: 43,
+  id: 46,
   nombre: "Búho campestre",
   cientifico: "Asio flammeus",
   orden: "Strigiformes",
@@ -755,7 +827,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Asio_flammeus"
 },
 {
-  id: 44,
+  id: 47,
   nombre: "Búho chico",
   cientifico: "Asio otus",
   orden: "Strigiformes",
@@ -773,7 +845,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Asio_otus"
 },
 {
-  id: 45,
+  id: 48,
   nombre: "Búho real",
   cientifico: "Bubo bubo",
   orden: "Strigiformes",
@@ -791,7 +863,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Bubo_bubo"
 },
 {
-  id: 46,
+  id: 49,
   nombre: "Buitre leonado",
   cientifico: "Gyps fulvus",
   orden: "Accipitriformes",
@@ -809,7 +881,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Gyps_fulvus"
 },
 {
-  id: 47,
+  id: 50,
   nombre: "Buitre negro",
   cientifico: "Aegypius monachus",
   orden: "Accipitriformes",
@@ -827,7 +899,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Aegypius_monachus"
 },
 {
-  id: 48,
+  id: 51,
   nombre: "Busardo ratonero",
   cientifico: "Buteo buteo",
   orden: "Accipitriformes",
@@ -845,7 +917,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Buteo_buteo"
 },
 {
-  id: 49,
+  id: 52,
+  nombre: "Calamón común",
+  cientifico: "Porphyrio porphyrio",
+  orden: "Gruiformes",
+  familia: "Rallidae",
+  alimentacion: ["plantas", "insectos", "peces"],
+  envergadura: 95,
+  estacion: "Residente",
+  amenaza: "Casi amenazado",
+  descripcion: "Se encuentra amenazado por la desecación y la contaminación de los humedales en los que habita. Es un ave inconfundible con un precioso color azul y sus robustas patas de color carmín.",
+  autor: "Sighmanb",
+  autor_page: "https://www.flickr.com/people/23632548@N00",
+  imagen: "Calamon_comun",
+  alttext: "Imagen de Calamón común",
+  seo: "https://seo.org/ave/calamon-comun/#",
+  wiki: "https://es.wikipedia.org/wiki/Porphyrio_porphyrio"
+},
+{
+  id: 53,
   nombre: "Calandria común",
   cientifico: "Melanocorypha calandra",
   orden: "Passeriformes",
@@ -863,7 +953,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Melanocorypha_calandra"
 },
 {
-  id: 50,
+  id: 54,
   nombre: "Cárabo común",	
   cientifico: "Strix aluco",
   orden: "Strigiformes",
@@ -881,7 +971,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Strix_aluco"
 },
 {
-  id: 51,
+  id: 55,
   nombre: "Carbonero común",
   cientifico: "Parus major",
   orden: "Passeriformes",
@@ -899,7 +989,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Parus_major"
 },
 {
-  id: 52,
+  id: 56,
   nombre: "Carbonero garrapinos",
   cientifico: "Periparus ater",
   orden: "Passeriformes",
@@ -917,7 +1007,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Periparus_ater"
 },
 {
-  id: 53,
+  id: 57,
+  nombre: "Carraca europea",
+  cientifico: "Coracias garrulus",
+  orden: "Coraciiformes",
+  familia: "Coraciidae",
+  alimentacion: ["insectos", "reptiles", "roedores"],
+  envergadura: 70,
+  estacion: "Estival",
+  amenaza: "En peligro",
+  descripcion: "Un ave estival inconfundible gracias a su precioso plumaje azul. Se encuentra en peligro actualmente. Su población ha disminuido drásticamente en parte culpa de la destrucción de su hábitat y los pesticidas.",
+  autor: "Christian Svane",
+  autor_page: "https://commons.wikimedia.org/w/index.php?curid=719240",
+  imagen: "Carraca_europea",
+  alttext: "Imagen de Carraca europea",
+  seo: "https://seo.org/ave/carraca-europea/#",
+  wiki: "https://es.wikipedia.org/wiki/Coracias_garrulus"
+},
+{
+  id: 58,
   nombre: "Carricero común",
   cientifico: "Acrocephalus scirpaceus",
   orden: "Passeriformes",
@@ -935,7 +1043,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Acrocephalus_scirpaceus"
 },
 {
-  id: 54,
+  id: 59,
   nombre: "Carricero tordal",
   cientifico: "Acrocephalus arundinaceus",
   orden: "Passeriformes",
@@ -953,7 +1061,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Acrocephalus_arundinaceus"
 },
 {
-  id: 55,
+  id: 60,
   nombre: "Cerceta carretona",
   cientifico: "Spatula querquedula",
   orden: "Anseriformes",
@@ -971,7 +1079,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Spatula_querquedula"
 },
 {
-  id: 56,
+  id: 61,
   nombre: "Cerceta común",
   cientifico: "Anas crecca",
   orden: "Anseriformes",
@@ -989,7 +1097,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Anas_crecca"
 },
 {
-  id: 57,
+  id: 62,
   nombre: "Cernícalo primilla",
   cientifico: "Falco naumanni",
   orden: "Falconiformes",
@@ -1007,7 +1115,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Falco_naumanni"
 },
 {
-  id: 58,
+  id: 63,
   nombre: "Cernícalo vulgar",
   cientifico: "Falco tinnunculus",
   orden: "Falconiformes",
@@ -1025,7 +1133,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Falco_tinnunculus"
 },
 {
-  id: 156,
+  id: 64,
   nombre: "Cetia ruiseñor",
   cientifico: "Cettia cetti",
   orden: "Passeriformes",
@@ -1043,7 +1151,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Cettia_cetti"
 },
 {
-  id: 38,
+  id: 65,
   nombre: "Chocha perdiz",
   cientifico: "Scolopax rusticola",
   orden: "Charadriiformes",
@@ -1061,7 +1169,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Scolopax_rusticola"
 },
 {
-  id: 59,
+  id: 66,
   nombre: "Chochín paleártico",
   cientifico: "Troglodytes troglodytes",
   orden: "Passeriformes",
@@ -1079,7 +1187,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Troglodytes_troglodytes"
 },
 {
-  id:60,
+  id:67,
   nombre: "Chorlitejo chico",
   cientifico: "Charadrius dubius",
   orden: "Charadriiformes",
@@ -1097,7 +1205,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Charadrius_dubius"
 },
 {
-  id: 61,
+  id: 68,
   nombre: "Chotacabras cuellirrojo",
   cientifico: "Caprimulgus ruficollis",
   orden: "Caprimulgiformes",
@@ -1115,7 +1223,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Caprimulgus_ruficollis"
 },
 {
-  id: 62,
+  id: 69,
   nombre: "Chotacabras europeo",
   cientifico: "Caprimulgus europaeus",
   orden: "Caprimulgiformes",
@@ -1133,7 +1241,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Caprimulgus_europaeus"
 },
 {
-  id: 63,
+  id: 70,
   nombre: "Chova piquirroja",
   cientifico: "Pyrrhocorax pyrrhocorax",
   orden: "Passeriformes",
@@ -1151,7 +1259,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Pyrrhocorax_pyrrhocorax"
 },
 {
-  id: 64,
+  id: 71,
   nombre: "Cigüeña blanca",
   cientifico: "Ciconia ciconia",
   orden: "Ciconiiformes",
@@ -1169,7 +1277,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Ciconia_ciconia"
 },
 {
-  id: 65,
+  id: 72,
   nombre: "Cigüeña negra",
   cientifico: "Ciconia nigra",
   orden: "Ciconiiformes",
@@ -1187,7 +1295,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Ciconia_nigra"
 },
 {
-  id: 66,
+  id: 73,
   nombre: "Cigüeñuela común",
   cientifico: "Himantopus himantopus",
   orden: "Charadriiformes",
@@ -1205,7 +1313,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Himantopus_himantopus"
 },
 {
-  id: 67,
+  id: 74,
   nombre: "Cisticola buitrón",	
   cientifico: "Cisticola juncidis",
   orden: "Passeriformes",
@@ -1223,7 +1331,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Cisticola_juncidis"
 },
 {
-  id: 68,
+  id: 75,
   nombre: "Codorniz común",
   cientifico: "Coturnix coturnix",
   orden: "Galliformes",
@@ -1241,7 +1349,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Coturnix_coturnix"
 },
 {
-  id: 69,
+  id: 76,
   nombre: "Cogujada común",
   cientifico: "Galerida cristata",
   orden: "Passeriformes",
@@ -1259,7 +1367,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Galerida_cristata"
 },
 {
-  id: 70,
+  id: 77,
   nombre: "Cogujada montesina",
   cientifico: "Galerida theklae",
   orden: "Passeriformes",
@@ -1277,7 +1385,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Galerida_theklae"
 },
 {
-  id: 71,
+  id: 78,
   nombre: "Colirrojo real",
   cientifico: "Phoenicurus phoenicurus",
   orden: "Passeriformes",
@@ -1295,7 +1403,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Phoenicurus_phoenicurus"
 },
 {
-  id: 72,
+  id: 79,
   nombre: "Colirrojo Tizón",
   cientifico: "Phoenicurus ochuros",
   orden: "Passeriformes",
@@ -1313,7 +1421,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Phoenicurus_ochruros"
 },
 {
-  id: 73,
+  id: 80,
   nombre: "Collalba gris",
   cientifico: "Oenanthe oenanthe",
   orden: "Passeriformes",
@@ -1331,7 +1439,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Oenanthe_oenanthe"
 },
 {
-  id: 74,
+  id: 81,
   nombre: "Collalba Negra",
   cientifico: "Oenanthe leucura",
   orden: "Passeriformes",
@@ -1349,7 +1457,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Oenanthe_leucura"
 },
 {
-  id: 75,
+  id: 82,
   nombre: "Collalba rubia occidental",
   cientifico: "Oenanthe hispanica",
   orden: "Passeriformes",
@@ -1367,7 +1475,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Oenanthe_hispanica"
 },
 {
-  id: 76,
+  id: 83,
   nombre: "Cormorán grande",
   cientifico: "Phalacrocorax carbo",
   orden: "Suliformes",
@@ -1385,7 +1493,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Phalacrocorax_carbo"
 },
 {
-  id: 77,
+  id: 84,
   nombre: "Corneja negra",
   cientifico: "Corvus corone",
   orden: "Passeriformes",
@@ -1403,7 +1511,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Corvus_corone"
 },
 {
-  id: 78,
+  id: 85,
   nombre: "Cotorra argentina",
   cientifico: "Myiopsitta monachus",
   orden: "Psittaciformes",
@@ -1421,7 +1529,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Myiopsitta_monachus"
 },
 {
-  id: 79,
+  id: 86,
+  nombre: "Cotorra de Kramer",
+  cientifico: "Psittacula krameri",
+  orden: "Psittaciformes",
+  familia: "Psittacidae",
+  alimentacion: ["semillas", "plantas"],
+  envergadura: 50,
+  estacion: "Residente",
+  amenaza: "Especie exótica invasora",
+  descripcion: "De forma similar a la cotorra argentina, este ave se ha introducido en nuestro pais a través del comercio procedente de África y Asia. Se han adaptado bien a nuestro clima y están en expansión.",
+  autor: "ShivaShankar",
+  autor_page: "https://www.flickr.com/photos/13111216@N00/",
+  imagen: "Cotorra_de_kramer",
+  alttext: "Imagen de Cotorra de Kramer",
+  seo: "https://seo.org/ave/cotorra-de-kramer/#",
+  wiki: "https://es.wikipedia.org/wiki/Psittacula_krameri"
+},
+{
+  id: 87,
   nombre: "Críalo europeo",
   cientifico: "Clamator glandarius",
   orden: "Cuculiformes",
@@ -1439,7 +1565,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Clamator_glandarius"
 },
 {
-  id: 80,
+  id: 88,
   nombre: "Cuchara común",
   cientifico: "Spatula clypeata",
   orden: "Anseriformes",
@@ -1457,7 +1583,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Spatula_clypeata"
 },
 {
-  id: 81,
+  id: 89,
   nombre: "Cuco",
   cientifico: "Cuculus canorus",
   orden: "Cuculiformes",
@@ -1475,7 +1601,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Cuculus_canorus"
 },
 {
-  id: 82,
+  id: 90,
   nombre: "Cuervo grande",
   cientifico: "Corvus corax",
   orden: "Passeriformes",
@@ -1493,7 +1619,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Corvus_corax"
 },
 {
-  id: 83,
+  id: 91,
+  nombre: "Culebrera europea",
+  cientifico: "Circaetus gallicus",
+  orden: "Accipitriformes",
+  familia: "Accipitridae",
+  alimentacion: ["reptiles", "roedores", "aves"],
+  envergadura: 168,
+  estacion: "Estival",
+  amenaza: "Preocupación menor",
+  descripcion: "Rapaz muy especial ya que su alimentación se basa en ofidios, a las que detecta, atrapa y engulle gracias a adaptaciones morfológicas. Prefiere areas forestales con una buena densidad de árboles.",
+  autor: "MarioM",
+  autor_page: "https://commons.wikimedia.org/wiki/User:MarioM",
+  imagen: "Culebrera_europea",
+  alttext: "Imagen de Culebrera europea",
+  seo: "https://seo.org/ave/culebrera-europea/",
+  wiki: "https://es.wikipedia.org/wiki/Circaetus_gallicus"
+},
+{
+  id: 92,
   nombre: "Curruca cabecinegra",
   cientifico: "Sylvia melanocephala",
   orden: "Passeriformes",
@@ -1511,7 +1655,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Sylvia_melanocephala"
 },
 {
-  id: 84,
+  id: 93,
   nombre: "Curruca capirotada",
   cientifico: "Sylvia atricapilla",
   orden: "Passeriformes",
@@ -1529,7 +1673,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Sylvia_atricapilla"
 },
 {
-  id: 85,
+  id: 94,
   nombre: "Curruca carrasqueña",
   cientifico: "Curruca iberiae",
   orden: "Passeriformes",
@@ -1547,7 +1691,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Sylvia_cantillans"
 },
 {
-  id: 86,
+  id: 95,
   nombre: "Curruca mirlona occidental",
   cientifico: "Sylvia hortensis",
   orden: "Passeriformes",
@@ -1565,7 +1709,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Sylvia_hortensis"
 },
 {
-  id: 87,
+  id: 96,
   nombre: "Curruca rabilarga",
   cientifico: "Sylvia undata",
   orden: "Passeriformes",
@@ -1583,7 +1727,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Sylvia_undata"
 },
 {
-  id: 88,
+  id: 97,
   nombre: "Curruca tomillera",
   cientifico: "Curruca conspicillata",
   orden: "Passeriformes",
@@ -1601,7 +1745,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Curruca_conspicillata"
 },
 {
-  id: 89,
+  id: 98,
   nombre: "Curruca zarcera",
   cientifico: "Sylvia communis",
   orden: "Passeriformes",
@@ -1619,7 +1763,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Sylvia_communis"
 },
 {
-  id: 90,
+  id: 99,
   nombre: "Elanio común",
   cientifico: "Elanus caeruleus",
   orden: "Accipitriformes",
@@ -1637,7 +1781,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Elanus_caeruleus"
 },
 {
-  id: 91,
+  id: 100,
+  nombre: "Escribano hortelano",
+  cientifico: "Emberiza hortulana",
+  orden: "Passeriformes",
+  familia: "Emberizidae",
+  alimentacion: ["insectos", "semillas"],
+  envergadura: 23,
+  estacion: "Estival",
+  amenaza: "Casi amenazado",
+  descripcion: "Este esbelto escribano es más abundante en el norte de la península. El escribano asado es un plato de la gastronomía francesa. Su caza afortunadamente ha quedado prohibida en la Unión Europea.",
+  autor: "Pierre Dalous",
+  autor_page: "https://commons.wikimedia.org/wiki/User:Kookaburra_81",
+  imagen: "Escribano_hortelano",
+  alttext: "Imagen de Escribano hortelano",
+  seo: "https://seo.org/ave/escribano-hortelano/#",
+  wiki: "https://es.wikipedia.org/wiki/Emberiza_hortulana"
+},
+{
+  id: 101,
   nombre: "Escribano montesino",
   cientifico: "Emberiza cia",
   orden: "Passeriformes",
@@ -1655,7 +1817,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Emberiza_cia"
 },
 {
-  id: 92,
+  id: 102,
   nombre: "Escribano palustre",
   cientifico: "Emberiza schoeniclus",
   orden: "Passeriformes",
@@ -1673,7 +1835,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Emberiza_schoeniclus"
 },
 {
-  id: 93,
+  id: 103,
+  nombre: "Escribano soteño",
+  cientifico: "Emberiza cirlus",
+  orden: "Passeriformes",
+  familia: "Emberizidae",
+  alimentacion: ["semillas", "insectos"],
+  envergadura: 24,
+  estacion: "Residente",
+  amenaza: "Casi amenazado",
+  descripcion: "Su color es parecido al del escribano cerillo, su principal diferencia se encuentra en las lineas laterales en la cara. Es predominantemente granívora pero como otras aves similares, en época reproductora su dieta incluye invertebrados.",
+  autor: "Paco Gómez",
+  autor_page: "https://www.flickr.com/people/37824079@N02",
+  imagen: "Escribano_soteño",
+  alttext: "Imagen de Escribano soteño",
+  seo: "https://seo.org/ave/escribano-soteno/#",
+  wiki: "https://es.wikipedia.org/wiki/Emberiza_cirlus"
+},
+{
+  id: 104,
   nombre: "Escribano triguero",
   cientifico: "Emberiza calandra",
   orden: "Passeriformes",
@@ -1691,7 +1871,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Emberiza_calandra"
 },
 {
-  id: 94,
+  id: 105,
   nombre: "Estornino negro",
   cientifico: "Sturnus unicolor",
   orden: "Passeriformes",
@@ -1709,7 +1889,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Sturnus_unicolor"
 },
 {
-  id: 95,
+  id: 106,
   nombre: "Estornino pinto",
   cientifico: "Sturnus vulgaris",
   orden: "Passeriformes",
@@ -1727,7 +1907,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Sturnus_vulgaris"
 },
 {
-  id: 96,
+  id: 107,
+  nombre: "Faisán Vulgar",
+  cientifico: "Phasianus colchicus",
+  orden: "Galliformes",
+  familia: "Phasianidae",
+  alimentacion: ["semillas", "frutos", "plantas", "insectos"],
+  envergadura: 80,
+  estacion: "Residente",
+  amenaza: "Datos insuficientes",
+  descripcion: "Este ave fue introducido en la Península Ibérica desde Asia. La presencia en nuestro país está relacionada con fines cinegéticos aunque hay algunas poblaciones asilvestradas.",
+  autor: "DickDaniels",
+  autor_page: "https://theworldbirds.org/",
+  imagen: "Faisan_vulgar",
+  alttext: "Imagen de Faisán vulgar",
+  seo: "https://seo.org/ave/faisan-vulgar/#",
+  wiki: "https://es.wikipedia.org/wiki/Phasianus_colchicus"
+},
+{
+  id: 108,
   nombre: "Focha común",
   cientifico: "Fulica atra",
   orden: "Gruiformes",
@@ -1745,7 +1943,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Fulica_atra"
 },
 {
-  id: 97,
+  id: 109,
   nombre: "Gallineta común",
   cientifico: "Gallinula chloropus",
   orden: "Gruiformes",
@@ -1763,7 +1961,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Gallinula_chloropus"
 },
 {
-  id: 98,
+  id: 110,
   nombre: "Ganga ibérica",
   cientifico: "Pterocles alchata",
   orden: "Pterocliformes",
@@ -1781,7 +1979,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Pterocles_alchata"
 },
 {
-  id: 99,
+  id: 111,
   nombre: "Ganga ortega",
   cientifico: "Pterocles orientalis",
   orden: "Pterocliformes",
@@ -1799,7 +1997,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Pterocles_orientalis"
 },
 {
-  id: 100,
+  id: 112,
   nombre: "Ganso del nilo",
   cientifico: "Alopochen aegyptiaca",
   orden: "Anseriformes",
@@ -1817,7 +2015,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Alopochen_aegyptiaca"
 },
 {
-  id: 101,
+  id: 113,
   nombre: "Garceta común",
   cientifico: "Egretta garzetta",
   orden: "Pelecaniformes",
@@ -1835,7 +2033,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Egretta_garzetta"
 },
 {
-  id: 102,
+  id: 114,
+  nombre: "Garceta grande",
+  cientifico: "Ardea alba",
+  orden: "Pelecaniformes",
+  familia: "Ardeidae",
+  alimentacion: ["peces", "anfibios", "insectos", "roedores"],
+  envergadura: 165,
+  estacion: "Invernal",
+  amenaza: "Preocupación menor",
+  descripcion: "La garceta grande es un ave primordialmente invernal en nuestra península. En Madrid está presente en las cuencas del río Tajo. Su alimentación  principal son peces, ranas y pequeños mamiferos, aunque puede llegar a comer pequeñas aves y reptiles.",
+  autor: "Googie Man",
+  autor_page: "https://commons.wikimedia.org/w/index.php?curid=10552518",
+  imagen: "Garceta_grande",
+  alttext: "Imagen de Garceta grande",
+  seo: "https://seo.org/ave/garceta-grande/#",
+  wiki: "https://es.wikipedia.org/wiki/Ardea_alba"
+},
+{
+  id: 115,
   nombre: "Garcilla bueyera",
   cientifico: "Bubulcus ibis",
   orden: "Pelecaniformes",
@@ -1853,7 +2069,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Bubulcus_ibis"
 },
 {
-  id: 103,
+  id: 116,
   nombre: "Garza imperial",
   cientifico: "Adea purpurea",
   orden: "Pelecaniformes",
@@ -1871,7 +2087,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Ardea_purpurea"
 },
 {
-  id: 104,
+  id: 117,
   nombre: "Garza real",
   cientifico: "Ardea cinerea",
   orden: "Pelecaniformes",
@@ -1889,7 +2105,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Ardea_cinerea"
 },
 {
-  id: 105,
+  id: 118,
   nombre: "Gavilán común",
   cientifico: "Accipiter nisus",
   orden: "Accipitriformes",
@@ -1907,7 +2123,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Accipiter_nisus"
 },
 {
-  id: 106,
+  id: 119,
   nombre: "Gaviota reidora",
   cientifico: "Chroicocephalus ridibundus",
   orden: "Charadriiformes",
@@ -1925,7 +2141,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Chroicocephalus_ridibundus"
 },
 {
-  id: 107,
+  id: 120,
   nombre: "Gaviota sombría",
   cientifico: "Larus fuscus",
   orden: "Charadriiformes",
@@ -1943,7 +2159,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Larus_fuscus"
 },
 {
-  id: 108,
+  id: 121,
   nombre: "Golondrina común",
   cientifico: "Hirundo rustica",
   orden: "Passeriformes",
@@ -1961,7 +2177,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Hirundo_rustica"
 },
 {
-  id: 109,
+  id: 122,
   nombre: "Golonfrina dáurica",
   cientifico: "Cecropis daurica",
   orden: "Passeriformes",
@@ -1979,7 +2195,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Cecropis_daurica"
 },
 {
-  id: 110,
+  id: 123,
+  nombre: "Gorrión chillón",
+  cientifico: "Petronia petronia",
+  orden: "Passeriformes",
+  familia: "Passeridae",
+  alimentacion: ["semillas", "frutos", "insectos"],
+  envergadura: 30,
+  estacion: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "Es un gorrión bastante más grande comparándolo con otros de su familia. Es corpulento y tiene un pico muy robusto. Tiene en el cuello una banda de color amarillo que suele permanecer oculta.",
+  autor: "Sandra",
+  autor_page: "https://www.flickr.com/people/79805947@N02",
+  imagen: "Gorrion_chillon",
+  alttext: "Imagen de Gorrión chillón",
+  seo: "https://seo.org/ave/gorrion-chillon/#",
+  wiki: "https://es.wikipedia.org/wiki/Petronia_petronia"
+},
+{
+  id: 124,
   nombre: "Gorrión común",
   cientifico: "Passer domesticus",
   orden: "Passeriformes",
@@ -1997,7 +2231,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Passer_domesticus"
 },
 {
-  id: 111,
+  id: 125,
   nombre: "Gorrión molinero",
   cientifico: "Passer montanus",
   orden: "Passeriformes",
@@ -2015,7 +2249,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Passer_montanus"
 },
 {
-  id: 112,
+  id: 126,
+  nombre: "Gorrion moruno",
+  cientifico: "Passer hispaniolensis",
+  orden: "Passeriformes",
+  familia: "Passeridae",
+  alimentacion: ["semillas", "frutos", "insectos"],
+  envergadura: 25,
+  estacion: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "El gorrión moruno es un ave gregaria que vive en grupo y que está en expansión. Es muy parecida al gorrión común. Presenta un claro dimorfismo sexual, teniendo las hembras tonos más pardos y claros.",
+  autor: "Cesco77",
+  autor_page: "https://commons.wikimedia.org/wiki/User:Cesco77",
+  imagen: "Gorrion_moruno",
+  alttext: "Imagen de Gorrión moruno",
+  seo: "https://seo.org/ave/gorrion-moruno/#",
+  wiki: "https://es.wikipedia.org/wiki/Passer_hispaniolensis"
+},
+{
+  id: 127,
   nombre: "Grajilla occidental",
   cientifico: "Corvus monedula",
   orden: "Passeriformes",
@@ -2033,7 +2285,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Corvus_monedula"
 },
 {
-  id: 113,
+  id: 128,
   nombre: "Halcón peregrino",
   cientifico: "Falco peregrinus",
   orden: "Falconiformes",
@@ -2051,7 +2303,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Falco_peregrinus"
 },
 {
-  id: 114,
+  id: 129,
   nombre: "Herrerillo capuchino",
   cientifico: "Lophophanes cristatus",
   orden: "Passeriformes",
@@ -2069,7 +2321,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Lophophanes_cristatus"
 },
 {
-  id: 115,
+  id: 130,
   nombre: "Herrerillo común",
   cientifico: "Cyanistes caeruleus",
   orden: "Passeriformes",
@@ -2087,25 +2339,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Cyanistes_caeruleus"
 },
 {
-  id: 116,
-  nombre: "Jilguero lúgano",
-  cientifico: "Spinus spinus",
-  orden: "Passeriformes",
-  familia: "Fringillidae",
-  alimentacion: ["semillas", "insectos"],
-  envergadura: 22,
-  estacion: "Invernal",
-  amenaza: "Preocupación menor",
-  descripcion: "En Madrid es un ave invernante. Muy inquieto y social que forma grupos con otras aves, incluso es posible verlo con otros fringílidos. Es granívora aunque en época repdroductora también como insectos.",
-  autor: "Jrproudfoot",
-  autor_page: "https://commons.wikimedia.org/w/index.php?curid=4401078",
-  imagen: "Jilguero_lugano",
-  alttext: "Imagen de Jilguero lúgano",
-  seo: "https://seo.org/ave/jilguero-lugano/#",
-  wiki: "https://es.wikipedia.org/wiki/Spinus_spinus"
-},
-{
-  id: 117,
+  id: 131,
   nombre: "Jilguero europeo",
   cientifico: "Carduelis carduelis",
   orden: "Passeriformes",
@@ -2123,7 +2357,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Carduelis_carduelis"
 },
 {
-  id: 118,
+  id: 132,
+  nombre: "Jilguero lúgano",
+  cientifico: "Spinus spinus",
+  orden: "Passeriformes",
+  familia: "Fringillidae",
+  alimentacion: ["semillas", "insectos"],
+  envergadura: 22,
+  estacion: "Invernal",
+  amenaza: "Preocupación menor",
+  descripcion: "En Madrid es un ave invernante. Muy inquieto y social que forma grupos con otras aves, incluso es posible verlo con otros fringílidos. Es granívora aunque en época repdroductora también como insectos.",
+  autor: "Jrproudfoot",
+  autor_page: "https://commons.wikimedia.org/w/index.php?curid=4401078",
+  imagen: "Jilguero_lugano",
+  alttext: "Imagen de Jilguero lúgano",
+  seo: "https://seo.org/ave/jilguero-lugano/#",
+  wiki: "https://es.wikipedia.org/wiki/Spinus_spinus"
+},
+{
+  id: 133,
   nombre: "Lavandera blanca",
   cientifico: "Motacilla alba",
   orden: "Passeriformes",
@@ -2141,7 +2393,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Motacilla_alba"
 },
 {
-  id: 119,
+  id: 134,
+  nombre: "Lavandera boyera",
+  cientifico: "Motacilla flava",
+  orden: "Passeriformes",
+  familia: "Motacillidae",
+  alimentacion: ["insectos"],
+  envergadura: 25,
+  estacion: "Estival",
+  amenaza: "Preocupación menor",
+  descripcion: "Presenta mucha variaedad de plumajes aunque su característica principal es el color verdoso y marillento que presenta. Tiene la cola más corta con respecto a otras aves de su especie. Es la única lavandera estival en nuestro país.",
+  autor: "Andreas Trepte",
+  autor_page: "https://www.photo-natur.net/",
+  imagen: "Lavandera_boyera",
+  alttext: "Imagen de Lavandera boyera",
+  seo: "https://seo.org/ave/lavandera-boyera/#",
+  wiki: "https://es.wikipedia.org/wiki/Motacilla_flava"
+},
+{
+  id: 135,
   nombre: "Lavandera cascadeña",
   cientifico: "Motacilla cinerea",
   orden: "Passeriformes",
@@ -2159,7 +2429,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Motacilla_cinerea"
 },
 {
-  id: 120,
+  id: 136,
   nombre: "Lechuza común",
   cientifico: "Tyto alba",
   orden: "Strigiformes",
@@ -2177,7 +2447,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Tyto_alba"
 },
 {
-  id: 121,
+  id: 137,
+  nombre: "Malvasía cabeciblanca",
+  cientifico: "Oxyura leucocephala",
+  orden: "Anseriformes",
+  familia: "Anatidae",
+  alimentacion: ["plantas", "semillas", "insectos", "moluscos", "crustáceos"],
+  envergadura: 67,
+  estacion: "Residente",
+  amenaza: "En peligro",
+  descripcion: "Pato inconfundible con un pico voluminoso y azul. Es un ave buceadora cuya alimentación básica son los vegetales. Se encuentra actualmente en peligro y tiene una población muy localizada en pocos putons de la península. ",
+  autor: "Ferran Pestaña",
+  autor_page: "https://www.flickr.com/people/57956171@N00",
+  imagen: "Malvasia_cabeciblanca",
+  alttext: "Imagen de Malvasía cabeciblanca",
+  seo: "https://seo.org/ave/malvasia-cabeciblanca/#",
+  wiki: "https://es.wikipedia.org/wiki/Oxyura_leucocephala"
+},
+{
+  id: 138,
   nombre: "Martín pescador común",
   cientifico: "Alcedo atthis",
   orden: "Coraciformes",
@@ -2195,7 +2483,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Alcedo_atthis"
 },
 {
-  id: 122,
+  id: 139,
   nombre: "Martinete común",
   cientifico: "Nycticorax nycticorax",
   orden: "Pelecaniformes",
@@ -2213,7 +2501,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Nycticorax_nycticorax"
 },
 {
-  id: 123,
+  id: 140,
   nombre: "Milano negro",
   cientifico: "Milvus migrans",
   orden: "Accipitriformes",
@@ -2231,7 +2519,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Milvus_migrans"
 },
 {
-  id: 124,
+  id: 141,
   nombre: "Milano real",
   cientifico: "Milvus milvus",
   orden: "Accipitriformes",
@@ -2249,7 +2537,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Milvus_milvus"
 },
 {
-  id: 125,
+  id: 142,
   nombre: "Mirlo acuático europeo",
   cientifico: "Cinclus cinclus",
   orden: "Passeriformes",
@@ -2267,7 +2555,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Cinclus_cinclus"
 },
 {
-  id: 126,
+  id: 143,
   nombre: "Mirlo común",
   cientifico: "Turdus merula",
   orden: "Passeriformes",
@@ -2285,7 +2573,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Turdus_merula"
 },
 {
-  id: 127,
+  id: 144,
   nombre: "Mito común",
   cientifico: "Aegithalos caudatus",
   orden: "Passeriformes",
@@ -2303,7 +2591,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Aegithalos_caudatus"
 },
 {
-  id: 128,
+  id: 145,
   nombre: "Mochuelo europeo",
   cientifico: "Aethene noctua",
   orden: "Strigiformes",
@@ -2321,7 +2609,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Athene_noctua"
 },
 {
-  id: 129,
+  id: 146,
   nombre: "Mosquitero común",
   cientifico: "Phylloscopus collybita",
   orden: "Passeriformes",
@@ -2339,7 +2627,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Phylloscopus_collybita"
 },
 {
-  id: 130,
+  id: 147,
   nombre: "Mosquitero musical",
   cientifico: "Phylloscopus trochilus",
   orden: "Passeriformes",
@@ -2357,7 +2645,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Phylloscopus_trochilus"
 },
 {
-  id: 131,
+  id: 148,
   nombre: "Mosquitero papialbo",
   cientifico: "Phylloscopus bonelli",
   orden: "Passeriformes",
@@ -2375,7 +2663,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Phylloscopus_bonelli"
 },
 {
-  id: 132,
+  id: 149,
   nombre: "Oropéndola europea",
   cientifico: "Oriolus oriolus",
   orden: "Passeriformes",
@@ -2393,7 +2681,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Oriolus_oriolus"
 },
 {
-  id: 133,
+  id: 150,
   nombre: "Pájaro moscón europeo",
   cientifico: "Remiz pendulinus",
   orden: "Passeriformes",
@@ -2411,7 +2699,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Remiz_pendulinus"
 },
 {
-  id: 134,
+  id: 151,
   nombre: "Paloma Bravía",
   cientifico: "Columba livia",
   orden: "Columbiformes",
@@ -2429,7 +2717,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Columba_livia"
 },
 {
-  id: 135,
+  id: 152,
   nombre: "Paloma torcaz",
   cientifico: "Columba palumbus",
   orden: "Columbiformes",
@@ -2447,7 +2735,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Columba_palumbus"
 },
 {
-  id: 136,
+  id: 153,
   nombre: "Paloma zurita",
   cientifico: "Columba oenas",
   orden: "Columbiformes",
@@ -2465,7 +2753,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Columba_oenas"
 },
 {
-  id: 137,
+  id: 154,
   nombre: "Papamoscas cerrojillo",
   cientifico: "Ficedula hypoleuca",
   orden: "Passeriformes",
@@ -2483,7 +2771,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Ficedula_hypoleuca"
 },
 {
-  id: 138,
+  id: 155,
   nombre: "Papamoscas gris",
   cientifico: "Muscicapa striata",
   orden: "Passeriformes",
@@ -2501,7 +2789,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Muscicapa_striata"
 },
 {
-  id: 139,
+  id: 1156,
   nombre: "Pardillo común",
   cientifico: "Linaria cannabina",
   orden: "Passeriformes",
@@ -2519,7 +2807,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Linaria_cannabina"
 },
 {
-  id: 140,
+  id: 157,
+  nombre: "Pato colorado",
+  cientifico: "Netta rufina",
+  orden: "Anseriformes",
+  familia: "Anatidae",
+  alimentacion: ["plantas", "peces", "moluscos", "crustáceos"],
+  envergadura: 87,
+  estacion: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "Llama la atención su gran cabeza redonda y su intenso plumaje nupcial. Predominantemente vegetariana, es un ave muy exigente en cuanto a su habitat. Existe como suele ocurrir en otras aves de su orden un claro dimorfismo sexual.",
+  autor: "Arpingstone",
+  autor_page: "https://commons.wikimedia.org/w/index.php?curid=1773470",
+  imagen: "Pato_colorado",
+  alttext: "Imagen de Pato colorado",
+  seo: "https://seo.org/ave/pato-colorado/#",
+  wiki: "https://es.wikipedia.org/wiki/Netta_rufina"
+},
+{
+  id: 158,
   nombre: "Perdiz roja",
   cientifico: "Alectoris rufa",
   orden: "Galliformes",
@@ -2537,7 +2843,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Alectoris_rufa"
 },
 {
-  id: 141,
+  id: 159,
   nombre: "Petirrojo europeo",
   cientifico: "Erithacus rubecula",
   orden: "Passeriformes",
@@ -2555,7 +2861,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Erithacus_rubecula"
 },
 {
-  id: 142,
+  id: 160,
   nombre: "Pico menor",
   cientifico: "Dryobates minor",
   orden: "Piciformes",
@@ -2573,7 +2879,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Dryobates_minor"
 },
 {
-  id: 143,
+  id: 161,
   nombre: "Pico picapinos",
   cientifico: "Dendrocopos major",
   orden: "Piciformes",
@@ -2591,7 +2897,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Dendrocopos_major"
 },
 {
-  id: 144,
+  id: 162,
   nombre: "Picogordo común",
   cientifico: "Coccothraustes coccothraustes",
   orden: "Passeriformes",
@@ -2609,7 +2915,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Coccothraustes_coccothraustes"
 },
 {
-  id: 145,
+  id: 163,
   nombre: "Pinzón real",
   cientifico: "Fringilla montifringilla",
   orden: "Passeriformes",
@@ -2627,7 +2933,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Fringilla_montifringilla"
 },
 {
-  id: 146,
+  id: 164,
   nombre: "Pinzón vulgar",
   cientifico: "Fringilla coelebs",
   orden: "Passeriformes",
@@ -2645,7 +2951,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Fringilla_coelebs"
 },
 {
-  id: 147,
+  id: 165,
   nombre: "Piquituerto común",
   cientifico: "Loxia curvirostra",
   orden: "Passeriformes",
@@ -2663,7 +2969,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Loxia_curvirostra"
 },
 {
-  id: 148,
+  id: 166,
   nombre: "Pito real ibérico",
   cientifico: "Picus sharpei",
   orden: "Piciformes",
@@ -2681,7 +2987,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Picus_sharpei"
 },
 {
-  id: 149,
+  id: 167,
   nombre: "Porrón europeo",
   cientifico: "Aythya ferina",
   orden: "Anseriformes",
@@ -2699,7 +3005,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Aythya_ferina"
 },
 {
-  id: 150,
+  id: 168,
   nombre: "Porrón moñudo",
   cientifico: "Aythya fuligula",
   orden: "Anseriformes",
@@ -2717,7 +3023,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Aythya_fuligula"
 },
 {
-  id: 151,
+  id: 169,
   nombre: "Porrón pardo",
   cientifico: "Aythya nyroca",
   orden: "Anseriformes",
@@ -2735,7 +3041,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Aythya_nyroca"
 },
 {
-  id: 152,
+  id: 170,
   nombre: "Rabilargo ibérico",
   cientifico: "Cyanopica cooki",
   orden: "Passeriformes",
@@ -2753,7 +3059,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Cyanopica_cooki"
 },
 {
-  id: 153,
+  id: 171,
+  nombre: "Rascón europeo",
+  cientifico: "Rallus aquaticus",
+  orden: "Gruiformes",
+  familia: "Rallidae",
+  alimentacion: ["insectos", "moluscos", "plantas", "semillas"],
+  envergadura: 42,
+  estacion: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "Es un ave discreta y difícil de localizar aunque está ampliamente distribuida por muchos de los humedales  la Península Ibérica. Es una especie territorial que defiende su territorio firmemente.",
+  autor: "Alexis Lours",
+  autor_page: "https://commons.wikimedia.org/wiki/User:Alexis_Lours",
+  imagen: "Rascon_europeo",
+  alttext: "Imagen de Rascón europeo",
+  seo: "https://seo.org/ave/rascon-europeo/#",
+  wiki: "https://es.wikipedia.org/wiki/Rallus_aquaticus"
+},
+{
+  id: 172,
   nombre: "Reyezuelo listado",
   cientifico: "Regulus ignicapilla",
   orden: "Passeriformes",
@@ -2771,7 +3095,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Regulus_ignicapilla"
 },
 {
-  id: 154,
+  id: 173,
   nombre: "Reyezuelo sencillo",
   cientifico: "Regulus regulus",
   orden: "Passeriformes",
@@ -2789,7 +3113,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Regulus_regulus"
 },
 {
-  id: 155,
+  id: 174,
   nombre: "Roquero rojo",
   cientifico: "Monticola saxatilis",
   orden: "Passeriformes",
@@ -2807,7 +3131,25 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Monticola_saxatilis"
 },
 {
-  id: 157,
+  id: 175,
+  nombre: "Roquero solitario",
+  cientifico: "Monticola solitarius",
+  orden: "Passeriformes",
+  familia: "Muscicapidae",
+  alimentacion: ["insectos", "reptiles", "frutos"],
+  envergadura: 35,
+  estacion: "Residente",
+  amenaza: "Preocupación menor",
+  descripcion: "Autoexplicado en su nombre, el roquero es una ve que tiene preferencia por las zonas rocosas. El macho presenta un plumaje de un tono azulado, la hembra en cambio tiene un color pardo con motas claras.",
+  autor: "Artemy Voikhansky",
+  autor_page: "https://commons.wikimedia.org/wiki/User:Artemy_Voikhansky",
+  imagen: "Roquero_solitario",
+  alttext: "Imagen de Roquero solitario",
+  seo: "https://seo.org/ave/roquero-solitario/#",
+  wiki: "https://es.wikipedia.org/wiki/Monticola_solitarius"
+},
+{
+  id: 176,
   nombre: "Ruiseñor común",
   cientifico: "Luscinia megarhynchos",
   orden: "Passeriformes",
@@ -2825,7 +3167,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Luscinia_megarhynchos"
 },
 {
-  id: 158,
+  id: 177,
   nombre: "Ruiseñor pechiazul",
   cientifico: "Luscinia svecica",
   orden: "Passeriformes",
@@ -2843,7 +3185,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Luscinia_svecica"
 },
 {
-  id: 159,
+  id: 178,
   nombre: "Serín verdecillo",
   cientifico: "Serinus serinus",
   orden: "Passeriformes",
@@ -2861,7 +3203,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Serinus_serinus"
 },
 {
-  id: 160,
+  id: 179,
   nombre: "Silbón europeo",
   cientifico: "Mareca penelope",
   orden: "Anseriformes",
@@ -2879,7 +3221,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Mareca_penelope"
 },
 {
-  id: 161,
+  id: 180,
   nombre: "Sisón común",
   cientifico: "Tetrax tetrax",
   orden: "Otidiformes",
@@ -2897,7 +3239,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Tetrax_tetrax"
 },
 {
-  id: 162,
+  id: 181,
   nombre: "Somormujo lavanco",
   cientifico: "Podiceps cristatus",
   orden: "Podicipediformes",
@@ -2915,7 +3257,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Podiceps_cristatus"
 },
 {
-  id: 163,
+  id: 182,
   nombre: "Tarabilla europea",
   cientifico: "Saxicola rubicola",
   orden: "Passeriformes",
@@ -2933,7 +3275,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Saxicola_rubicola"
 },
 {
-  id: 164,
+  id: 183,
   nombre: "Tarabilla norteña",
   cientifico: "Saxicola rubetra",
   orden: "Passeriformes",
@@ -2951,7 +3293,43 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Saxicola_rubetra"
 },
 {
-  id: 165,
+  id: 184,
+  nombre: "Tarro blanco",
+  cientifico: "Tadorna tadorna",
+  orden: "Anseriformes",
+  familia: "Anatidae",
+  alimentacion: ["moluscos", "crustáceos", "insectos"],
+  envergadura: 120,
+  estacion: "Invernal",
+  amenaza: "Preocupación menor",
+  descripcion: "Ave llamativa a caballo entre un pato y un ganso. Ambos sexos son muy parecidos solo que el macho presenta una protuberancia en la base del pico a modo de escudo. Presente en el Parque Reional de la Cuenca Alta del Manzanares.",
+  autor: "DickDaniels",
+  autor_page: "http://theworldbirds.org/",
+  imagen: "Tarro_blanco",
+  alttext: "Imagen de Tarro blanco",
+  seo: "https://seo.org/ave/tarro-blanco/#",
+  wiki: "https://es.wikipedia.org/wiki/Tadorna_tadorna"
+},
+{
+  id: 185,
+  nombre: "Tarro canelo",
+  cientifico: "Tadorna ferruginea",
+  orden: "Anseriformes",
+  familia: "Anatidae",
+  alimentacion: ["plantas", "semillas"],
+  envergadura: 120,
+  estacion: "Residente",
+  amenaza: "Vulnerable",
+  descripcion: "Tiene un precioso plumaje castaño anaranjado y un pico y patas de color negro. Está muy localizado en nuestro país y actualmetne se encuentra en estado vulnerable.",
+  autor: "Mprasannak",
+  autor_page: "https://commons.wikimedia.org/wiki/User:Mprasannak",
+  imagen: "Tarro_canelo",
+  alttext: "Imagen de Tarro canelo",
+  seo: "https://seo.org/ave/tarro-canelo/",
+  wiki: "https://es.wikipedia.org/wiki/Tadorna_ferruginea"
+},
+{
+  id: 186,
   nombre: "Terrera común",
   cientifico: "Calandrella brachydactyla",
   orden: "Passeriformes",
@@ -2969,7 +3347,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Calandrella_brachydactyla"
 },
 {
-  id: 166,
+  id: 187,
   nombre: "Torcecuellos euroasiático",
   cientifico: "Jynx torquilla",
   orden: "Piciformes",
@@ -2987,7 +3365,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Jynx_torquilla"
 },
 {
-  id: 167,
+  id: 188,
   nombre: "Tórtola europea",
   cientifico: "Streptopelia turtur",
   orden: "Columbiformes",
@@ -3005,7 +3383,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Streptopelia_turtur"
 },
 {
-  id: 168,
+  id: 189,
   nombre: "Tórtola turca",
   cientifico: "Streptopelia decaocto",
   orden: "Columbiformes",
@@ -3023,7 +3401,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Streptopelia_decaocto"
 },
 {
-  id: 169,
+  id: 190,
   nombre: "Trepador azul",
   cientifico: "Sitta europaea",
   orden: "Passeriformes",
@@ -3041,7 +3419,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Sitta_europaea"
 },
 {
-  id: 170,
+  id: 191,
   nombre: "Urraca común",
   cientifico: "Pica pica",
   orden: "Passeriformes",
@@ -3059,7 +3437,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Pica_pica"
 },
 {
-  id: 171,
+  id: 192,
   nombre: "Vencejo común",
   cientifico: "Apus apus",
   orden: "Caprimulgiformes",
@@ -3077,7 +3455,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Apus_apus"
 },
 {
-  id: 172,
+  id: 193,
   nombre: "Vencejo pálido",
   cientifico: "Apus pallidus",
   orden: "Caprimulgiformes",
@@ -3095,7 +3473,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Apus_pallidus"
 },
 {
-  id: 173,
+  id: 194,
   nombre: "Vencejo real",
   cientifico: "Tachymarptis melba",
   orden: "Caprimulgiformes",
@@ -3113,7 +3491,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Tachymarptis_melba"
 },
 {
-  id: 174,
+  id: 195,
   nombre: "Verderón común",
   cientifico: "Chloris chloris",
   orden: "Passeriformes",
@@ -3131,7 +3509,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Chloris_chloris"
 },
 {
-  id: 175,
+  id: 196,
   nombre: "Verderón serrano",	
   cientifico: "Carduelis citrinella",
   orden: "Passeriformes",
@@ -3149,7 +3527,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Carduelis_citrinella"
 },
 {
-  id: 176,
+  id: 197,
   nombre: "Zampullín común",
   cientifico: "Tachybaptus ruficollis",
   orden: "Podicipediformes",
@@ -3167,7 +3545,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Tachybaptus_ruficollis"
 },
 {
-  id: 177,
+  id: 198,
   nombre: "Zampullín cuellinegro",
   cientifico: "Podiceps nigricollis",
   orden: "Podicipediformes",
@@ -3185,7 +3563,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Tachybaptus_ruficollis"
 },
 {
-  id: 178,
+  id: 199,
   nombre: "Zarcero políglota",
   cientifico: "Hippolais polyglotta",
   orden: "Passeriformes",
@@ -3203,7 +3581,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Hippolais_polyglotta"
 },
 {
-  id: 179,
+  id: 200,
   nombre: "Zorzal alirrojo",
   cientifico: "Turdus iliacus",
   orden: "Passeriformes",
@@ -3221,7 +3599,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Turdus_iliacus"
 },
 {
-  id: 180,
+  id: 201,
   nombre: "Zorzal charlo",
   cientifico: "Turdus viscivorus",
   orden: "Passeriformes",
@@ -3239,7 +3617,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Turdus_viscivorus"
 },
 {
-  id: 181,
+  id: 202,
   nombre: "Zorzal común",
   cientifico: "Turdus philomelos",
   orden: "Passeriformes",
@@ -3257,7 +3635,7 @@ export const birds = [{
   wiki: "https://es.wikipedia.org/wiki/Turdus_philomelos"
 },
 {
-  id: 182,
+  id: 203,
   nombre: "Zorzal real",
   cientifico: "Turdus pilaris",
   orden: "Passeriformes",
