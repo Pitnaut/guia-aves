@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import BirdList from './components/BirdList';
-import BirdPage from './pages/BirdPage';
+import BirdDetail from './pages/BirdDetail';
 import BirdOrder from './pages/BirdOrder';
 import BirdAmenaza from './pages/BirdAmenaza';
 import BirdEstacion from './pages/BirdEstacion';
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/birds' element={<BirdList />} />
-          <Route path='/birds/:nombre' element={<BirdPage />} />
+          <Route path='/birds/:nombre' element={<BirdDetail />} />
           <Route path='/birds/orden/:orden' element={<BirdOrder />} />
           <Route path='/birds/amenaza/:amenaza' element={<BirdAmenaza />} />
           <Route path='/birds/estacion/:estacion' element={<BirdEstacion />} />

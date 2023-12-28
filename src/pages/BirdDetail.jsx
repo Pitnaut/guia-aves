@@ -1,22 +1,29 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { birds } from '../data/data';
 import '../stylesheets/BirdDetail.css';
 import { foodToEmoji } from '../data/foodToEmoji'; 
-import { BirdContext } from './BirdContext';
+import { BirdContext } from '../components/BirdContext';
 import wingIconLeft from '../assets/wingIconLeft.png'
 import wingIconRight from '../assets/wingIconRight.png'
 
-const BirdDetail = ({ bird }) => {
+const BirdDetail = () => {
 
+  const { nombre: nombreParam } = useParams();
+  const birdName = nombreParam.replace(/-/g, ' ');
+  const normalizedBirdName = birdName.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const bird = birds.find((bird) => bird.nombre.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() === normalizedBirdName);
+  
   const { seenBird, markAsSeen } = useContext(BirdContext); 
-
-  const { nombre, cientifico, orden, familia, amenaza, estacion, envergadura, imagen, alttext, descripcion, autor, seo, wiki, alimentacion, autor_page } = bird;
-
-  const currentIndex = birds.findIndex(bird => bird.nombre === nombre);
-
+  const currentIndex = birds.findIndex(bird => bird.nombre.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() === normalizedBirdName);
   const prevBird = birds[currentIndex - 1];
   const nextBird = birds[currentIndex + 1];
+
+  if (!bird) {
+    return <div>No se encontró el pájaro</div>;
+  }
+
+  const { nombre, cientifico, orden, familia, amenaza, estacion, envergadura, imagen, alttext, descripcion, autor, seo, wiki, alimentacion, autor_page } = bird;
 
   return (
     <div className='main-container'>

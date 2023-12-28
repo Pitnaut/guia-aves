@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import '../stylesheets/BirdCard.css';
 import { BirdContext } from './BirdContext';
 import medal from '../assets/medal.png'
+import { Link } from 'react-router-dom';
 
 const BirdCard = ({ bird }) => {
 
@@ -9,6 +10,10 @@ const BirdCard = ({ bird }) => {
   const { seenBird } = useContext(BirdContext); 
 
   return (
+    <Link
+      key={nombre} 
+      to={`/birds/${bird.nombre.replace(/ /g, '-')}`}
+      style={{ textDecoration: 'none' }} >
     <div className='bird-card'>
         <div key={nombre} className='bird-image'>
           <img
@@ -21,6 +26,7 @@ const BirdCard = ({ bird }) => {
           <h2>{nombre}</h2>      
         </div>
     </div>
+    </Link>
   );
 }
 
