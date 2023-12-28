@@ -8,7 +8,7 @@ const SearchPage = () => {
   const [queryParams] = useSearchParams();
   const birdName = queryParams.get('nombre');
   const normalizedBirdName = birdName
-    ? birdName.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+    ? birdName.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/ /g, '-')
     : '';
   const matchingBirds = birds.filter(
     (bird) =>
@@ -16,6 +16,7 @@ const SearchPage = () => {
         .toLowerCase()
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g, '')
+        .replace(/ /g, '-')
         .includes(normalizedBirdName)
   );
 
@@ -24,7 +25,7 @@ const SearchPage = () => {
       {matchingBirds.length > 0 ? (
         <div className='bird-list'>
           {matchingBirds.map((bird) => (
-            <BirdCard key={bird.nombre} bird={bird} />
+            <BirdCard bird={bird} key={bird.nombre} />
           ))}
         </div>
       ) : (

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import '../stylesheets/SearchBar.css';
 import { useNavigate, createSearchParams } from 'react-router-dom';
 import { birds } from '../data/data';
@@ -8,30 +8,28 @@ export const SearchBar = () => {
   const searchInputRef = useRef();
   const [searchQuery, setSearchQuery] = useState('');
 
-  useEffect(() => {
-      const normalizedBirdName = searchQuery
-        ? searchQuery.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
-        : '';
-      const matchingBirds = birds.filter(
-        (bird) =>
-          bird.nombre
-            .toLowerCase()
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
-            .includes(normalizedBirdName)
-      );
-      const query = createSearchParams({ nombre: searchQuery });
-      if (searchQuery) {
-        navigate({
-          pathname: '/search',
-          search: `${query}`,
-          state: { matchingBirds },
-        });
-      }
-  }, [searchQuery, navigate]);
-
   const onSearchHandler = (e) => {
     e.preventDefault();
+    const normalizedBirdName = searchQuery
+      ? searchQuery.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+      : '';
+    const matchingBirds = birds.filter(
+      (bird) =>
+        bird.nombre
+          .toLowerCase()
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/ /g, '-')
+          .includes(normalizedBirdName)
+    );
+    const query = createSearchParams({ nombre: searchQuery });
+    if (searchQuery) {
+      navigate({
+        pathname: '/search',
+        search: `${query}`,
+        state: { matchingBirds },
+      });
+    }
   };
 
   return (

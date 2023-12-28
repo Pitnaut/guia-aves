@@ -11,7 +11,7 @@ const BirdCard = ({ bird }) => {
 
   return (
     <Link
-      key={nombre} 
+      key={bird.nombre} 
       to={`/birds/${bird.nombre.replace(/ /g, '-')}`}
       style={{ textDecoration: 'none' }} >
     <div className='bird-card'>
