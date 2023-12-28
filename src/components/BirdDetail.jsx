@@ -22,8 +22,8 @@ const BirdDetail = ({ bird }) => {
     <div className='main-container'>
       <div className='navegador-aves'>
       <div className='links-container'>
-        <div className='ave-anterior'>{prevBird && <Link className="link-style" to={`/birds/${prevBird.nombre}`}>Ave anterior</Link>}</div>
-        <div className='ave-siguiente'>{nextBird && <Link className="link-style" to={`/birds/${nextBird.nombre}`}>Ave siguiente</Link>}</div>
+        <div className='ave-anterior'>{prevBird && <Link className="link-style" to={`/birds/${prevBird.nombre.replace(/ /g, '-')}`}>Ave anterior</Link>}</div>
+        <div className='ave-siguiente'>{nextBird && <Link className="link-style" to={`/birds/${nextBird.nombre.replace(/ /g, '-')}`}>Ave siguiente</Link>}</div>
         <div className='todas-aves'><Link className="link-style" to='/birds/'>Volver</Link></div>
       </div>
       <div className='seen-button'>

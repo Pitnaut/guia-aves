@@ -1,7 +1,7 @@
 import React from 'react';
 import { birds } from '../data/data';
 import BirdCard from '../components/BirdCard';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, Link } from 'react-router-dom';
 import '../stylesheets/BirdPage.css';
 
 const SearchPage = () => {
@@ -24,7 +24,12 @@ const SearchPage = () => {
       {matchingBirds.length > 0 ? (
         <div className='bird-list'>
           {matchingBirds.map((bird) => (
-            <BirdCard key={bird.id} bird={bird} />
+            <Link
+            key={bird.nombre}
+            to={`/birds/${bird.nombre.replace(/ /g, '-')}`}
+            style={{ textDecoration: 'none' }}>
+              <BirdCard key={bird.nombre} bird={bird} />
+            </Link>
           ))}
         </div>
       ) : (

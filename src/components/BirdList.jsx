@@ -11,7 +11,7 @@ const BirdList = () => {
         return (
           <Link
             key={bird.nombre} 
-            to={`/birds/${bird.nombre}`}
+            to={`/birds/${bird.nombre.replace(/ /g, '-')}`} // Aquí reemplazas los espacios con guiones
             style={{ textDecoration: 'none' }}
           >
             <BirdCard bird={bird} 

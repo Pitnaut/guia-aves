@@ -6,7 +6,6 @@ import medal from '../assets/medal.png'
 const BirdCard = ({ bird }) => {
 
   const { imagen, alttext, nombre } = bird;
-
   const { seenBird } = useContext(BirdContext); 
 
   return (

@@ -15,7 +15,7 @@ const BirdEstacion = () => {
       {filteredBirds.map((bird) => (
         <Link
           key={bird.nombre}
-          to={`/birds/${bird.nombre}`}
+          to={`/birds/${bird.nombre.replace(/ /g, '-')}`}
           style={{ textDecoration: 'none' }}>
         <BirdCard key={bird.id} bird={bird} />
         </Link>
