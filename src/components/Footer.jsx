@@ -1,11 +1,14 @@
 import React from 'react';
+import BirdCounter from './BirdCounter';
 import '../stylesheets/Footer.css';
 
 const Footer = () => {
   return (
     <footer className='footer'>
       <div className='footer-content'>
-        <p className='footer-text'>© 2021 - Todos los derechos reservados</p>
+        <div className='contador-aves'>
+          <BirdCounter />
+        </div>
       </div>
     </footer>
   )

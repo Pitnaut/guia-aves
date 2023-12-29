@@ -1,17 +1,18 @@
 .footer {
+  margin: 0;
   background-color: #34614580;
   backdrop-filter: blur(1rem);
   font-family: 'Montserrat';
   font-size: 1.1rem;
   color: rgb(240, 235, 235);
-  height: 10rem;
-  position: sticky;
+  height:10rem;
+  position: fixed;
   bottom: 0;
   width: 100%;
 
   animation: solid-footer linear both;
   animation-timeline: scroll(root block);
-  animation-range: 98% 100%;
+  animation-range: 96% 100%;
 }
 
 @keyframes solid-footer {
@@ -19,3 +20,28 @@
    background-color: #346145;
   }
  }
+
+ .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  padding: 0 2rem;
+ }
+
+.bird-counter progress {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 100%;
+}
+.bird-counter progress::-webkit-progress-bar {
+  background-color: #353535;
+  border-radius: 10px;
+}
+
+.bird-counter progress::-webkit-progress-value {
+  background-color: #8fbf9f;
+  border-radius: 10px;
+}
+
