@@ -1,0 +1,21 @@
+.footer {
+  background-color: #34614580;
+  backdrop-filter: blur(1rem);
+  font-family: 'Montserrat';
+  font-size: 1.1rem;
+  color: rgb(240, 235, 235);
+  height: 10rem;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+
+  animation: solid-footer linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 98% 100%;
+}
+
+@keyframes solid-footer {
+  to {
+   background-color: #346145;
+  }
+ }

@@ -8,6 +8,7 @@ import BirdAmenaza from './pages/BirdAmenaza';
 import BirdEstacion from './pages/BirdEstacion';
 import Home from './pages/Home';
 import SearchPage from './pages/SearchPage'
+import Footer from './components/Footer';
 
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/about' element={<h1>Explicación de la Guía de Aves</h1>} />
           <Route path='/search' element={<SearchPage />} />
         </Routes>
+      <Footer />
     </Router>
   )
 }

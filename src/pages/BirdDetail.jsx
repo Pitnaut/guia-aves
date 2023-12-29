@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { birds } from '../data/data';
 import '../stylesheets/BirdDetail.css';
@@ -19,6 +19,8 @@ const BirdDetail = () => {
   const prevBird = birds[currentIndex - 1];
   const nextBird = birds[currentIndex + 1];
 
+  const [isClicked, setIsClicked] = useState(false);
+
   if (!bird) {
     return <div>No se encontró el pájaro</div>;
   }
@@ -34,8 +36,8 @@ const BirdDetail = () => {
         <div className='todas-aves'><Link className="link-style" to='/birds/'>Volver</Link></div>
       </div>
       <div className='seen-button'>
-  <button onClick={()=> markAsSeen(nombre)}>¿Avistada?</button>
-  <span className="icon" key={seenBird.includes(nombre) ? 'seen' : 'not-seen'}>
+      <button onClick={() => { markAsSeen(nombre); setIsClicked(true); }}>¿Avistada?</button>
+      <span className={`icon ${isClicked ? 'rotate-on-click' : ''}`} key={seenBird.includes(nombre) ? 'seen' : 'not-seen'}>
     {seenBird.includes(nombre) ? '✔️' : '❌'}
   </span>
 </div>

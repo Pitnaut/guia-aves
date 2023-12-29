@@ -72,8 +72,7 @@ a.link-style {
   }
 }
 
-.icon {
-  display: inline-block;
+.rotate-on-click {
   animation: rotate 0.3s linear;
 }
 
