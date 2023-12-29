@@ -31,7 +31,7 @@
  }
 
 .bird-counter progress {
-  -webkit-appearance: none;
+  appearance: none;
   height: 20px;
   width: 100%;
 }

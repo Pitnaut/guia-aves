@@ -26,8 +26,13 @@ export const BirdProvider = ({ children }) => {
       }
     });
   };
+
+  const resetBirdCount = () => {
+    setSeenBird([])
+  }
+
   return (
-    <BirdContext.Provider value={{ seenBird, markAsSeen}}>
+    <BirdContext.Provider value={{ seenBird, markAsSeen, resetBirdCount}}>
       {children}
     </BirdContext.Provider>
   )
