@@ -4,7 +4,7 @@
   backdrop-filter: blur(1rem);
   font-family: 'Montserrat';
   font-size: 1rem;
-  color: rgb(240, 235, 235);
+  color: #F0EBEB;
   height:12rem;
   position: fixed;
   bottom: 0;
@@ -24,16 +24,24 @@
  .footer-content {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 80%;
+  align-items: flex-start;
+  align-content: center;
   padding: 0 2rem;
  }
+
+/* contador de aves */
 
  .contador-aves {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: .5rem;
+  margin-top: .5rem;
+  margin-right: 3rem;
+  padding-right: 3rem;
+  border-right: #F0EBEB 2px solid;
+  border-left: #F0EBEB 2px solid;
+  padding-left: 3rem;
  }
 
  .bird-counter {
@@ -45,7 +53,7 @@
   width: 100%;
   text-align: center;
   top: 96px;
-  color: #fff;
+  color: #F0EBEB;
 }
 
 .bird-counter progress {
@@ -78,4 +86,46 @@
   background-color: #8fbf9f;
   color: #353535;
   transition: 0.2s;
+}
+
+/* Contacto */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: .5rem;
+  margin-top: .5rem;
+  margin-right: 3rem;
+  padding-right: 3rem;
+  border-right: #F0EBEB 2px solid;
+  padding-bottom: 1.75rem
+}
+
+.contact-container a {
+  color: #F0EBEB;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Proyectos */
+
+.proyects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: .5rem;
+  margin-top: .5rem;
+  margin-right: 3rem;
+  padding-right: 3rem;
+  border-right: #F0EBEB 2px solid;
+  padding-bottom: 1.75rem
+}
+
+.proyects-container a {
+  color: #F0EBEB;
+  text-decoration: none;
+  font-size: 1rem;
 }
