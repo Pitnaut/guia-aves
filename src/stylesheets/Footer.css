@@ -3,9 +3,9 @@
   background-color: #34614580;
   backdrop-filter: blur(1rem);
   font-family: 'Montserrat';
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: rgb(240, 235, 235);
-  height:10rem;
+  height:12rem;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -30,6 +30,24 @@
   padding: 0 2rem;
  }
 
+ .contador-aves {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .bird-counter {
+  position: relative;
+}
+
+.bird-counter .progress-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 96px;
+  color: #fff;
+}
+
 .bird-counter progress {
   appearance: none;
   height: 20px;
@@ -37,11 +55,27 @@
 }
 .bird-counter progress::-webkit-progress-bar {
   background-color: #353535;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .bird-counter progress::-webkit-progress-value {
   background-color: #8fbf9f;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
+.bird-counter button {
+  background-color: #353535;
+  border: none;
+  border-radius: 5px;
+  color: #8fbf9f;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.bird-counter button:hover {
+  background-color: #8fbf9f;
+  color: #353535;
+  transition: 0.2s;
+}
