@@ -40,10 +40,10 @@ const BirdDetail = () => {
         <div className='ave-anterior'>
           {prevBird && <Link className="link-style" to={`/birds/${prevBird.nombre.replace(/ /g, '-')}`} onClick={() => setFadeEffect('fade-out')}>Ave anterior</Link>}
         </div>
+        <div className='todas-aves'><Link className="link-style" to='/birds/'>Volver</Link></div>
         <div className='ave-siguiente'>
           {nextBird && <Link className="link-style" to={`/birds/${nextBird.nombre.replace(/ /g, '-')}`} onClick={() => setFadeEffect('fade-out')}>Ave siguiente</Link>}        
-        </div>
-        <div className='todas-aves'><Link className="link-style" to='/birds/'>Volver</Link></div>
+        </div>  
       </div>
       <div className='seen-button'>
       <button onClick={() => { markAsSeen(nombre); setIsClicked(true); }}>¿Avistada?</button>
