@@ -21,6 +21,12 @@ const BirdDetail = () => {
 
   const [isClicked, setIsClicked] = useState(false);
 
+  const [fadeEffect, setFadeEffect] = useState(null);
+
+  const handleAnimationEnd = () => {
+    setFadeEffect(null);
+  };
+
   if (!bird) {
     return <div>No se encontró el pájaro</div>;
   }
@@ -31,18 +37,22 @@ const BirdDetail = () => {
     <div className='main-container'>
       <div className='navegador-aves'>
       <div className='links-container'>
-        <div className='ave-anterior'>{prevBird && <Link className="link-style" to={`/birds/${prevBird.nombre.replace(/ /g, '-')}`}>Ave anterior</Link>}</div>
-        <div className='ave-siguiente'>{nextBird && <Link className="link-style" to={`/birds/${nextBird.nombre.replace(/ /g, '-')}`}>Ave siguiente</Link>}</div>
+        <div className='ave-anterior'>
+          {prevBird && <Link className="link-style" to={`/birds/${prevBird.nombre.replace(/ /g, '-')}`} onClick={() => setFadeEffect('fade-out')}>Ave anterior</Link>}
+        </div>
+        <div className='ave-siguiente'>
+          {nextBird && <Link className="link-style" to={`/birds/${nextBird.nombre.replace(/ /g, '-')}`} onClick={() => setFadeEffect('fade-out')}>Ave siguiente</Link>}        
+        </div>
         <div className='todas-aves'><Link className="link-style" to='/birds/'>Volver</Link></div>
       </div>
       <div className='seen-button'>
       <button onClick={() => { markAsSeen(nombre); setIsClicked(true); }}>¿Avistada?</button>
       <span className={`icon ${isClicked ? 'rotate-on-click' : ''}`} key={seenBird.includes(nombre) ? 'seen' : 'not-seen'}>
-    {seenBird.includes(nombre) ? '✔️' : '❌'}
-  </span>
-</div>
+        {seenBird.includes(nombre) ? '✔️' : '❌'}
+      </span>
       </div>
-      <div className='grid-layout'>
+      </div>
+      <div className={`grid-layout ${fadeEffect}`} onAnimationEnd={handleAnimationEnd}>        
         <div className='nombre-ave'>
           <h1>{nombre}</h1>
           <p>{cientifico}</p>
