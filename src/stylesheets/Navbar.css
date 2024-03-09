@@ -1,6 +1,6 @@
 .navigator {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
@@ -171,5 +171,30 @@ select option {
   to {
     left: 0;
     right: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .navigator {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sections-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-size: 1.1rem;
+    color: rgb(240, 235, 235);
+    margin-right: 4rem;
+  }
+
+  .searchbar {
+    margin-bottom: 2rem;
+    margin-left: 1.6rem;
   }
 }

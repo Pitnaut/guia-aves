@@ -53,8 +53,7 @@ const NavBar = () => {
   }
 
   return (
-    <nav className='navigator'>
-      <div className="sections">        
+    <nav className='navigator'>      
         <ul className='sections-list'>
           <li className='menu-item'>
             <NavLink 
@@ -126,8 +125,7 @@ const NavBar = () => {
               </div>
             )}
           </li>
-        </ul>
-      </div>
+        </ul>    
       <div className='searchbar'>
         <SearchBar />
       </div>
