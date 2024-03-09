@@ -17,12 +17,11 @@
 .sections-list {
   display: flex;
   flex-wrap: nowrap;
-  list-style-type: none;
+  list-style: none;
   align-items: center;
   font-family: 'Montserrat';
-  font-size: 1.1rem;
   color: rgb(240, 235, 235);
-  gap: 5%;
+  gap: 10%;
 }
 
 .sections-list li {
@@ -56,7 +55,7 @@
 }
 
 .menu-item {
-  margin-left: 5%;
+  font-size: 1.6rem;
 }
 
 .dropdown {
@@ -66,8 +65,7 @@
 
 .dropbtn {
   color: rgb(240, 235, 235);
-  padding: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   border: none;
   cursor: pointer;
   font-family: 'Montserrat';
@@ -140,20 +138,20 @@ select option {
   color: rgb(240, 235, 235);
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 .link:visited {
   color: rgb(240, 235, 235);
   text-decoration: none;
   font-family: 'Montserrat';
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .active-link {
   color: rgb(240, 235, 235);
   text-decoration: none;
   font-family: 'Montserrat';
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 @keyframes blur-navbar {
@@ -174,27 +172,24 @@ select option {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .navigator {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
   }
 
   .sections-list {
     display: flex;
     flex-wrap: wrap;
-    list-style-type: none;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     font-family: 'Montserrat';
-    font-size: 1.1rem;
-    color: rgb(240, 235, 235);
-    margin-right: 4rem;
+    gap: 1%;
+    margin-right: 2.3rem;
   }
 
   .searchbar {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     margin-left: 1.6rem;
   }
 }
