@@ -129,3 +129,125 @@
   text-decoration: none;
   font-size: 1rem;
 }
+
+@media (max-width: 805px) {
+
+  .footer {
+    background-color: #34614580;
+    backdrop-filter: blur(1rem);
+    font-family: 'Montserrat';
+    font-size: .8rem;
+    color: #F0EBEB;
+    height:10rem;
+    position: fixed;
+    width: 100%;
+  }
+
+  .footer-content {
+    display: flex;
+    margin-top: .2rem;
+   }
+
+   .footer-content a {
+    margin-top: .3rem;
+   }
+  
+  /* contador de aves */
+  
+   .contador-aves {
+    display: flex;
+    justify-content: center;
+    border-right: #F0EBEB 2px solid;
+    border-left: #F0EBEB 2px solid;
+    margin-right: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+   }
+  
+   .bird-counter {
+    position: relative;
+  }
+
+  .bird-counter p {
+    font-size: .7rem;
+  }
+  
+  .bird-counter .progress-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 89px;
+    color: #F0EBEB;
+    font-size: .7rem;
+  }
+  
+  .bird-counter progress {
+    appearance: none;
+    height: 12px;
+    width: 100%;
+  }
+  .bird-counter progress::-webkit-progress-bar {
+    background-color: #353535;
+    border-radius: 5px;
+  }
+  
+  .bird-counter progress::-webkit-progress-value {
+    background-color: #8fbf9f;
+    border-radius: 5px;
+  }
+  
+  .bird-counter button {
+    background-color: #353535;
+    border: none;
+    border-radius: 5px;
+    color: #8fbf9f;
+    font-size: .7rem;
+    padding: 0.2rem .5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  .bird-counter button:hover {
+    background-color: #8fbf9f;
+    color: #353535;
+    transition: 0.2s;
+  }
+  
+  /* Contacto */
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-right: #F0EBEB 2px solid;
+    margin-right: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .contact-container a {
+    color: #F0EBEB;
+    text-decoration: none;
+    font-size: .7rem;
+  }
+  
+  /* Proyectos */
+  
+  .proyects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-right: #F0EBEB 2px solid;
+    margin-right: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .proyects-container a {
+    color: #F0EBEB;
+    text-decoration: none;
+    font-size: .7rem;
+  }
+
+}

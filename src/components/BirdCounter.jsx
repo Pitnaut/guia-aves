@@ -11,12 +11,12 @@ const BirdCounter = () => {
   return (
     <div className="bird-counter">
       <h3>Progreso</h3>
-      <p className="bird-counter-text">{birdCount} de 203 aves avistadas</p>
+      <p className="bird-counter-text">{birdCount} de 203 avistamientos</p>
       <div className="progress-bar">
         <progress value={birdCount} max={totalBirds}></progress>
         <div className="progress-text">{progress.toFixed(2)}%</div>
       </div>
-      <button onClick={resetBirdCount}>Resetear aves</button>
+      <button onClick={resetBirdCount}>Resetear</button>
     </div>
   )
 };
