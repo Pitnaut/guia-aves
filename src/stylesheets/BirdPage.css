@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 3%;
-  padding-bottom: 5%;
+  padding-bottom: 15rem;
 }
 
 .bird-order, .bird-estacion, .bird-amenaza {
@@ -73,5 +73,17 @@
   }
   100% {
     transform: scaleY(1);
+  }
+}
+
+@media (max-width: 805px) {
+  .bird-order-container h1, .bird-estacion-container h1 {
+    font-size: 2rem;
+  }
+  .header-amenaza h1 {
+    font-size: 1.5rem;
+  }
+  .header-amenaza img {
+    height: 2.8rem;
   }
 }
