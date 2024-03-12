@@ -87,3 +87,17 @@
     height: 2.8rem;
   }
 }
+
+@media (max-width: 500px) {
+  .bird-order, .bird-estacion, .bird-amenaza {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill, minmax(7rem, 1fr)
+      );
+    gap: 1rem;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 80%;
+  }
+}
