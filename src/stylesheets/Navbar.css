@@ -180,16 +180,50 @@ select option {
 
   .sections-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
     font-family: 'Montserrat';
     gap: 1%;
     margin-right: 2.3rem;
+    gap: 6%;
   }
 
   .searchbar {
     margin-bottom: 1.5rem;
     margin-left: 1.6rem;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .link {
+    font-size: 1rem;
+  }
+  .link:visited {
+    font-size: 1rem;
+  }
+  
+  .active-link {
+    font-size: 1rem;
+  }
+  .dropbtn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .link {
+    font-size: .8rem;
+  }
+  .link:visited {
+    font-size: .8rem;
+  }
+  
+  .active-link {
+    font-size: .8rem;
+  }
+  .dropbtn {
+    font-size: .8rem;
   }
 }
