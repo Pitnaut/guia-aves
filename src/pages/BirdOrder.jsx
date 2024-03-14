@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { birds } from '../data/data'
 import { useParams } from 'react-router-dom'
 import '../stylesheets/BirdPage.css'
@@ -6,6 +6,11 @@ import BirdCard from '../components/BirdCard'
 
 
 const BirdOrder = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const { orden } = useParams()
   const filteredBirds = birds.filter((bird) => bird.orden === orden)
 

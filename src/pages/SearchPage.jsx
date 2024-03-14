@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { birds } from '../data/data';
 import BirdCard from '../components/BirdCard';
 import { useSearchParams } from 'react-router-dom';
 import '../stylesheets/BirdPage.css';
 
 const SearchPage = () => {
+
+ useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [queryParams] = useSearchParams();
   const birdName = queryParams.get('nombre');
   const normalizedBirdName = birdName

@@ -9,15 +9,15 @@ const BirdList = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000); // ajusta este tiempo según sea necesario
+    }, 1000); 
 
-    return () => clearTimeout(timer); // limpia el temporizador si el componente se desmonta
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className='bird-list'>
       {loading ? (
-        <div className='loader'>Cargando...</div> // reemplaza esto con tu propio spinner o cargador
+        <div className='loader'>Cargando...</div>
       ) : (
         birds.map((bird) => {
           return (

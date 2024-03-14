@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { birds } from '../data/data';
 import '../stylesheets/BirdDetail.css';
@@ -8,6 +8,10 @@ import wingIconLeft from '../assets/wingIconLeft.png'
 import wingIconRight from '../assets/wingIconRight.png'
 
 const BirdDetail = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const { nombre: nombreParam } = useParams();
   const birdName = nombreParam.replace(/-/g, ' ');
