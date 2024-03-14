@@ -106,6 +106,8 @@
 
 .dropdown-content-active {
   display: block;
+  right: 0;
+  left: auto;
 }
 
 .dropdown-content div {
