@@ -8,7 +8,6 @@ const BirdAvistadas = () => {
   const { seenBird } = useContext(BirdContext);
 
   const filteredBirds = birds.filter((bird) => seenBird.includes(bird.nombre));
-  console.log(filteredBirds)
 
   useEffect(() => {
     window.scrollTo(0, 0);

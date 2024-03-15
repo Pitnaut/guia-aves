@@ -52,6 +52,12 @@ const NavBar = () => {
     setIsDropdownVisible(false);
   }
 
+  const handleAvistadasSelect = (e) => {
+    console.log("handleAvistadasSelect called");
+    navigate(`/birds/avistadas`);
+    setIsDropdownVisible(false);
+  }
+
   return (
     <nav className='navigator'>      
         <ul className='sections-list'>
@@ -120,6 +126,16 @@ const NavBar = () => {
                           {option}
                         </option>
                       ))}
+                  </select>
+                </div>
+                <div className='custom-select'>
+                  <select
+                    value={'avistadas'}
+                    onChange={() => {}}
+                    onClick={handleAvistadasSelect}
+                  >
+                    <option value="" disabled hidden defaultValue>Aves Avistadas</option>
+                    <option value="avistadas">Aves Avistadas</option>                  
                   </select>
                 </div>
               </div>

@@ -77,7 +77,7 @@
 }
 
 @media (max-width: 805px) {
-  .bird-order-container h1, .bird-estacion-container h1 {
+  .bird-order-container h1, .bird-estacion-container h1, .bird-avistadas-container h1{
     font-size: 2rem;
   }
   .header-amenaza h1 {
@@ -89,7 +89,7 @@
 }
 
 @media (max-width: 500px) {
-  .bird-order, .bird-estacion, .bird-amenaza {
+  .bird-order, .bird-estacion, .bird-amenaza, .bird-avistadas {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(
