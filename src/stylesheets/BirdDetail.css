@@ -295,11 +295,10 @@ a.link-style {
 
   .navegador-aves {
     margin-top: 1rem;
-    width: 68%;
+    width: 30rem;
     display: flex;
     justify-content: center;
-    padding-left: .8rem;
-    margin-left: 7.3rem;
+    padding-left: .5rem;
   }
   
   .links-container {
