@@ -1,4 +1,4 @@
-.bird-order-container, .bird-estacion-container, .bird-amenaza-container {
+.bird-order-container, .bird-estacion-container, .bird-amenaza-container, .bird-avistadas-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +7,7 @@
   padding-bottom: 15rem;
 }
 
-.bird-order, .bird-estacion, .bird-amenaza {
+.bird-order, .bird-estacion, .bird-amenaza, .bird-avistadas {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(
@@ -19,7 +19,7 @@
   width: 55%;
 }
 
-.bird-order-container h1, .bird-estacion-container h1 {
+.bird-order-container h1, .bird-estacion-container h1, .bird-avistadas-container h1 {
   font-size: 3rem;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;

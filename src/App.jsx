@@ -6,6 +6,7 @@ import BirdDetail from './pages/BirdDetail';
 import BirdOrder from './pages/BirdOrder';
 import BirdAmenaza from './pages/BirdAmenaza';
 import BirdEstacion from './pages/BirdEstacion';
+import BirdAvistadas from './pages/BirdAvistadas';
 import Home from './pages/Home';
 import SearchPage from './pages/SearchPage'
 import Footer from './components/Footer';
@@ -24,6 +25,7 @@ function App() {
           <Route path='/birds/orden/:orden' element={<BirdOrder />} />
           <Route path='/birds/amenaza/:amenaza' element={<BirdAmenaza />} />
           <Route path='/birds/estacion/:estacion' element={<BirdEstacion />} />
+          <Route path='birds/avistadas' element={<BirdAvistadas />}  />
           <Route path='/about' element={<h1>Explicación de la Guía de Aves</h1>} />
           <Route path='/search' element={<SearchPage />} />
         </Routes>
