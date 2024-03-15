@@ -295,9 +295,11 @@ a.link-style {
 
   .navegador-aves {
     margin-top: 1rem;
-    width: 70%;
+    width: 68%;
     display: flex;
     justify-content: center;
+    padding-left: .8rem;
+    margin-left: 7.3rem;
   }
   
   .links-container {
@@ -321,6 +323,103 @@ a.link-style {
   .seen-button button {
     font-size: .6rem;
   }
+
+  .grid-layout {
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 1rem;
+    width: 30rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+  }
+
+  .nombre-ave {
+    grid-column: 1 ;
+    grid-row: 1 / 1;
+    width: 30rem;
+  }
+  
+  .nombre-ave h1 {
+    font-size: 1.5rem;
+  }
+  
+  .nombre-ave p {
+    font-size: 1rem;
+  }
+  
+  .imagen {
+    grid-column: 1;
+    grid-row: 2 / 2;
+  }
+  
+  .info-ave {
+    font-size: 1rem;
+    grid-column: 1;
+    grid-row: 3 / 3;
+  }
+
+  .info-ave p {
+    margin: .2rem .3rem .3rem .5rem;
+    padding: 0;
+    line-height: 1.5rem;
+  }
+  
+  .info-ave .label {
+    font-weight: bold;
+    color: #353535;
+  }
+  
+  .descripcion-ave {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    grid-column: 1;
+    grid-row: 4 / 4;
+  }
+  
+  .envergadura {
+    width: 100%;
+    display: flex;
+    grid-column: 1;
+    grid-row: 5 / 5;
+  }
+  
+  .envergadura img {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  
+  .envergadura p {
+    font-size: 2.5rem;
+  }
+  
+  .alimentacion {
+    font-size: 2.5rem;
+    grid-column: 1;
+    grid-row: 6 / 6;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+  
+  .autor {
+    grid-column: 1;
+    grid-row: 7 / 7;
+    text-align: center;
+  }
+  
+  .autor a {
+      margin: 1rem;
+      margin-top: 1rem;
+      font-size: 1rem;
+  }
+  
+  .enlaces {
+    grid-column: 1;
+    grid-row: 8 / 8;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
   
 }
 
@@ -335,6 +434,7 @@ a.link-style {
 
   .navegador-aves {
     margin-top: 1rem;
+    padding-left: 1rem;
     width: 20rem;
     display: flex;
     justify-content: center;
@@ -345,7 +445,7 @@ a.link-style {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     margin-top: 1rem;
-    width: 8rem;
+    width: 20rem;
     row-gap: 1rem;
     column-gap: 1rem;
   }
@@ -358,43 +458,27 @@ a.link-style {
   
   .nombre-ave h1 {
     font-size: 1.5rem;
-    font-weight: bold;
-    color: #353535;
-    text-align: left;
   }
   
   .nombre-ave p {
     font-size: 1rem;
-    font-style: italic;
-    font-weight: bold;
-    color: #353535;
-    text-align: left;
   }
   
   .imagen {
     grid-column: 1;
     grid-row: 2 / 2;
-    display: flex;
-    justify-content: center;
   }
   
-  .imagen img {
-    max-width: 20rem;
-    height: 100%;
-    border-radius: 15px;
-
-  } 
-  
   .info-ave {
-    padding-left: 1rem;
-    padding-top: 0rem;
-    background-color: #ebe2cd;
-    border-radius: 15px;
-    box-shadow: inset 0 0 5px #c2baa6;
     font-size: 1rem;
-    font-family: "Montserrat", sans-serif;
     grid-column: 1;
     grid-row: 3 / 3;
+  }
+
+  .info-ave p {
+    margin: .2rem .3rem .3rem .5rem;
+    padding: 0;
+    line-height: 1.5rem;
   }
   
   .info-ave .label {
@@ -404,14 +488,8 @@ a.link-style {
   
   .descripcion-ave {
     font-size: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #ebe2cd;
-    border-radius: 15px;
-    box-shadow: inset 0 0 5px #c2baa6;
-    font-family: "Montserrat", sans-serif;
     grid-column: 1;
     grid-row: 4 / 4;
   }
@@ -419,14 +497,6 @@ a.link-style {
   .envergadura {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    background-color: #ebe2cd;
-    border-radius: 15px;
-    box-shadow: inset 0 0 5px #c2baa6;
-    font-family: "Montserrat", sans-serif;
     grid-column: 1;
     grid-row: 5 / 5;
   }
@@ -437,36 +507,18 @@ a.link-style {
   }
   
   .envergadura p {
-    font-size: 3.5rem;
-    font-family: "Handlee", cursive;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    padding-top: 1rem;
-    margin-left: .4rem;
-    margin-right: .4rem;
+    font-size: 2.5rem;
   }
   
   .alimentacion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    background-color: #ebe2cd;
-    border-radius: 15px;
-    box-shadow: inset 0 0 5px #c2baa6;
-    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
     grid-column: 1;
     grid-row: 6 / 6;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
   }
   
   .autor {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: #ebe2cd;
-    border-radius: 15px;
-    box-shadow: inset 0 0 5px #c2baa6;
-    font-family: "Montserrat", sans-serif;
     grid-column: 1;
     grid-row: 7 / 7;
     text-align: center;
@@ -476,34 +528,12 @@ a.link-style {
       margin: 1rem;
       margin-top: 1rem;
       font-size: 1rem;
-      font-weight: bold;
-      color: #353535;
-      text-align: center;
-      padding-top: 1rem;
-      text-decoration: none;
   }
   
   .enlaces {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #ebe2cd;
-    border-radius: 15px;
-    box-shadow: inset 0 0 5px #c2baa6;
-    font-family: "Montserrat", sans-serif;
     grid-column: 1;
     grid-row: 8 / 8;
     padding-top: .5rem;
     padding-bottom: .5rem;
-  }
-  
-  .enlaces a {
-    font-size: 1rem;
-    color: #353535;
-    text-align: center;
-    text-decoration: none;
-    padding-left: .5rem;
-    padding-right: .5rem;
   }
 }
