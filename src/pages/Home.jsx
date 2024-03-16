@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import logo from '../assets/logo.png';
-import petirrojo from '../../public/images/Petirrojo_europeo.png';
+import petirrojo from '../assets/Petirrojo_europeo.png';
 import '../stylesheets/Home.css'
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
             Si quieres saber más sobre alguna especie, puedes visitar la web de SEO Birdlife o Wikipedia, donde encontrarás información más detallada.
           </p>
           <p>Si tienes alguna duda sobre como se usa esta app, tienes dentro de 'Guía de uso' las instrucciones y la leyenda que aparece en los detalles del ave.</p>
-          <p>En caso de encontrar algún error o sencillamente tienes una sugerencia sobre como mejorar puedes ponerte en contacto con el correo proporcionado en el footer.</p>
+          <p>En caso de encontrar algún error o sencillamente tienes una sugerencia sobre como mejorar puedes ponerte en contacto en el correo proporcionado en el footer.</p>
           <p>Esta aplicación es totalmente gratuita y forma parte de un proyecto educativo personal. Se han dado crédito a los autores de las fotos.</p>
         </div>
       </div>
