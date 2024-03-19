@@ -1,4 +1,9 @@
 
+.home-container {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
 .home {
   margin: 0 auto;
   display: flex;
@@ -13,11 +18,13 @@
 }
 
 .home h2 {
+  width: 100%;
   font-size: 1.5rem;
   color: rgb(240, 235, 235);
   background-color: #346145;
   padding: 1rem;
   border-radius: 15px;
+  text-align: center;
 }
 
 .intro-logo {
@@ -36,14 +43,21 @@
   margin-right: 1rem;
 }
 
+.intro-logo p {
+  margin-left: .1rem;
+}
+
 .main-text {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
+
+
 .main-text img {
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 15px;
   margin-top: 1rem;
   margin-left: 1rem;
@@ -51,4 +65,30 @@
 
 .big-text {
   margin-bottom: 12rem;
+}
+
+@media (min-width: 750px) {
+
+  .home {
+    font-size: 1.8rem;
+  }
+
+  .home h2 {
+    font-size: 2rem;
+  }
+ 
+  .intro-logo img {
+    width: 15rem;
+    height: 15rem;;
+  }
+
+  .intro-logo p {
+    margin-left: 1rem;
+  }
+
+  .main-text img {
+    width: 15rem;
+    height: 15rem;
+  }
+
 }

@@ -10,6 +10,7 @@ export default function Home() {
   }, []);
 
   return (
+    <div className='home-container'>
       <div className='home' >
         <h2>Bienvenido a la guía de Aves de Madrid</h2>
         <div className='intro-logo'>      
@@ -18,8 +19,7 @@ export default function Home() {
         </div>
         <div className='main-text'>
           <p>
-            En esta guía no oficial con las principales aves que habitan la Comunidad de Madrid,
-            tendrás una información sencilla sobre cada ave.
+            La guía cuenta con más de 200 especies. Podrás llevar la cuenta de tus avistamientos y filtrar por orden, estación y nivel de amenaza.
           </p>
           <img src={petirrojo} />
         </div>
@@ -32,5 +32,6 @@ export default function Home() {
           <p>Esta aplicación es totalmente gratuita y forma parte de un proyecto educativo personal. Se han dado crédito a los autores de las fotos.</p>
         </div>
       </div>
+    </div>
   )
 }
