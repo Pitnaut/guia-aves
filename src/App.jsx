@@ -10,6 +10,7 @@ import BirdAvistadas from './pages/BirdAvistadas';
 import Home from './pages/Home';
 import SearchPage from './pages/SearchPage'
 import Footer from './components/Footer';
+import Guide from './pages/Guide';
 
 
 
@@ -26,7 +27,7 @@ function App() {
           <Route path='/birds/amenaza/:amenaza' element={<BirdAmenaza />} />
           <Route path='/birds/estacion/:estacion' element={<BirdEstacion />} />
           <Route path='birds/avistadas' element={<BirdAvistadas />}  />
-          <Route path='/about' element={<h1>Explicación de la Guía de Aves</h1>} />
+          <Route path='/guide' element={<Guide />} />
           <Route path='/search' element={<SearchPage />} />
         </Routes>
       <Footer />

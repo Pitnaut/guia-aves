@@ -77,7 +77,7 @@ const NavBar = () => {
           </li>
           <li className='menu-item'>
             <NavLink 
-              to='/about'
+              to='/guide'
               className={({ isActive }) => isActive ? 'active-link' : 'link'}>
                 Guía de uso
             </NavLink>
