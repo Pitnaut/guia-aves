@@ -29,6 +29,7 @@ export const SearchBar = () => {
         search: `${query}`,
         state: { matchingBirds },
       });
+      setSearchQuery('');
     }
   };
 
