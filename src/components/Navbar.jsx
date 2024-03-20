@@ -6,7 +6,7 @@ import { NavLink, useNavigate, useLocation} from 'react-router-dom';
 
 
 
-const NavBar = () => {
+export const NavBar = () => {
 
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [selectedOrden, setSelectedOrden] = useState("");
@@ -149,5 +149,3 @@ const NavBar = () => {
   );
 
 }
-
-export default NavBar;
