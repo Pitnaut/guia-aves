@@ -10,7 +10,7 @@ const BirdList = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1200); 
+    }, 1500); 
 
     return () => clearTimeout(timer);
   }, []);
