@@ -27,9 +27,9 @@ const SearchPage = () => {
   );
 
   return (
-    <div className='search-page'>
+    <div className='bird-search-container'>
       {matchingBirds.length > 0 ? (
-        <div className='bird-list'>
+        <div className='bird-search'>
           {matchingBirds.map((bird) => (
             <BirdCard bird={bird} key={bird.nombre} />
           ))}

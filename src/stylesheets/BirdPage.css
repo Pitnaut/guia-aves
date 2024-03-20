@@ -1,4 +1,4 @@
-.bird-order-container, .bird-estacion-container, .bird-amenaza-container, .bird-avistadas-container {
+.bird-order-container, .bird-estacion-container, .bird-amenaza-container, .bird-avistadas-container, .bird-search-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +7,7 @@
   padding-bottom: 15rem;
 }
 
-.bird-order, .bird-estacion, .bird-amenaza, .bird-avistadas {
+.bird-order, .bird-estacion, .bird-amenaza, .bird-avistadas, .bird-search {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(

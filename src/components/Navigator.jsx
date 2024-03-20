@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { SearchBar } from './SearchBar';
-import '../stylesheets/Navbar.css';
+import '../stylesheets/Navigator.css';
 import { birds } from '../data/data';
 import { NavLink, useNavigate, useLocation} from 'react-router-dom';
 
 
 
-const NavBar = () => {
+const Navigator = () => {
 
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [selectedOrden, setSelectedOrden] = useState("");
@@ -150,4 +150,4 @@ const NavBar = () => {
 
 }
 
-export default NavBar;
+export default Navigator;

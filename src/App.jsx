@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavBar from './components/NavBar';
+import Navigator from './components/Navigator';
 import BirdList from './components/BirdList';
 import BirdDetail from './pages/BirdDetail';
 import BirdOrder from './pages/BirdOrder';
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <Router> 
-      <NavBar />
+      <Navigator />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/birds' element={<BirdList />} />
