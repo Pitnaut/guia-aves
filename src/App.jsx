@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar.jsx';
 import BirdList from './components/BirdList';
 import BirdDetail from './pages/BirdDetail';
 import BirdOrder from './pages/BirdOrder';
