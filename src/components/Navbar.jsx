@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { SearchBar } from './SearchBar';
-import '../stylesheets/NavBar.css';
+import '../stylesheets/Navbar.css';
 import { birds } from '../data/data';
 import { NavLink, useNavigate, useLocation} from 'react-router-dom';
 
