@@ -10,8 +10,8 @@
 }
 
 .guide-container p {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .guide-container {
@@ -37,8 +37,8 @@
 .intro-guide p {
   font-size: 1rem;
   text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .guide-navigator {
@@ -86,4 +86,46 @@
   margin: 0 auto;
   text-align: center;
   margin-bottom: 12rem;
+}
+
+@media (min-width: 750px) {
+
+  .intro-guide h1 {
+    font-size: 3.5rem !important;
+  }
+
+  .guide-container h2 {
+    font-size: 3rem;
+  }
+
+  .guide-container {
+    max-width: 60rem;
+  }
+
+  .intro-guide h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro-guide p {
+    font-size: 1.2rem;
+  }
+
+  .guide-navigator {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .amenaza-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+  }
+
+  .amenaza-images img {
+    height: 4rem;
+  }
+
+
 }
