@@ -3,6 +3,7 @@ import { birds } from '../data/data';
 import BirdCard from '../components/BirdCard';
 import { useSearchParams } from 'react-router-dom';
 import '../stylesheets/BirdPage.css';
+import birdNotFound from '../assets/bird_not_found.jpg';
 
 const SearchPage = () => {
 
@@ -34,7 +35,10 @@ const SearchPage = () => {
           ))}
         </div>
       ) : (
+        <div className='bird-not-found'>
+          <img src={birdNotFound} alt='Bird not found'/>
         <p>No se encontró información de aves</p>
+        </div>
       )}
     </div>
   );
